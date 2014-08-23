@@ -37,7 +37,7 @@ twitterFeed: "http://lviv.gdg.org.ua/tweetledee/favoritesjson.php?c=10&cache_int
 subscribeAction: "http://gdg.us5.list-manage1.com/subscribe/post?u=9fc8aa205b0521b5f05fc8e1e&amp;id=ae0fb459fc" # MIRARHO AMB GESTOR DE CORREUS
 
 # Documents
-c4pUrl: "http://bit.ly/dfua-c4p" # MIRARHO
+c4pUrl: "http://bit.ly/dfua-c4p" # MIRARHO AIXO ESTA A SPEAKERS "BECOME A SPEAKER"
 c4sponsorsUrl: "/assets/GDG_DevFest_Partnership.pdf"
 
 # Head
@@ -55,16 +55,16 @@ typeoutTextValues: '"", "F", "R", "E", "S", "C", "FRESC"'
 eventName: "Casa Corbella"
 
 # Team Block
-aboutUs: Google's services have become synonymous with simple things online. Number of technological innovations and IT industries in which Google is creating new products is enormous. It's hard to get to know all of them, but realistic. This is why people have started to gather in small local groups and share their experience. Later, the following groups have been called Google Developer Groups. GDGs can take many forms -- from just a few people getting together to watch some videos, to large gatherings with demos, tech talks, hackathons and conferences.
+aboutUs: "Aixo es una prova, falta per posar qui som" # MIRARHO
 
 # Speakers List Block
 showSessions: true
-thumbnailsFolder: /img/speakers/
+thumbnailsFolder: /img/speakers/ #ARRAY AMB TOTES LES IMATGES
 
 # Footer
-gplusFollowUsUrl: "https://plus.google.com/b/102444623953913144164"
-twitterFollowUsUrl: "https://twitter.com/intent/user?screen_name=GDGLviv"
-fbFollowUsUrl: "https://facebook.com/GDGLviv"
+gplusFollowUsUrl: "https://plus.google.com/b/108193050919826516538"
+twitterFollowUsUrl: "https://twitter.com/intent/user?screen_name=casacorbella"
+fbFollowUsUrl: "https://facebook.com/casacorbella"
 
 # Blog
 blogCommentsEnabled: true
