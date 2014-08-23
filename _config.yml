@@ -5,7 +5,7 @@ exclude: ['/automation/', 'README.md', 'LICENCE.txt', 'CNAME']
 
 
 # Site settings
-title: GDG DevFest Season 2014
+title: Casa Corbella
 email: lviv@gdg.org.ua
 description: "GDG DevFest is a set of events all around the world"
 baseurl: "/zeppelin"
