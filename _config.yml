@@ -49,7 +49,7 @@ socialImageSrcFacebook: "/img/seo/sharing-facebook.png"
 
 # Header
 eventDate: "Juliol, 2014"
-typeoutTextValues: '"", "F", "R", "E", "S", "C", "FRESC"'
+typeoutTextValues: '"", "COR", "CORBE", "CORBELLA"'
 
 # About Event Block
 eventName: "Casa Corbella"
@@ -68,4 +68,4 @@ fbFollowUsUrl: "https://facebook.com/casacorbella"
 
 # Blog
 blogCommentsEnabled: true
-discusShortName: "devfestua"
+discusShortName: "casacorbella"
