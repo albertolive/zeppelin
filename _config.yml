@@ -8,8 +8,8 @@ exclude: ['/automation/', 'README.md', 'LICENCE.txt', 'CNAME']
 title: Casa Corbella
 email: casacorbella@gmail.com
 description: "Pàgina web de la Casa Corbella de Cardedeu"
-baseurl: "/"
-url: "http://casacorbella.cat"
+baseurl: ""
+url: "http://albertolive.github.io/zeppelin/"
 permalink: /blog/:title
 googleAnalyticsTrackingId: "UA-54122212-1"
 googleAnalyticsSiteUrl: "albertolive.github.io"
