@@ -9,7 +9,7 @@ title: Casa Corbella
 email: casacorbella@gmail.com
 description: "Pàgina web de la Casa Corbella de Cardedeu"
 baseurl: "/zeppelin"
-url: "http://albertolive.github.io/zeppelin/"
+url: "http://albertolive.github.io/"
 permalink: /blog/:title
 googleAnalyticsTrackingId: "UA-54122212-1"
 googleAnalyticsSiteUrl: "albertolive.github.io"
