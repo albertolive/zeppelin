@@ -8,7 +8,7 @@ exclude: ['/automation/', 'README.md', 'LICENCE.txt', 'CNAME']
 title: Casa Corbella
 email: casacorbella@gmail.com
 description: "Pàgina web de la Casa Corbella de Cardedeu"
-baseurl: ""
+baseurl: "/"
 url: "http://casacorbella.cat"
 permalink: /blog/:title
 googleAnalyticsTrackingId: "UA-54122212-1"
