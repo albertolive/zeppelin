@@ -6,7 +6,7 @@ exclude: ['/automation/', 'README.md', 'LICENCE.txt', 'CNAME']
 
 # Site settings
 title: Casa Corbella
-email: casacorbella@gmail.com
+email: hola@casacorbella.cat
 description: "Pàgina web de la Casa Corbella de Cardedeu"
 baseurl: ""
 url: "http://albertolive.github.io/zeppelin/"
