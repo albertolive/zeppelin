@@ -115,17 +115,17 @@ h6 {
     fill: #464646;
 }
 .logo-dark {
-    background-image: url('../img/sprites/logosBo.svg');
+    background-image: url('../img/logos/logo_menu_negre.png');
     background-repeat: no-repeat;
     background-position: 0 -1px;
 }
 .logo-gray {
-    background-image: url('../img/sprites/logosBo.svg');
+    background-image: url('../img/logos/logo_menu_negre.png');
     background-repeat: no-repeat;
     background-position: 0 -63px;
 }
 .logo-light {
-    background-image: url('../img/sprites/logosBo.svg');
+    background-image: url('../img/logos/logo_menu_negre.png');
     background-repeat: no-repeat;
     background-position: 0 -127px;
 }

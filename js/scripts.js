@@ -28,7 +28,7 @@
         if ($(window).height() < 512) {
             $('#bottom-navlinks').removeClass('bottom-navlinks').addClass('bottom-navlinks-small');
         }
-        if ($(window).scrollTop() >= 100) {
+        if ($(window).scrollTop() >= 10) {
             $('#top-header').addClass('after-scroll');
             $('#logo-header').removeClass('logo-light').addClass('logo-dark');
         }
