@@ -1,359 +1,418 @@
-(function($) {
-    $(document).ready(function() {
-        $('body').css('overflow', 'hidden');
-        $(window).load(function() {
-            var preloaderDelay = 350,
-                preloaderFadeOutTime = 800;
+(function(e) {
+    e(document).ready(function() {
+        function t(e) {
+            for (var t, n, r = e.length; r; t = parseInt(Math.random() * r), n = e[--r], e[r] = e[t], e[t] = n) {}
+            return e
+        }
 
-            function hidePreloader() {
-                var loadingAnimation = $('#loading-animation'),
-                    preloader = $('#preloader');
-                loadingAnimation.fadeOut();
-                preloader.delay(preloaderDelay).fadeOut(preloaderFadeOutTime);
+        function r() {
+            if (e(window).width() > 767) {
+                e(".same-height-wrapper").each(function() {
+                    var t = 0;
+                    e(".same-height").each(function() {
+                        var n = e(this).height();
+                        if (n > t) {
+                            t = n
+                        }
+                    });
+                    e(".same-height").each(function() {
+                        e(this).height(t)
+                    })
+                })
             }
-            $('body').css('overflow', 'auto');
-            hidePreloader();
-            generateSameHeight();
+        }
+        e("#top-header").addClass("after-scroll");
+        e("body").css("overflow", "hidden");
+        e(window).load(function() {
+            function i() {
+                var r = e("#loading-animation"),
+                    i = e("#preloader");
+                r.fadeOut();
+                i.delay(t).fadeOut(n)
+            }
+            var t = 350,
+                n = 800;
+            e("body").css("overflow", "auto");
+            i();
+            r()
         });
-
-        if ($(window).width() > 1500) {
-            $('.team-item-wrapper').each(function() {
-                $(this).addClass('col-lg-3');
-            });
+        if (e(window).width() > 1500) {
+            e(".team-item-wrapper").each(function() {
+                e(this).addClass("col-lg-3")
+            })
         }
-        if ($(window).width() < 768) {
-            $('.animated').removeClass('animated').removeClass('hiding');
-            $('.stat span').removeClass('timer');
+        if (e(window).width() < 768) {
+            e(".animated").removeClass("animated").removeClass("hiding");
+            e(".stat span").removeClass("timer")
         }
-        if ($(window).height() < 512) {
-            $('#bottom-navlinks').removeClass('bottom-navlinks').addClass('bottom-navlinks-small');
+        if (e(window).height() < 512) {
+            e("#bottom-navlinks").removeClass("bottom-navlinks").addClass("bottom-navlinks-small")
         }
-        if ($(window).scrollTop() >= 100) {
-            $('#top-header').addClass('after-scroll');
-            $('#logo-header').removeClass('logo-light').addClass('logo-dark');
-        }
-
-        $(window).scroll(function() {
-            var scroll = $(this).scrollTop();
-            var header = $('#top-header');
-            var logo = $('#logo-header');
-            var src = logo.attr('src');
-            var buyButton = $('#buy-tickets-button');
-
-            if (scroll >= 100) {
-                header.addClass('after-scroll');
-                logo.removeClass('logo-light').addClass('logo-dark');
+        if (e(window).scrollTop() >= 100) {}
+        e(window).scroll(function() {
+            var t = e(this).scrollTop();
+            var n = e("#top-header");
+            var r = e("#logo-header");
+            var i = r.attr("src");
+            var s = e("#buy-tickets-button");
+            if (t >= 100) {} else {} if (t >= e(window).height()) {
+                s.fadeIn(400);
+                s.removeClass("hidden")
             } else {
-                header.removeClass('after-scroll');
-                if (!header.hasClass('dark-header')) {
-                    logo.removeClass('logo-dark').addClass('logo-light');
-                }
-            }
-
-            if (scroll >= $(window).height()) {
-                buyButton.fadeIn(400);
-                buyButton.removeClass('hidden');
-            } else {
-                buyButton.fadeOut(400, function() {
-                    buyButton.addClass('hidden');
-                });
+                s.fadeOut(400, function() {
+                    s.addClass("hidden")
+                })
             }
         });
-
-        $(function() {
-            var idArray = [];
-            $('.rockstar-speakers-item').each(function() {
-                idArray[idArray.length] = $(this).attr('data-id');
+        e(function() {
+            var n = [];
+            e(".rockstar-speakers-item").each(function() {
+                n[n.length] = e(this).attr("data-id")
             });
-            idArray = shuffleArray(idArray);
-            for (var i = 0; i < 4; i++) {
-                $('#rockstar-speaker-' + idArray[i]).removeClass('hidden');
+            n = t(n);
+            for (var r = 0; r < 4; r++) {
+                e("#rockstar-speaker-" + n[r]).removeClass("hidden")
             }
         });
-
-        function shuffleArray(o) {
-            for (var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-            return o;
-        };
-
-        var delay = parseInt($('.increment-animation').attr('data-delay'));
-        $('.increment-animation').not('hidden').each(function(index) {
-            $(this).attr('data-delay', index * delay);
+        var n = parseInt(e(".increment-animation").attr("data-delay"));
+        e(".increment-animation").not("hidden").each(function(t) {
+            e(this).attr("data-delay", t * n)
         });
-
-        $('.animated').appear(function() {
-            var element = $(this);
-            var animation = element.data('animation');
-            var animationDelay = element.data('delay');
-            if (animationDelay) {
+        e(".animated").appear(function() {
+            var t = e(this);
+            var n = t.data("animation");
+            var r = t.data("delay");
+            if (r) {
                 setTimeout(function() {
-                    element.addClass(animation + " visible");
-                    element.removeClass('hiding');
-                    if (element.hasClass('counter')) {
-                        element.find('.timer').countTo();
+                    t.addClass(n + " visible");
+                    t.removeClass("hiding");
+                    if (t.hasClass("counter")) {
+                        t.find(".timer").countTo()
                     }
-                }, animationDelay);
+                }, r)
             } else {
-                element.addClass(animation + " visible");
-                element.removeClass('hiding');
-                if (element.hasClass('counter')) {
-                    element.find('.timer').countTo();
+                t.addClass(n + " visible");
+                t.removeClass("hiding");
+                if (t.hasClass("counter")) {
+                    t.find(".timer").countTo()
                 }
             }
         }, {
             accY: -150
         });
-
-        $(function() {
-            $('a[href*=#]:not([href=#])').click(function() {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
+        e(function() {
+            e("a[href*=#]:not([href=#])").click(function() {
+                if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+                    var t = e(this.hash);
+                    t = t.length ? t : e("[name=" + this.hash.slice(1) + "]");
+                    if (t.length) {
+                        e("html,body").animate({
+                            scrollTop: t.offset().top
+                        }, 1e3);
+                        return false
                     }
                 }
-            });
+            })
         });
-
-        $(function() {
-            $('a[href=#]').click(function() {
-                event.preventDefault();
-            });
+        e(function() {
+            e("a[href=#]").click(function() {
+                event.preventDefault()
+            })
         });
-
-        function generateSameHeight() {
-            if ($(window).width() > 767) {
-                $('.same-height-wrapper').each(function() {
-                    var max = 0;
-                    $('.same-height').each(function() {
-                        var height = $(this).height();
-                        if (height > max) {
-                            max = height;
-                        }
-                    });
-                    $('.same-height').each(function() {
-                        $(this).height(max);
-                    });
-                });
-            }
-        }
-
-        $('#post-section .post-body p').each(function() {
-            if ($(this).find('.feature-image').length) {
-                var url = $(this).find('.feature-image').prop('src');
-                $('#top-section').css('background-image', 'url(' + url + ')').addClass('enable-overlay');
+        e("#post-section .post-body p").each(function() {
+            if (e(this).find(".feature-image").length) {
+                var t = e(this).find(".feature-image").prop("src");
+                e("#top-section").css("background-image", "url(" + t + ")").addClass("enable-overlay")
             }
         });
-
-        $('.slider').each(function() {
-            $(this).find('.slider-item').first().addClass('slider-current-item').removeClass('hidden');
-            if ($(this).find('.slider-item').length > 1) {
-                $(this).closest('.speaker-item').find('.slider-next-item').removeClass('hidden');
+        e(".slider").each(function() {
+            e(this).find(".slider-item").first().addClass("slider-current-item").removeClass("hidden");
+            if (e(this).find(".slider-item").length > 1) {
+                e(this).closest(".speaker-item").find(".slider-next-item").removeClass("hidden")
             }
         });
-        $('.slider-next-item').click(function() {
-            var speakerItem = $(this).closest('.speaker-item');
-            var elem = speakerItem.find('.slider-current-item').next();
-            if (elem.length) {
-                elem.addClass('slider-current-item').removeClass('hidden');
-                speakerItem.find('.slider-current-item').first().removeClass('slider-current-item').addClass('hidden');
+        e(".slider-next-item").click(function() {
+            var t = e(this).closest(".speaker-item");
+            var n = t.find(".slider-current-item").next();
+            if (n.length) {
+                n.addClass("slider-current-item").removeClass("hidden");
+                t.find(".slider-current-item").first().removeClass("slider-current-item").addClass("hidden")
             } else {
-                speakerItem.find('.slider-item').first().addClass('slider-current-item').removeClass('hidden');
-                speakerItem.find('.slider-current-item').last().removeClass('slider-current-item').addClass('hidden');
+                t.find(".slider-item").first().addClass("slider-current-item").removeClass("hidden");
+                t.find(".slider-current-item").last().removeClass("slider-current-item").addClass("hidden")
             }
         });
-
-        //Side menu
-        var container = $('.st-container');
-        $('#menu-trigger').click(function(event) {
-            event.stopPropagation();
-            var top = $(window).scrollTop();
-            var left = $(window).scrollLeft()
-            var effect = $(this).attr('data-effect');
-
-            if (!container.hasClass('st-menu-open')) {
-                container.addClass(effect).delay(25).addClass('st-menu-open');
-                $('body').css('overflow', 'hidden');
+        var i = e(".st-container");
+        e("#menu-trigger").click(function(t) {
+            t.stopPropagation();
+            var n = e(window).scrollTop();
+            var r = e(window).scrollLeft();
+            var s = e(this).attr("data-effect");
+            if (!i.hasClass("st-menu-open")) {
+                i.addClass(s).delay(25).addClass("st-menu-open");
+                e("body").css("overflow", "hidden")
             } else {
-                container.removeClass('st-menu-open');
-                $('body').css('overflow', 'auto');
+                i.removeClass("st-menu-open");
+                e("body").css("overflow", "auto")
             }
         });
-        $('.st-pusher').click(function() {
-            if (container.hasClass('st-menu-open')) {
-                container.removeClass('st-menu-open');
-                $('body').css('overflow', 'auto');
+        e(".st-pusher").click(function() {
+            if (i.hasClass("st-menu-open")) {
+                i.removeClass("st-menu-open");
+                e("body").css("overflow", "auto")
             }
         });
-
-        $(window).resize(function() {
-            if ($(window).width() > 1500) {
-                $('.team-item-wrapper').each(function() {
-                    $(this).addClass('col-lg-3');
-                });
+        e(window).resize(function() {
+            if (e(window).width() > 1500) {
+                e(".team-item-wrapper").each(function() {
+                    e(this).addClass("col-lg-3")
+                })
             } else {
-                $('.team-item-wrapper').each(function() {
-                    $(this).removeClass('col-lg-3');
-                });
-            }
-            if ($(window).width() > 767) {
-                if (container.hasClass('st-menu-open')) {
-                    container.removeClass('st-menu-open');
-                    $('body').css('overflow', 'auto');
+                e(".team-item-wrapper").each(function() {
+                    e(this).removeClass("col-lg-3")
+                })
+            } if (e(window).width() > 767) {
+                if (i.hasClass("st-menu-open")) {
+                    i.removeClass("st-menu-open");
+                    e("body").css("overflow", "auto")
                 }
-                generateSameHeight()
+                r()
             }
-            var bottomNavLinks = $('#bottom-navlinks');
-            if ($(window).height() < 512) {
-                bottomNavLinks.removeClass('bottom-navlinks').addClass('bottom-navlinks-small');
+            var t = e("#bottom-navlinks");
+            if (e(window).height() < 512) {
+                t.removeClass("bottom-navlinks").addClass("bottom-navlinks-small")
             } else {
-                bottomNavLinks.removeClass('bottom-navlinks-small').addClass('bottom-navlinks');
+                t.removeClass("bottom-navlinks-small").addClass("bottom-navlinks")
+            } if (e(window).width() < 768) {
+                e(".same-height").css("height", "100%")
             }
-            if ($(window).width() < 768) {
-                $('.same-height').css('height', '100%');
-            }
         });
-
-        $('.modal').on('show.bs.modal', function() {
-            $('body').css('overflow', 'hidden');
+        e(".modal").on("show.bs.modal", function() {
+            e("body").css("overflow", "hidden")
         });
-        $('.modal').on('hide.bs.modal', function() {
-            $('body').css('overflow', 'auto');
+        e(".modal").on("hide.bs.modal", function() {
+            e("body").css("overflow", "auto")
         });
-
-        if (typeof twitterFeedUrl !== 'undefined') {
-            var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select * from json where url="' + twitterFeedUrl + '"') + '&format=json&callback=?';
-            $.getJSON(yql, function(data) {
-                $.each(data.query.results.json.json, function(i, gist) {
-                    var tweetElement = '<div class="tweet animated fadeInUp hidden"><p class="tweet-text">' + linkify(gist.text) + '</p><p class="tweet-meta">by <a href="https://twitter.com/' + gist.user.screen_name + ' target="_blank">@' + gist.user.screen_name + '</a></p></div>';
-                    $('#tweets').append(tweetElement);
+        if (typeof twitterFeedUrl !== "undefined") {
+            var s = "http://query.yahooapis.com/v1/public/yql?q=" + encodeURIComponent('select * from json where url="' + twitterFeedUrl + '"') + "&format=json&callback=?";
+            e.getJSON(s, function(t) {
+                e.each(t.query.results.json.json, function(t, n) {
+                    var r = '<div class="tweet animated fadeInUp hidden"><p class="tweet-text">' + o(n.text) + '</p><p class="tweet-meta">by <a href="https://twitter.com/' + n.user.screen_name + ' target="_blank">@' + n.user.screen_name + "</a></p></div>";
+                    e("#tweets").append(r)
                 });
-                animateTweets();
+                u()
             });
 
-            function linkify(inputText) {
-                var replacedText, pattern1, pattern2, pattern3, pattern4;
-                pattern1 = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gim;
-                replacedText = inputText.replace(pattern1, '<a href="$1" target="_blank">$1</a>');
-                pattern2 = /(^|[^\/])(www\.[\S]+(\b|$))/gim;
-                replacedText = replacedText.replace(pattern2, '$1<a href="http://$2" target="_blank">$2</a>');
-                pattern3 = /#(\S*)/g;
-                replacedText = replacedText.replace(pattern3, '<a href="https://twitter.com/search?q=%23$1" target="_blank">#$1</a>');
-                pattern4 = /\B@([\w-]+)/gm;
-                replacedText = replacedText.replace(pattern4, '<a href="https://twitter.com/$1" target="_blank">@$1</a>');
-                return replacedText;
+            function o(e) {
+                var t, n, r, i, s;
+                n = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gim;
+                t = e.replace(n, '<a href="$1" target="_blank">$1</a>');
+                r = /(^|[^\/])(www\.[\S]+(\b|$))/gim;
+                t = t.replace(r, '$1<a href="http://$2" target="_blank">$2</a>');
+                i = /#(\S*)/g;
+                t = t.replace(i, '<a href="https://twitter.com/search?q=%23$1" target="_blank">#$1</a>');
+                s = /\B@([\w-]+)/gm;
+                t = t.replace(s, '<a href="https://twitter.com/$1" target="_blank">@$1</a>');
+                return t
             }
 
-            function animateTweets() {
-                var $tweets = $('#tweets').find('.tweet'),
-                    i = 0;
-                $($tweets.get(0)).removeClass('hidden');
-
-                function changeTweets() {
-                    var next = (++i % $tweets.length);
-                    $($tweets.get(next - 1)).addClass('hidden');
-                    $($tweets.get(next)).removeClass('hidden');
+            function u() {
+                function r() {
+                    var r = ++n % t.length;
+                    e(t.get(r - 1)).addClass("hidden");
+                    e(t.get(r)).removeClass("hidden")
                 }
-                var interval = setInterval(changeTweets, 5000);
+                var t = e("#tweets").find(".tweet"),
+                    n = 0;
+                e(t.get(0)).removeClass("hidden");
+                var i = setInterval(r, 5e3)
             }
         }
     });
-
-
-    //Google plus
     (function() {
-        var po = document.createElement('script');
-        po.type = 'text/javascript';
-        po.async = true;
-        po.src = 'https://apis.google.com/js/platform.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(po, s);
+        var e = document.createElement("script");
+        e.type = "text/javascript";
+        e.async = true;
+        e.src = "https://apis.google.com/js/platform.js";
+        var t = document.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(e, t)
     })();
+    if (typeof googleMaps !== "undefined") {
+        var t, n, r, i, s, o;
+        var u = [];
+        var a = new google.maps.DirectionsService;
+        var f = "custom_style";
 
-    //Google maps
-    if (typeof googleMaps !== 'undefined') {
-        var map, autocomplete, directionsDisplay, geocoder, polyline, origin;
-        var markers = [];
-        var directionsService = new google.maps.DirectionsService();
-        var MY_MAPTYPE_ID = 'custom_style';
+        function l() {
+            function T(n, i) {
+                var o = {
+                    origin: n,
+                    destination: eventPlace,
+                    travelMode: google.maps.TravelMode[i]
+                };
+                a.route(o, function(o, u) {
+                    if (u == google.maps.DirectionsStatus.OK) {
+                        t.setMapTypeId("zoomed");
+                        r.setMap(t);
+                        r.setDirections(o);
+                        var a = o.routes[0].legs[0];
+                        N(a.start_location);
+                        N(a.end_location);
+                        e("#distance").text(a.distance.text);
+                        e("#estimateTime").text(a.duration.text);
+                        e("#mode-select").val(i);
+                        e("#mode").removeClass("hidden");
+                        var f = e("#mode-icon use").attr("xlink:href");
+                        f = f.substring(0, f.indexOf("#") + 1) + "icon-" + i.toLowerCase();
+                        e("#mode-icon use").attr("xlink:href", f)
+                    } else {
+                        if (u != google.maps.DirectionsStatus.OK && i != "DRIVING") {
+                            T(n, "DRIVING")
+                        } else {
+                            var l = s.getPath();
+                            l.push(n);
+                            l.push(eventPlace);
+                            N(n);
+                            N(eventPlace);
+                            var c = new google.maps.LatLngBounds;
+                            c.extend(n);
+                            c.extend(eventPlace);
+                            t.fitBounds(c);
+                            s.setMap(t);
+                            var h = Math.round(google.maps.geometry.spherical.computeDistanceBetween(n, eventPlace) / 1e3);
+                            e("#distance").text(h + " km");
+                            e("#estimateTime").text("");
+                            e("#find-flight").removeClass("hidden");
+                            e("#mode").addClass("hidden")
+                        }
+                    }
+                });
+                L();
+                e("#find-way").addClass("location-active");
+                O(n);
+                e("#find-way h3").removeClass("fadeInUp").addClass("fadeOutDown")
+            }
 
-        function initialize() {
-            directionsDisplay = new google.maps.DirectionsRenderer({
+            function N(e) {
+                var n = new google.maps.Marker({
+                    position: e,
+                    map: t,
+                    icon: icon
+                });
+                u.push(n)
+            }
+
+            function C(e) {
+                var n = new google.maps.Marker({
+                    position: e,
+                    map: t
+                });
+                u.push(n)
+            }
+
+            function L() {
+                for (var e = 0; e < u.length; e++) {
+                    u[e].setMap(null)
+                }
+                u = []
+            }
+
+            function A(e) {
+                var n = t.getZoom(),
+                    r = 50;
+                var i = Math.abs(e - n);
+                var s = e > n ? 1 : -1;
+                for (var o = 0; o < i; o++) {
+                    setTimeout(function() {
+                        n += s;
+                        t.setZoom(n)
+                    }, (o + 1) * r)
+                }
+            }
+
+            function O(t) {
+                i.geocode({
+                    latLng: t
+                }, function(t, n) {
+                    if (n == google.maps.GeocoderStatus.OK && t[1]) {
+                        var r = t[1].address_components;
+                        e.each(r, function(t, n) {
+                            if (n.types[0] == "locality") {
+                                e("#result-name").text(n.long_name);
+                                return false
+                            }
+                        })
+                    }
+                })
+            }
+            r = new google.maps.DirectionsRenderer({
                 suppressMarkers: true
             });
-            geocoder = new google.maps.Geocoder();
-
-            polyline = new google.maps.Polyline({
-                strokeColor: '#03a9f4',
+            i = new google.maps.Geocoder;
+            s = new google.maps.Polyline({
+                strokeColor: "#03a9f4",
                 strokeOpacity: 1,
                 strokeWeight: 2
             });
-
-            var defaultOpts = [{
+            var l = [{
                 stylers: [{
                     lightness: 40
                 }, {
-                    visibility: 'on'
+                    visibility: "on"
                 }, {
-                    gamma: 0.9
+                    gamma: .9
                 }, {
-                    weight: 0.4
+                    weight: .4
                 }]
             }, {
-                elementType: 'labels',
+                elementType: "labels",
                 stylers: [{
-                    visibility: 'off'
+                    visibility: "off"
                 }]
             }, {
-                featureType: 'water',
+                featureType: "water",
                 stylers: [{
-                    color: '#5dc7ff'
+                    color: "#5dc7ff"
                 }]
             }, {
-                featureType: 'road',
+                featureType: "road",
                 stylers: [{
-                    visibility: 'off'
+                    visibility: "off"
                 }]
             }];
-
-            var zoomedOpts = [{
+            var p = [{
                 stylers: [{
                     lightness: 40
                 }, {
-                    visibility: 'on'
+                    visibility: "on"
                 }, {
                     gamma: 1.1
                 }, {
-                    weight: 0.9
+                    weight: .9
                 }]
             }, {
-                elementType: 'labels',
+                elementType: "labels",
                 stylers: [{
-                    visibility: 'off'
+                    visibility: "off"
                 }]
             }, {
-                featureType: 'water',
+                featureType: "water",
                 stylers: [{
-                    color: '#5dc7ff'
+                    color: "#5dc7ff"
                 }]
             }, {
-                featureType: 'road',
+                featureType: "road",
                 stylers: [{
-                    visibility: 'on'
+                    visibility: "on"
                 }]
             }, {
-                featureType: 'road',
+                featureType: "road",
                 elementType: "labels",
                 stylers: [{
                     saturation: -30
                 }]
             }];
-
-            var mapOptions = {
+            var v = {
                 zoom: 17,
                 minZoom: 2,
                 scrollwheel: false,
@@ -368,204 +427,94 @@
                 streetViewControl: false,
                 center: centerMap,
                 mapTypeControlOptions: {
-                    mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+                    mapTypeIds: [google.maps.MapTypeId.ROADMAP, f]
                 },
-                mapTypeId: MY_MAPTYPE_ID
+                mapTypeId: f
             };
-            if ($(window).width() < 768) {
-                mapOptions.center = mobileCenterMap;
+            if (e(window).width() < 768) {
+                v.center = mobileCenterMap
             }
-            if (googleMaps == 'logistics') {
-                mapOptions.zoom = 5;
-                mapOptions.zoomControl = true;
+            if (googleMaps == "logistics") {
+                v.zoom = 5;
+                v.zoomControl = true
             }
-
-            map = new google.maps.Map(document.getElementById('canvas-map'), mapOptions);
-            var marker = new google.maps.Marker({
+            t = new google.maps.Map(document.getElementById("canvas-map"), v);
+            var m = new google.maps.Marker({
                 position: eventPlace,
                 animation: google.maps.Animation.DROP,
                 icon: icon,
-                map: map
+                map: t
             });
-            markers.push(marker);
-            var defaultMapOptions = {
-                name: 'Default Style'
+            u.push(m);
+            var y = {
+                name: "Default Style"
             };
-            var zoomedMapOptions = {
-                name: 'Zoomed Style'
+            var w = {
+                name: "Zoomed Style"
             };
-            var defaultMapType = new google.maps.StyledMapType(defaultOpts, defaultMapOptions);
-            var zoomedMapType = new google.maps.StyledMapType(zoomedOpts, zoomedMapOptions);
-            map.mapTypes.set('default', defaultMapType);
-            map.mapTypes.set('zoomed', zoomedMapType);
-            if (googleMaps === 'logistics') {
-                map.setMapTypeId('default');
-                var input = (document.getElementById('location-input'));
-                autocomplete = new google.maps.places.Autocomplete(input);
-                google.maps.event.addListener(autocomplete, 'place_changed', function() {
-                    marker.setVisible(false);
-                    var place = autocomplete.getPlace();
-                    if (place.geometry == 'undefined' || !place.geometry) {
-                        return;
+            var E = new google.maps.StyledMapType(l, y);
+            var S = new google.maps.StyledMapType(p, w);
+            t.mapTypes.set("default", E);
+            t.mapTypes.set("zoomed", S);
+            if (googleMaps === "logistics") {
+                t.setMapTypeId("default");
+                var x = document.getElementById("location-input");
+                n = new google.maps.places.Autocomplete(x);
+                google.maps.event.addListener(n, "place_changed", function() {
+                    m.setVisible(false);
+                    var e = n.getPlace();
+                    if (e.geometry == "undefined" || !e.geometry) {
+                        return
                     }
-                    var address = '';
-                    if (place.address_components) {
-                        address = [
-                            (place.address_components[0] && place.address_components[0].short_name || ''), (place.address_components[1] && place.address_components[1].short_name || ''), (place.address_components[2] && place.address_components[2].short_name || '')
-                        ].join(' ');
+                    var t = "";
+                    if (e.address_components) {
+                        t = [e.address_components[0] && e.address_components[0].short_name || "", e.address_components[1] && e.address_components[1].short_name || "", e.address_components[2] && e.address_components[2].short_name || ""].join(" ")
                     }
-                    geocoder.geocode({
-                        'address': address
-                    }, function(results, status) {
-                        if (status == google.maps.GeocoderStatus.OK) {
-                            origin = results[0].geometry.location;
-                            calcRoute(origin, 'TRANSIT');
+                    i.geocode({
+                        address: t
+                    }, function(e, t) {
+                        if (t == google.maps.GeocoderStatus.OK) {
+                            o = e[0].geometry.location;
+                            T(o, "TRANSIT")
                         } else {
-                            alert('Geocode was not successful for the following reason: ' + status);
+                            alert("Geocode was not successful for the following reason: " + t)
                         }
-                    });
-                });
-
+                    })
+                })
             } else {
-                map.setMapTypeId('zoomed');
+                t.setMapTypeId("zoomed")
             }
-
-            function calcRoute(origin, selectedMode) {
-                var request = {
-                    origin: origin,
-                    destination: eventPlace,
-                    travelMode: google.maps.TravelMode[selectedMode]
-                };
-                directionsService.route(request, function(response, status) {
-                    if (status == google.maps.DirectionsStatus.OK) {
-                        map.setMapTypeId('zoomed');
-                        directionsDisplay.setMap(map);
-                        directionsDisplay.setDirections(response);
-                        var leg = response.routes[0].legs[0];
-                        makeMarker(leg.start_location);
-                        makeMarker(leg.end_location);
-                        $('#distance').text(leg.distance.text);
-                        $('#estimateTime').text(leg.duration.text);
-                        $('#mode-select').val(selectedMode);
-                        $('#mode').removeClass('hidden');
-                        var attribute = $('#mode-icon use').attr('xlink:href');
-                        attribute = attribute.substring(0, attribute.indexOf('#') + 1) + 'icon-' + selectedMode.toLowerCase();
-                        $('#mode-icon use').attr('xlink:href', attribute);
-                    } else if (status != google.maps.DirectionsStatus.OK && selectedMode != 'DRIVING') {
-                        calcRoute(origin, 'DRIVING');
-                    } else {
-                        var path = polyline.getPath();
-                        path.push(origin);
-                        path.push(eventPlace);
-                        makeMarker(origin);
-                        makeMarker(eventPlace);
-                        var bounds = new google.maps.LatLngBounds();
-                        bounds.extend(origin);
-                        bounds.extend(eventPlace);
-                        map.fitBounds(bounds);
-                        polyline.setMap(map);
-                        var distance = Math.round(google.maps.geometry.spherical.computeDistanceBetween(origin, eventPlace) / 1000);
-                        $('#distance').text(distance + ' km');
-                        $('#estimateTime').text('');
-                        $('#find-flight').removeClass('hidden');
-                        $('#mode').addClass('hidden');
-                    }
-                });
-                deleteMarkers();
-                $('#find-way').addClass('location-active');
-                setDirectionInput(origin);
-                $('#find-way h3').removeClass('fadeInUp').addClass('fadeOutDown');
-            }
-
-            function makeMarker(position) {
-                var directionMarker = new google.maps.Marker({
-                    position: position,
-                    map: map,
-                    icon: icon
-                });
-                markers.push(directionMarker);
-            }
-
-            function addMarker(location) {
-                var marker = new google.maps.Marker({
-                    position: location,
-                    map: map
-                });
-                markers.push(marker);
-            }
-
-            function deleteMarkers() {
-                for (var i = 0; i < markers.length; i++) {
-                    markers[i].setMap(null);
-                }
-                markers = [];
-            }
-
-            function smoothZoom(level) {
-                var currentZoom = map.getZoom(),
-                    timeStep = 50;
-                var numOfSteps = Math.abs(level - currentZoom);
-                var step = (level > currentZoom) ? 1 : -1;
-                for (var i = 0; i < numOfSteps; i++) {
-                    setTimeout(function() {
-                        currentZoom += step;
-                        map.setZoom(currentZoom);
-                    }, (i + 1) * timeStep);
-                }
-            }
-
-            function setDirectionInput(origin) {
-                geocoder.geocode({
-                    'latLng': origin
-                }, function(results, status) {
-                    if (status == google.maps.GeocoderStatus.OK && results[1]) {
-                        var arrAddress = results[1].address_components;
-                        $.each(arrAddress, function(i, address_component) {
-                            if (address_component.types[0] == "locality") {
-                                $('#result-name').text(address_component.long_name);
-                                return false;
-                            }
-                        });
-                    }
-                });
-            }
-
-            $('#mode-select').change(function() {
-                var selectedMode = $(this).val();
-                calcRoute(origin, selectedMode);
+            e("#mode-select").change(function() {
+                var t = e(this).val();
+                T(o, t)
             });
-
-
-            $("#direction-locate").click(function() {
+            e("#direction-locate").click(function() {
                 if (navigator.geolocation) {
-                    navigator.geolocation.getCurrentPosition(function(position) {
-                        origin = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-                        calcRoute(origin, 'TRANSIT');
-                    });
+                    navigator.geolocation.getCurrentPosition(function(e) {
+                        o = new google.maps.LatLng(e.coords.latitude, e.coords.longitude);
+                        T(o, "TRANSIT")
+                    })
                 }
             });
-
-            $("#direction-cancel").click(function() {
-                $('#find-way').removeClass('location-active');
-                $('#location-input').val('');
-                $("#find-flight").addClass('hidden');
-                deleteMarkers();
-                directionsDisplay.setMap(null);
-                polyline.setMap(null);
-                map.setMapTypeId('default');
-                map.panTo(eventPlace);
-                if ($(window).width() < 768) {
-                    map.setCenter(mobileCenterMap);
+            e("#direction-cancel").click(function() {
+                e("#find-way").removeClass("location-active");
+                e("#location-input").val("");
+                e("#find-flight").addClass("hidden");
+                L();
+                r.setMap(null);
+                s.setMap(null);
+                t.setMapTypeId("default");
+                t.panTo(eventPlace);
+                if (e(window).width() < 768) {
+                    t.setCenter(mobileCenterMap)
                 } else {
-                    map.setCenter(centerMap);
+                    t.setCenter(centerMap)
                 }
-                makeMarker(eventPlace);
-                smoothZoom(5);
-                $('#find-way h3').removeClass('fadeOutDown').addClass('fadeInUp');
-            });
+                N(eventPlace);
+                A(5);
+                e("#find-way h3").removeClass("fadeOutDown").addClass("fadeInUp")
+            })
         }
-
-        google.maps.event.addDomListener(window, 'load', initialize);
+        google.maps.event.addDomListener(window, "load", l)
     }
-
-})(jQuery);
+})(jQuery)
