@@ -2364,7 +2364,7 @@ nav ul>li>a.current,nav ul>li>a:hover {
     margin: 0 auto;
 }
 
-@media(min-width:320px) {
+@media only screen and (max-width:635px) {
     .hackathon-details {
         margin-left: 0px;
         padding-top: 270px;
@@ -2482,7 +2482,7 @@ nav ul>li>a.current,nav ul>li>a:hover {
     .jumbotron {
         position: relative;
         left: 1em;
-        margin-top: 9em;
+        margin-top: 29em;
         padding-bottom: 2em;
         padding-left: 0;
     }
