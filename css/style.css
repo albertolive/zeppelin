@@ -2311,6 +2311,38 @@ nav ul>li>a.current,nav ul>li>a:hover {
     fill: #ef7c02;
 }
 
+.hackathon-row {
+    margin-bottom: 90px;
+}
+
+.hackathon-row.float-right .hackathon-img-wrapper {
+    float: right;
+}
+
+.hackathon-row.float-right .hackathon-details {
+    text-align: right;
+    margin-left: 0;
+    margin-right: 300px;
+}
+
+.hackathon-img-wrapper {
+    float: left;
+}
+
+.hackathon-img-wrapper img {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.hackathon-details {
+    text-align: left;
+    margin-left: 300px;
+}
+
+.hackathon-details p {
+    font-size: 16px;
+}
+
 @media(min-width:768px) {
     .speaker-modal .modal-dialog {
         width: 740px;
