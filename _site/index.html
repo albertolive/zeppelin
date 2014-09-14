@@ -153,36 +153,40 @@
 </section>
 <!-- End Top Section -->
 
- <!-- Begin Location Section -->
-<section id="location">
-    <div id="canvas-map"></div>
+ <!-- About Section -->
+<section id="about">
     <div class="content-wrapper">
-        <div class="col-lg-3 col-md-4 col-sm-6 col-md-offset-1 animated hiding location-description text-left" data-animation="fadeInLeft" data-delay="0">
-            <div class="row">
-                <div class="pull-left">
-                    <h3>Localització</h3>
-                    <ul itemscope="" itemtype="http://schema.org/PostalAddress">
-                        
-                        <li itemprop="name">Casa Corbella</li>
-                        <li itemprop="address">Avinguda Eduard Corbella 1</li>
-                        <li itemprop="email"><a href="mailto:hola@casacorbella.cat">hola@casacorbella.cat</a>
-                        </li>
-                        <!--<li itemscope="" itemtype="http://schema.org/Event">
-                            <time itemprop="startDate" datetime=""></time>-
-                            <time itemprop="endDate" datetime=""></time>
-                        </li>-->
-                    </ul>
+        <div class="col-lg-10 col-lg-offset-1">
+            <h3>La casa</h3>
+            <div class="row about-details">
+                <div class="col-md-6 col-sm-6 col-xs-6">  
+                    <div class="animated hiding" data-animation="fadeInDown" data-delay="0">
+                        <h5>Història</h5>
+                        <img class="img-circle" src="/img/conference.jpg" height="128" width="128" alt="Conference">
+                        <p>Casa de gran valor històric però d'origen incert. La seva història és una novela on s'hi barrejen arbres genealògics de famílies de Cardedeu, estades del Sant Josep-Oriol i diuen que fins i tot, refugi de la CNT durant la Guerra Civil. Un misteri que mica en mica volem descobrir. Ens hi acompanyes?</p>
+                    </div>
                 </div>
-                <!-- <a href="/logistics/#findyourway" class="pull-right">
-                    <svg class="icon icon-direction" viewBox="0 0 32 32">
-                        <use xlink:href="img/sprites/sprites.svg#icon-direction"></use>
-                    </svg>
-                </a> -->
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="animated hiding" data-animation="fadeInDown" data-delay="500">
+                        <h5>Projecte</h5>
+                        <img class="img-circle" src="/img/workshop.jpg" height="128" width="128" alt="Workshops">
+                        <p>Familiars dels antics i actuals propietaris ens unim per continuar escrivint la història de la casa. Ennoblir el seu llegat vol dir obrir la casa al públic i oferir una programació plena de cultura, sensibilitat i compromís amb la seva història. </p>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <!-- <div class="col-md-4 col-sm-4 col-xs-6">
+                    <div class="animated hiding" data-animation="fadeInDown" data-delay="1000">
+                        <h5>Hackathon</h5>
+                        <img class="img-circle" src="/img/hackathon.jpg" height="128" width="128" alt="Hackathons">
+                        <p>Full-day free-style hackaton! Want some real teambuilding on friday? Grab your team and join our hackathon!</p>
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>
 </section>
-<!-- End Location Section -->
+<!-- End About Section -->
+
 
  <!-- Begin Subscribe Section -->
 <section id="subscribe" class="parallax" style="background-image: url(/img/subscribe1.jpg);">
@@ -215,7 +219,55 @@
         </div>
     </div>
 </section>
-<!-- End Subscribe Section --> 
+<!-- End Subscribe Section -->
+
+ <!-- Begin Location Section -->
+<section id="location">
+    <div id="canvas-map"></div>
+    <div class="content-wrapper">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-md-offset-1 animated hiding location-description text-left" data-animation="fadeInLeft" data-delay="0">
+            <div class="row">
+                <div class="pull-left">
+                    <h3>Localització</h3>
+                    <ul itemscope="" itemtype="http://schema.org/PostalAddress">
+                        
+                        <li itemprop="name">Casa Corbella</li>
+                        <li itemprop="address">Avinguda Eduard Corbella 1</li>
+                        <li itemprop="email"><a href="mailto:hola@casacorbella.cat">hola@casacorbella.cat</a>
+                        </li>
+                        <!--<li itemscope="" itemtype="http://schema.org/Event">
+                            <time itemprop="startDate" datetime=""></time>-
+                            <time itemprop="endDate" datetime=""></time>
+                        </li>-->
+                    </ul>
+                </div>
+                <!-- <a href="/logistics/#findyourway" class="pull-right">
+                    <svg class="icon icon-direction" viewBox="0 0 32 32">
+                        <use xlink:href="img/sprites/sprites.svg#icon-direction"></use>
+                    </svg>
+                </a> -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Location Section -->
+
+ <!-- Begin Twitter Feed Section -->
+<section id="twitter-feed" class="parallax" style="background-image: url(/img/twitter-feed.jpg);">
+    <div class="overlay"></div>
+    <div class="content-wrapper">
+        <div class="col-lg-6 col-md-8 col-lg-offset-3 col-md-offset-2">
+            <svg class="icon" viewBox="0 0 30 32">
+                <use xlink:href="/img/sprites/sprites.svg#icon-twitter"></use>
+            </svg>
+            <h3><a href="https://twitter.com/search?q=%23casacorbella" target="_blank">#casacorbella</a>
+            </h3>
+            <div id="tweets" class="tweets"></div>
+        </div>
+    </div>
+</section>
+<!-- End Twitter Feed Section -->
+ 
 
 				<!-- Begin Footer -->
 <footer id="footer">
@@ -284,7 +336,7 @@
 		<!-- Please don't delete this line-->
 		<div class="col-md-6">
 			<p class="copyright">
-				&copy; 2014 Designed and created by <a href="https://plus.google.com/+OlehZasadnyy/about">Oleh Zasadnyy</a> &middot; <a href="http://lviv.gdg.org.ua" target="_blank">GDG Lviv</a>
+				&copy; 2014 Disseny i creació per <a href="https://plus.google.com/+OlehZasadnyy/about">Oleh Zasadnyy</a> &middot; <a href="http://lviv.gdg.org.ua" target="_blank">GDG Lviv</a>. Modificat per Casa Corbella.
 			</p>
 		</div>
 	</div>

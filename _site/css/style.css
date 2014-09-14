@@ -78,6 +78,11 @@ h6 {
     font-size: 1.875em;
 }
 
+.responsive {
+    height: auto;
+    max-width: 100%;
+} 
+
 .waves-button {
     padding: 5px 18px 7px;
     border-radius: 3px;
@@ -144,13 +149,13 @@ h6 {
 .logo-gray {
     background-image: url('../img/logos/logo_menu_negre.png');
     background-repeat: no-repeat;
-    background-position: 0 -63px;
+    background-position: 0 -1px;
 }
 
 .logo-light {
     background-image: url('../img/logos/logo_menu_negre.png');
     background-repeat: no-repeat;
-    background-position: 0 -127px;
+    background-position: 0 -1px;
 }
 
 .st-container,.st-pusher,.st-content {
