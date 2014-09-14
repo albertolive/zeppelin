@@ -2376,6 +2376,9 @@ nav ul>li>a.current,nav ul>li>a:hover {
         margin-left: 0px;
         padding-top: 270px;
     }
+    .hackathon-row.float-right .hackathon-details {
+    margin-right: 0px;
+    }
     .prize:nth-child(4) {
         width: 100%;
     }
