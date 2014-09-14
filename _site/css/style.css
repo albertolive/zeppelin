@@ -2311,9 +2311,9 @@ nav ul>li>a.current,nav ul>li>a:hover {
     fill: #ef7c02;
 }
 
-.hackathon-row {
+/*.hackathon-row {
     margin-bottom: 90px;
-}
+}*/
 
 .hackathon-row.float-right .hackathon-img-wrapper {
     float: right;
@@ -2362,6 +2362,19 @@ nav ul>li>a.current,nav ul>li>a:hover {
 .prize-img-wrapper img {
     max-width: 250px;
     margin: 0 auto;
+}
+
+@media(min-width:320px) {
+    .hackathon-details {
+        margin-left: 0px;
+        padding-top: 270px;
+    }
+    .prize:nth-child(4) {
+        width: 100%;
+    }
+    .col-xs-4 {
+    width: 50%;
+    }
 }
 
 @media(min-width:768px) {
