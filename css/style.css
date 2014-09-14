@@ -934,6 +934,16 @@ nav ul>li>a.current,nav ul>li>a:hover {
     margin-top: 5em !important;
 }
 
+#top-section-page {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    padding-top: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 #top-section-hero {
     position: relative;
     width: 100%;
