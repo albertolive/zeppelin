@@ -149,17 +149,17 @@
 <section id="find-way">    
     <div id="canvas-map"></div>
     <div class="content-wrapper text-left">
-        <h3 class="animated hiding" data-animation="fadeInUp" data-delay="0">Find your way here</h3>
+        <h3 class="animated hiding" data-animation="fadeInUp" data-delay="0">Troba el teu camí aquí</h3>
         <div class="map-card col-lg-3 col-md-4 col-sm-6 col-xs-12">
             <div class="map-search">
-                <input type="text" id="location-input" class="location-input" name="location-input" data-input-value="Your location" placeholder="Your location" autocomplete="off">
+                <input type="text" id="location-input" class="location-input" name="location-input" data-input-value="Your location" placeholder="La teva localització" autocomplete="off">
                 <svg id="direction-locate" class="icon icon-geolocation" viewBox="0 0 30 32">
                     <use xlink:href="/img/sprites/sprites.svg#icon-geolocation"></use>
                 </svg>
             </div>
             <div class="location-result">
                 <span id="result-name"></span>
-                <span>to DevFest</span>
+                <span>a Casa Corbella</span>
                 <svg id="direction-cancel" class="icon icon-cross" viewBox="0 0 30 32">
                     <use xlink:href="/img/sprites/sprites.svg#icon-cross"></use>
                 </svg>
@@ -171,7 +171,7 @@
                     <svg class="icon icon-flag" viewBox="0 0 30 32">
                         <use xlink:href="/img/sprites/sprites.svg#icon-flag"></use>
                     </svg>
-                    <span>Distance</span>
+                    <span>Distància</span>
                     <span id="distance" class="details-result pull-right"></span>
                 </li>
                 <li>
@@ -180,14 +180,14 @@
                             <use xlink:href="/img/sprites/sprites.svg#icon-flight"></use>
                         </svg>
                         <select id="mode-select">
-                            <option value="DRIVING">DRIVING</option>
-                            <option value="WALKING">WALKING</option>
-                            <option value="BICYCLING">BICYCLING</option>
-                            <option value="TRANSIT">TRANSIT</option>
+                            <option value="DRIVING">Cotxe</option>
+                            <option value="WALKING">Caminar</option>
+                            <option value="BICYCLING">Bicicleta</option>
+                            <option value="TRANSIT">Trànsit</option>
                         </select>
                         <span id="estimateTime" class="details-result pull-right"></span>
                     </div>
-                    <a id="find-flight" href="https://google.com/flights" class="pull-right hidden" target="_blank">Find Flight</a>
+                    <a id="find-flight" href="https://google.com/flights" class="pull-right hidden" target="_blank">Busca un vol</a>
                 </li>
             </ul>
         </div>
@@ -195,33 +195,81 @@
 </section>
 <!-- End Find Way -->
 
- <!-- Begin Direction Details-->
+ <!--Begin Direction Details-->
 <section id="direction-details">
     <div class="content-wrapper">
-        <section class="image-section" style="background-image: url('/img/direction-details.jpg');">
-            <h3>Get around Lviv</h3>
+        <section class="image-section" style="background-color: #00000; min-height: 200px;">
+            <!--<h3>Get around Lviv</h3>-->
         </section>
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 text-left same-height-wrapper">
-                <div class="col-md-4 col-xs-12 same-height animated hiding" data-animation="fadeInDown" data-delay="0">
+                <div class="col-md-6 col-xs-12 same-height animated hiding" data-animation="fadeInDown" data-delay="0">
                     <div class="card">
-                        <h4>Dia</h4>
-                        <p>8 de Novembre<br>22h</p>
+                        <h4>Informació</h4>
+                        <p>
+                            Familiars dels antics i actuals propietaris ens unim per continuar escrivint la història de la casa. Ennoblir el seu llegat vol dir obrir la casa al públic i oferir una programació plena de cultura, sensibilitat i compromís amb la seva història.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-xs-12 same-height animated hiding" data-animation="fadeInDown" data-delay="500">
+                <div class="col-md-6 col-xs-12 same-height animated hiding" data-animation="fadeInDown" data-delay="500">
                     <div class="card">
-                        <h4>Preu</h4>
-                        <p>12€</p>
+                        <h4>Contacte</h4>
+                        <ul>
+                            <li><a href="mailto:hola@casacorbella.cat" target="blank">hola@casacorbella.cat</a></li>
+                            <li><a href="mailto:casacorbella@gmail.com" target="blank">casacorbella@gmail.com</a></li>
+                            <li><a href="tel:+34675348726">+34675348726</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-4 col-xs-12 same-height animated hiding" data-animation="fadeInDown" data-delay="1000">
+                <div class="col-md-6 col-xs-12 same-height animated hiding" data-animation="fadeInDown" data-delay="1000">
                     <div class="card">
-                        <h4>Consumicions</h4>
-                        <p>Xarrup de garnatxa i tapa de tardor<br>Copa de cava i tapa dolça</p>
+                        <h4>Segueix-nos</h4>
+                        <p>Vols estar al dia de Casa Corbella?</p>
+                        <ul class="social-links">
+                            <li>
+                                <a href="https://plus.google.com/b/108193050919826516538" target="_blank">
+                                    <svg class="icon icon-google-plus" viewBox="0 0 30 32">
+                                        <use xlink:href="/img/sprites/sprites.svg#icon-google-plus"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/intent/user?screen_name=casacorbella" target="_blank">
+                                    <svg class="icon icon-twitter" viewBox="0 0 30 32">
+                                        <use xlink:href="/img/sprites/sprites.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://facebook.com/casacorbella" target="_blank">
+                                    <svg class="icon icon-facebook" viewBox="0 0 30 32">
+                                        <use xlink:href="/img/sprites/sprites.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/feed.xml" target="_blank">
+                                    <svg class="icon icon-rss" viewBox="0 0 30 32">
+                                        <use xlink:href="/img/sprites/sprites.svg#icon-rss"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <!--div class="col-md-12 col-xs-12 animated hiding" data-animation="fadeInDown" data-delay="0">
+                <div class="col-md-6 col-xs-12 same-height animated hiding" data-animation="fadeInDown" data-delay="1000">
+                    <div class="card">
+                        <h4>On som?</h4>
+                        <ul>
+                            <li><b>Casa Corbella</b></li>
+                            <li>Avinguda Eduard Corbella 1</li>
+                            <li>08440 Cardedeu (Barcelona)</li>
+                            <li><b>GPS:</b> 41º 38' 33.298" N - 2º 21' 22.821" E</li>
+                            <li><a href="https://www.google.es/maps/place/Avinguda+Eduard+Corbella,+1,+08440+Cardedeu,+Barcelona/@41.6427203,2.3563783,215m/data=!3m1!1e3!4m2!3m1!1s0x12a4c93be4ad7d7d:0xe19862a6daab4372?hl=es" target="_blank">Veure a Google Maps</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="col-md-12 col-xs-12 animated hiding" data-animation="fadeInDown" data-delay="0">
                     <div class="card questions">
                         <h4>Questions?</h4>
                         <div class="col-md-4 col-xs-12">
@@ -264,7 +312,7 @@
                             </ul>
                         </div>
                     </div>
-                </div-->
+                </div -->
             </div>
         </div>
 
@@ -272,7 +320,7 @@
         </div>
     </div>
 </section>
-<!-- End Direction Details --> <!-- Begin Footer -->
+<!-- End Direction Details <!-- Begin Footer -->
 <footer id="footer">
 	<div class="row">
 		<div class="pull-left col-md-6 col-xs-6">

@@ -1934,7 +1934,7 @@ nav ul>li>a.current,nav ul>li>a:hover {
     position: absolute;
     top: -.4em;
     left: .8em;
-    color: #fff;
+    color: #000;
 }
 
 .map-card {
@@ -2369,6 +2369,10 @@ nav ul>li>a.current,nav ul>li>a:hover {
 .prize-img-wrapper img {
     max-width: 250px;
     margin: 0 auto;
+}
+
+.pull-right {
+    float: right !important;
 }
 
 @media only screen and (max-width:635px) {
