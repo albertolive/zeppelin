@@ -6,8 +6,8 @@
             <div class="row about-details">
                 <div class="col-md-6 col-sm-6 col-xs-6">  
                     <div class="animated hiding" data-animation="fadeInDown" data-delay="0">
-                        <h5>Història</h5>
-                        <img class="img-circle" src="{{ site.baseurl }}/img/historia.jpg" height="128" width="128" alt="Historia">
+                        <a {% if page.permalink == '/historia/' %} class="current" {% endif %} href="{{ site.baseurl }}/historia/"><h5>Història</h5>
+                        <img class="img-circle" src="{{ site.baseurl }}/img/historia.jpg" height="128" width="128" alt="Historia"></a>
                         <p>Casa de gran valor històric però d'origen incert. La seva història és una novela on s'hi barrejen arbres genealògics de famílies de Cardedeu, estades del Sant Josep-Oriol i diuen que fins i tot, refugi de la CNT durant la Guerra Civil. Un misteri que mica en mica volem descobrir. Ens hi acompanyes?</p>
                     </div>
                 </div>
