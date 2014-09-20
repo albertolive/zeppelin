@@ -445,19 +445,23 @@
                 <!-- Begin Footer -->
 <footer id="footer">
 	<div class="row">
-		<div class="pull-left col-md-6 col-xs-6">
-			<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300" data-href="http://albertolive.github.io/zeppelin/"></div>
-		</div>
-		<div class="logo-footer logo-gray pull-right"></div>
-	</div>
-	<div class="row">
-		<div class="col-md-4 col-sm-4 col-xs-6">
-			<ul>
+		<div class="col-md-3 col-sm-4 col-xs-6">
+			<!-- Posa aquesta etiqueta a la capçalera o just abans de l'etiqueta "body" de tancament. -->
+			<script src="https://apis.google.com/js/platform.js" async defer>
+			  {lang: 'ca', parsetags: 'explicit'}
+			</script>
+
+			<!-- Posa aquesta etiqueta allà on vulguis que widget es renderitzi. -->
+			<div class="g-follow" data-annotation="none" data-height="20" data-href="//plus.google.com/u/0/116777404151158684359" data-rel="publisher"></div>
+
+			<!-- Introdueix aquesta crida de renderització on correspongui. -->
+			<script type="text/javascript">gapi.follow.go();</script>
+			<!--<ul>
 				<h5>Links</h5>
-				<!-- <li><a href="http://gdg.org.ua" target="_blank">GDG.org.ua</a>
+				 <li><a href="http://gdg.org.ua" target="_blank">GDG.org.ua</a>
 				</li>
 				<li><a href="https://developers.google.com" target="_blank">Google Developers</a>
-				</li> -->
+				</li>
 			</ul>
 			<ul class="social-links">
 				<li>
@@ -488,16 +492,13 @@
 						</svg>
 					</a>
 				</li>
-			</ul>
+			</ul>-->
 		</div>
-		<div class="col-md-4 col-sm-4 col-xs-6">
-			<h5>Contacte</h5>
-			<ul>
-				<li><a href="mailto:hola@casacorbella.cat" target="_blank">hola@casacorbella.cat</a>
-				</li>
-			</ul>
+		<div class="col-md-3 col-sm-4 col-xs-6">
+			<a href="https://twitter.com/casacorbella" class="twitter-follow-button" data-show-count="false" data-size="medium">Segueix @casacorbella</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 		</div>
-		<div class="col-md-4 col-sm-4 col-xs-6">
+		<div class="col-md-3 col-sm-4 col-xs-6">
 			<div id="fb-root"></div>
 				<script>(function(d, s, id) {
 					  var js, fjs = d.getElementsByTagName(s)[0];
@@ -507,7 +508,10 @@
 					  fjs.parentNode.insertBefore(js, fjs);
 					}(document, 'script', 'facebook-jssdk'));
 				</script>
-				<div class="fb-like-box" data-href="https://www.facebook.com/casacorbella" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false"></div>
+				<div class="fb-like-box alignFacebook" data-href="https://www.facebook.com/casacorbella" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false"></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-6">
+			<div class="logo-footer alignFacebook logo-gray pull-right"></div>
 		</div>
 	</div>
 	<div class="row">
@@ -964,7 +968,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-54122212-1', 'albertolive.github.io');
+  ga('create', 'UA-54122212-1', 'www.casacorbella.cat');
   ga('send', 'pageview');
 
 </script>

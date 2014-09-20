@@ -1937,6 +1937,10 @@ nav ul>li>a.current,nav ul>li>a:hover {
     color: #000;
 }
 
+.alignFacebook {
+    margin-top: -25px;
+}
+
 .map-card {
     font-size: 1.2em;
     top: 450px;
@@ -2814,5 +2818,9 @@ nav ul>li>a.current,nav ul>li>a:hover {
 
     #footer {
         padding: 2em 1.5em 1em;
+    }
+
+    .alignFacebook {
+        margin-top: 0px;
     }
 }

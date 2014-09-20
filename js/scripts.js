@@ -193,7 +193,8 @@
         e(".modal").on("hide.bs.modal", function() {
             e("body").css("overflow", "auto")
         });
-        if (typeof twitterFeedUrl !== "undefined") {
+        var use = false;
+        if (typeof twitterFeedUrl !== "undefined" && use === true ) {
             var s = "http://query.yahooapis.com/v1/public/yql?q=" + encodeURIComponent('select * from json where url="' + twitterFeedUrl + '"') + "&format=json&callback=?";
             e.getJSON(s, function(t) {
                 e.each(t.query.results.json.json, function(t, n) {

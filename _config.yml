@@ -12,7 +12,7 @@ baseurl: ""
 url: "http://albertolive.github.io/zeppelin/"
 permalink: /blog/:title
 googleAnalyticsTrackingId: "UA-54122212-1"
-googleAnalyticsSiteUrl: "albertolive.github.io"
+googleAnalyticsSiteUrl: "www.casacorbella.cat"
 
 # Location block
 eventLocationName: "Casa Corbella"
