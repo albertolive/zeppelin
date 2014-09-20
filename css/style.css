@@ -2229,7 +2229,7 @@ nav ul>li>a.current,nav ul>li>a:hover {
     display: inline-block;
     width: 185px;
     height: 60px;
-    margin: -1em -1em 0;
+    /*margin: -1em -1em 0;*/
     -webkit-transform: scale(.65);
     -ms-transform: scale(.65);
     transform: scale(.65);
@@ -2516,7 +2516,7 @@ nav ul>li>a.current,nav ul>li>a:hover {
     .jumbotron {
         position: relative;
         left: 1em;
-        margin-top: 29em;
+        margin-top: 19em;
         padding-bottom: 2em;
         padding-left: 0;
     }
@@ -2528,6 +2528,10 @@ nav ul>li>a.current,nav ul>li>a:hover {
         -webkit-transform: scale(.6);
         -ms-transform: scale(.6);
         transform: scale(.6);
+    }
+
+    .logo-footer{
+        margin: -1em -3em 0;
     }
 
     #top-header.after-scroll .logo-header {
@@ -2838,5 +2842,6 @@ nav ul>li>a.current,nav ul>li>a:hover {
 
     .alignFacebook {
         margin-top: 0px;
+        margin-left: -10px;
     }
 }
