@@ -1941,6 +1941,22 @@ nav ul>li>a.current,nav ul>li>a:hover {
     margin-top: -25px;
 }
 
+.facebookColor a{
+    color: #8b9dc3 !important;
+} 
+
+.facebookColor a:hover{
+    color: #dfe3ee !important;
+} 
+
+.plusColor a{
+    color: #D34836 !important;
+} 
+
+.plusColor a:hover{
+    color: #F1F1F1 !important;
+} 
+
 .map-card {
     font-size: 1.2em;
     top: 450px;
