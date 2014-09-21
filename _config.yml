@@ -63,8 +63,8 @@ showSessions: true
 thumbnailsFolder: /img/speakers/ #ARRAY AMB TOTES LES IMATGES
 
 # Footer
-gplusFollowUsUrl: "https://plus.google.com/b/108193050919826516538"
-twitterFollowUsUrl: "https://twitter.com/intent/user?screen_name=casacorbella"
+gplusFollowUsUrl: "https://plus.google.com/b/116777404151158684359/+CasaCorbellaCatCasaCorbella/about"
+twitterFollowUsUrl: "https://twitter.com/intent/follow?original_referer=http%3A%2F%2F0.0.0.0%3A4000%2F&region=follow_link&screen_name=casacorbella&tw_p=followbutton&variant=2.0"
 fbFollowUsUrl: "https://facebook.com/casacorbella"
 
 # Blog
@@ -85,6 +85,14 @@ historiaRows:
 racontadesRows:
  - {title: "Què són?", image: "racontades-0.jpg", details: "Les Racontades són una combinació màgica entre contes i la descoberta de racons que ens fan mirar i sentir aquells espais de manera diferent.<br><br>A les Racontades, les històries i els llocs s’alien per evocar sensacions i les begudes que s'ofereixen al públic adult ajuden a fer d’aquest espectacle una experiència íntima, divertida, emotiva i inoblidable."}
  - {title: "Tots Sants", image: "racontades-1.jpg", details: "En aquesta nova edició de les Racontades, descobrirem diferents racons de la Casa Corbella al ritme d'històries d'intriga i de misteri. <br><br>El proper 8 de novembre, podreu gaudir d'una proposta singular en un espai únic com Casa Corbella.<br>Reserveu les vostres entrades aquí i porteu-les impreses el 8 de novembre a les 22h. No hi falteu!"}
+
+# Festival Fresc
+#festivalFrescTitol: "Meet our themes"
+festivalFrescRows:
+ - {title: "Què és?", image: "fresc-1.jpg", details: "El Fresc és el Petit Festival d’Estiu de Cardedeu. Petites perles sonores donant-se cita en un indret privilegiat i ple d’història com és el pati de la Casa Corbella, una masia del segle XVIII i tot un símbol arquitectònic i paisatgístic del municipi. Apostem de manera ferma pels músics més inquiets de casa nostra, esquivant el soroll mediàtic i buscant la complicitat d’una escena autòctona que cal reivindicar. Propostes inquietes i fresques que lliguen amb l’espai i la filosofia d’un projecte que pretén evolucionar sense perdre la transversalitat i el lligam amb el seu públic."}
+ - {title: "Microcultura", image: "fresc-2.jpg", details: "Petites estructures, petits públics i grans resultats. El Festival Fresc va néixer basant-se en criteris de proximitat i qualitat per respondre a la demanda cultural de les minories amb un model sostenible que s’emmotlla al context de crisi. Defugim les aglomeracions i els grans esdeveniments per a cercar el diàleg i reduir les distàncies entre l’artista i el públic, oferint un format senzill i proper."}
+ - {title: "Qui som", image: "fresc-3.jpg", details: "Som gent de casa. Gent que, com tu, estima la cultura i vol viure-la en tota la seva plenitud. Som Brubaker, empresa cultural de vocació inquieta i amb denominació d’origen cardedeuenca, impulsora d’un projecte d’èxit indiscutible com és l’Esbarjo Verdi i gestora del Centre de Creació i Difusió Musical NAUB1 de Granollers. Per fer del Fresc una realitat hem sumat esforços amb Quesoni, empresa de so també amb un llarg recorregut tant a Cardedeu com a la resta del territori, amb un full de serveis on destaca el suport a la cultura emergent; amb la Casa Corbella, finca històrica i un dels elements més singulars del paisatge cardedeuenc; i amb La Torre Rossa, autèntics mestres de la millor gastronomia italiana plenament arrelats a Cardedeu. Una unió a quatre bandes per a una experiència inoblidable."}
+
 
 # Informació
 # informacio:

@@ -1306,8 +1306,8 @@ nav ul>li>a.current,nav ul>li>a:hover {
 .venue-text {
     padding: 30px 20px;
     text-align: left;
-    color: #fff;
-    background: #03a9f4;
+    color: #000;
+    background: #ffca28;
 }
 
 .venue-text p {
@@ -2373,6 +2373,14 @@ nav ul>li>a.current,nav ul>li>a:hover {
 .iconBig {
     width: 36px;
     height: 36px;
+}
+
+.festivalFresc-details {
+    text-align: left;
+}
+
+.fresc-img-wrapper img {
+    margin: 0 auto;
 }
 
 /*.prizes h3 {
