@@ -7,7 +7,7 @@ exclude: ['/automation/', 'README.md', 'LICENCE.txt', 'CNAME']
 # Site settings
 title: Casa Corbella
 email: hola@casacorbella.cat
-description: "Pàgina web de la Casa Corbella de Cardedeu"
+description: "La pàgina web de la Casa Corbella és un projecte cultural que uneix antics i actuals propietaris per obrir la casa al poble i ennoblir el seu llegat"
 baseurl: ""
 url: "http://albertolive.github.io/zeppelin/"
 permalink: /blog/:title
