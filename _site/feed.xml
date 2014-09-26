@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Casa Corbella</title>
-    <description>Pàgina web de la Casa Corbella de Cardedeu</description>
+    <description>La pàgina web de la Casa Corbella és un projecte cultural que uneix antics i actuals propietaris per obrir la casa al poble i ennoblir el seu llegat</description>
     <link>http://albertolive.github.io/zeppelin//</link>
     <atom:link href="http://albertolive.github.io/zeppelin//feed.xml" rel="self" type="application/rss+xml" />
     <!-- 
