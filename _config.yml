@@ -9,7 +9,7 @@ title: Casa Corbella
 email: hola@casacorbella.cat
 description: "La pàgina web de la Casa Corbella és un projecte cultural que uneix antics i actuals propietaris per obrir la casa al poble i ennoblir el seu llegat"
 baseurl: ""
-url: "www.casacorbella.cat"
+url: "http://www.casacorbella.cat"
 permalink: /blog/:title
 googleAnalyticsTrackingId: "UA-54122212-1"
 googleAnalyticsSiteUrl: "www.casacorbella.cat"
