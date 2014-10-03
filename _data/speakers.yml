@@ -1,56 +1,47 @@
 - 
   id: 3
-  name: "Dawid"
-  surname: "Ostrowski"
-  company: "Google Poland"
-  title: "Developer Relations Program Manager"
-  bio: "Dawid is true technology enthusiast, who loves to work in areas where humans and machines meet to create amazing new products and services. He is experienced program manager with strong technical background, who is able to establish priorities for complex projects and execute across multiple organizations, according to long-term objectives. Dawid has worked in Poland, USA, Germany, Belgium and The Netherlands and truly values diversity of international working environment. His most visible characteristics are individualization (when dealing directly with people), ideation&intellection (inexhaustible source of new concepts) and strong communication (experienced trainer, community manager). He is also an activator constantly impatient for action."
-  thumbnailUrl: DawidOstrowski.jpg
+  name: "RTVC"
+  surname: "Ràdio Televisió Cardedeu"
+  company: "28 Juliol 2014"
+  title: "El Festival Fresc torna a obrir les portes de la Casa Corbella"
+  bio: "La casa Corbella ha obert les portes durant 4 dies per celebrar-hi la segona edició del Festival Fresc. Roger Mas, Xarim Aresté, Maria Rodés o Nevoá i Vicenç Solsona han format part d’una oferta que aposta per la varietat d’estils. La segona edició d’aquest festival estiuenc ha ampliat un dia la programació i espera continuar-ho fent en el futur."
+  thumbnailUrl: rtvc-festival-fresc2014.jpg
   rockstar: true
   social: 
-    - {name: "google-plus", link: "https://plus.google.com/+DawidOstrowski/"}
+    - {name: "site", link: "http://www.rtvc.cat/2014/07/el-festival-fresc-torna-a-obrir-les-portes-de-la-casa-corbella/"}
 - 
   id: 4
-  name: "Dmytro"
-  surname: "Danylyk"
-  company: "Lemberg Solutions Limited"
-  title: "Android Developer"
-  bio: '<p>Developer. Nominated to apply for the <a href="http://goo.gl/V7qHc">Google Developer Expert Program</a>. Finalist of <a href="http://goo.gl/HO2kLf">Google Apps Developer Challenge 2012</a>. Author of open source <a href="http://goo.gl/Sp5Pel">libraries</a> 1000+ stars. Writer. When Dmytro has free time he is writing <a href="http://goo.gl/AoOVru">technical articles</a>. Speaker. Always trying to share his knowledge &amp; experience on different <a href="http://goo.gl/PNolZY">events</a>. Big fan of android, flat design, stackoverflow, git, Intellij IDEA. Eclipse IDE hater.</p>'
-  thumbnailUrl: DmytroDanylyk.jpg
+  name: "TR3SC"
+  surname: "El club de Cultura"
+  company: ""
+  title: "Festival Fresc 2014"
+  bio: "Torna l'estiu i tenim ganes de refrescar-nos. I un any més volem fer-ho amb tu. Amb música, amb delícies gastronòmiques, amb tardes i vespres a la fresca i en un entorn de somni. Els dies 24, 25, 26 i 27 de juliol tornarem a obrir les portes de la Casa Corbella per a oferir-te de prop algunes de les veus més singulars del país. Roger Mas, Xarim Aresté, Névoa, Maria Rodés, Magalí Datzira i un munt de sorpreses més."
+  thumbnailUrl: tresc-festival-fresc-2014.jpg
   rockstar: true
   social: 
-    - {name: "google-plus", link: "https://plus.google.com/+DmytroDanylyk"}
-    - {name: "twitter", link: "https://twitter.com/dmytrodanylyk"}
-    - {name: "github", link: "https://github.com/dmytrodanylyk"}
+    - {name: "site", link: "http://www.tresc.cat/fitxa/concerts/44375/Festival-Fresc-2014"}
 - 
   id: 5
-  name: "Mateusz"
-  surname: "Herych"
-  company: "Base CRM, GDG Krakow"
-  title: "Software Engineer"
-  bio: "Mateusz is an Android GDE and GDG organizer. Works as Android Developer for Base CRM where he uses his android-abracadabras to make enterprise software users more productive."
-  thumbnailUrl: MateuszHerych.jpg
+  name: "AJCardedeu"
+  surname: "Ajuntament de Cardedeu"
+  company: ""
+  title: "El petit Festival d'Estiu de Cardedeu"
+  bio: "Divendres 26 - 21:30h - 6,00€</br>A toc de Jazz + Lluís Fortuny ReL Sessions</br>Dissabte 27 - 11:00h - 4,00€</br>Picnic Concert, el Fresc per als més petits amb As d'arts + Roleguita i Boquerón</br>Dissabte 27 - 21:30 - 6,00€</br>De Boleros... canta 'Bola de Nieve'</br>Diumenge 28 - 12:00h - 6,00€</br>Concert Vermut amb La Colònia</br>Abonaments:</br>- 15,00€ (no inclou el picnic concert)</br>Punt de venda anticipada:</br>- Llibreria El Compàs (c/ de Baix, 4-6 Cardedeu)</br>Informació general:</br>- Obertura de portes una hora abans de l'espectacle</br>- Entrada lliure després de les actuacions</br>- Aforament limitat a 150 persones</br>Lloc:  Casa Corbella"
+  thumbnailUrl: ajuntament-cardedeu-festival-fresc-2014.jpg
   rockstar: true
-  ribbon: 
-    - {abbr: "GDE", title: "Google Developer Expert", url: "https://developers.google.com/experts/"}
-    - {abbr: "GDG", title: "Google Developer Group", url: "https://developers.google.com/groups/chapter/107562802227561437057/"}
   social: 
-    - {name: "google-plus", link: "https://plus.google.com/+MateuszHerych"}
-    - {name: "twitter", link: "https://twitter.com/mherych"}
+    - {name: "site", link: "http://www.cardedeu.cat/public/agenda/festival-fresc/"}
 - 
   id: 6
-  name: "Roman"
-  surname: "Mazur"
-  company: "Stanfy, GDG Kyiv"
-  title: "Head of Android/Java Unit"
-  bio: "Roman started his way in Android 5 years ago and fall in love with this platform. Currently he is a head of Android unit in Stanfy LLC and a co-organizer of Kyiv Google Developers Group focusing on Android development. Roman is responsible for building a strong team of Android developers inside Stanfy as well as for organizing Android professionals community in Kyiv."
-  thumbnailUrl: RomanMazur.jpg
+  name: "AraVallès"
+  surname: "Diari digital del Vallès Oriental"
+  company: "14 Juliol 2014"
+  title: "Torna a Cardedeu el Festival Fresc"
+  bio: "Can Corbella de Cardedeu obrirà un any més les seves portes per acollir el Festival Fresc. Entre el 24 i el 27 de juliol, el municipi vallesà acollirà algunes de les millors veus del panorama musical català, com Roger Mas, Xarim Aresté, Névoa, Maria Rodés i Magalí Datzira, entre d’altres sorpreses."
+  thumbnailUrl: aravalles-festival-fresc-2014.jpg
   rockstar: true
-  ribbon:
-    - {abbr: "GDG", title: "Google Developer Group", url: "https://developers.google.com/groups/chapter/110301321530950732281/"}
   social: 
-    - {name: "google-plus", link: "https://plus.google.com/+RomanMazur/"}
-    - {name: "twitter", link: "http://twitter.com/roman_mazur"}
+    - {name: "site", link: "http://www.aravalles.cat/noticia/139011/torna-a-cardedeu-el-festival-fresc"}
 - 
   id: 7
   name: "Valentyn"

@@ -21,6 +21,10 @@
                 })
             }
         }
+        if (window.location.href.indexOf('http://albertolive.github.io/zeppelin/') === 0) {
+          window.location.href = 'http://www.casacorbella.cat';
+        }
+
         e("#top-header").addClass("after-scroll");
         e("body").css("overflow", "hidden");
         e(window).load(function() {
@@ -95,6 +99,44 @@
                 t.removeClass("hiding");
                 if (t.hasClass("counter")) {
                     t.find(".timer").countTo()
+                }
+            }
+        }, {
+            accY: -150
+        });
+        $(function() {
+            var appear, delay, i, offset, _i, _len, _ref;
+            _ref = $(".appear-animation");
+            for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+                i = _ref[_i];
+                offset = i.offsetLeft + i.offsetTop;
+                delay = offset / 1000;
+                $(i).css('transition-delay', '' + (delay * 0.47) + 's');
+                $(i).css('transition-duration', '' + 0.2 + 's');
+            }
+        });
+        $('.appear-animation-trigger').appear(function() {
+            setTimeout(function() {
+                $('.appear-animation-trigger').parent('div').find('.appear-animation').addClass('visible');
+            }, 1000);
+        });
+        $('.animated').appear(function() {
+            var element = $(this);
+            var animation = element.data('animation');
+            var animationDelay = element.data('delay');
+            if (animationDelay) {
+                setTimeout(function() {
+                    element.addClass(animation + " visible");
+                    element.removeClass('hiding');
+                    if (element.hasClass('counter')) {
+                        element.find('.timer').countTo();
+                    }
+                }, animationDelay);
+            } else {
+                element.addClass(animation + " visible");
+                element.removeClass('hiding');
+                if (element.hasClass('counter')) {
+                    element.find('.timer').countTo();
                 }
             }
         }, {

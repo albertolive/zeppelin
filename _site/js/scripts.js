@@ -21,11 +21,8 @@
                 })
             }
         }
-        debugger;
-        if ( window.self === window.top ) { 
-        // console.log("not in a frame") 
-            debugger;
-           window.location.href = 'http://www.casacorbella.cat';
+        if (window.location.href.indexOf('http://albertolive.github.io/zeppelin/') === 0) {
+          window.location.href = 'http://www.casacorbella.cat';
         }
 
         e("#top-header").addClass("after-scroll");

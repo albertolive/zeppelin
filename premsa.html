@@ -1,0 +1,15 @@
+---
+layout: default
+title: Premsa
+permalink: /premsa/
+modal: all
+---
+
+{% include headerPremsa.html %}
+
+{% if site.showSessions %}
+    {% include premsa-list.html %}
+{% else %}
+    {% include premsa-list-2.html %}
+{% endif %}
+
