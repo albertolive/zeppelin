@@ -1,30 +1,37 @@
 -
   id: 001
-  title: "El Festival Fresc torna a obrir les portes de la Casa Corbella"
-  track: android
-  subtype: workshop
-  speakers: [3]
+  title: "El petit Festival d'Estiu de Cardedeu"
+  speakers: [2]
 -
   id: 002
-  title: "Festival Fresc 2014"
-  track: cloud
-  subtype: presentation
-  speakers: [4]
+  title: "El Festival Fresc torna a obrir les portes de la Casa Corbella"
+  speakers: [3]
 -
   id: 003
-  title: "El petit Festival d'Estiu de Cardedeu"
-  track: android
-  subtype: presentation
-  speakers: [5]
+  title: "Festival Fresc 2014"
+  speakers: [4]
+
 -
   id: 004
   title: "Torna a Cardedeu el Festival Fresc"
-  track: web
-  subtype: keynote
-  speakers: [6]
+  speakers: [5]
 -
   id: 005
-  title: "Test: Interacting with Google Services using nothing but HTML"
-  track: web
-  subtype: keynote
+  title: "Cardedeu presenta el festival més «fresc» d'aquest estiu"
+  speakers: [6]
+-
+  id: 006
+  title: "Cardedeu, l'estiu més fresc"
   speakers: [7]
+-
+  id: 007
+  title: "El Fresc es consolida com el festival d’estiu de Cardedeu"
+  speakers: [8]
+-
+  id: 008
+  title: "Festival Fresc!, el petit Festival d’Estiu de Cardedeu"
+  speakers: [9]
+-
+  id: 009
+  title: "Un festival d’estiu portarà músics locals i vallesans a Cardedeu"
+  speakers: [10]

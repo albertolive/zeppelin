@@ -1,30 +1,8 @@
 - 
-  id: 3
-  name: "RTVC"
-  surname: "Ràdio Televisió Cardedeu"
-  company: "28 Juliol 2014"
-  title: "El Festival Fresc torna a obrir les portes de la Casa Corbella"
-  bio: "La casa Corbella ha obert les portes durant 4 dies per celebrar-hi la segona edició del Festival Fresc. Roger Mas, Xarim Aresté, Maria Rodés o Nevoá i Vicenç Solsona han format part d’una oferta que aposta per la varietat d’estils. La segona edició d’aquest festival estiuenc ha ampliat un dia la programació i espera continuar-ho fent en el futur."
-  thumbnailUrl: rtvc-festival-fresc2014.jpg
-  rockstar: true
-  social: 
-    - {name: "site", link: "http://www.rtvc.cat/2014/07/el-festival-fresc-torna-a-obrir-les-portes-de-la-casa-corbella/"}
-- 
-  id: 4
-  name: "TR3SC"
-  surname: "El club de Cultura"
-  company: ""
-  title: "Festival Fresc 2014"
-  bio: "Torna l'estiu i tenim ganes de refrescar-nos. I un any més volem fer-ho amb tu. Amb música, amb delícies gastronòmiques, amb tardes i vespres a la fresca i en un entorn de somni. Els dies 24, 25, 26 i 27 de juliol tornarem a obrir les portes de la Casa Corbella per a oferir-te de prop algunes de les veus més singulars del país. Roger Mas, Xarim Aresté, Névoa, Maria Rodés, Magalí Datzira i un munt de sorpreses més."
-  thumbnailUrl: tresc-festival-fresc-2014.jpg
-  rockstar: true
-  social: 
-    - {name: "site", link: "http://www.tresc.cat/fitxa/concerts/44375/Festival-Fresc-2014"}
-- 
-  id: 5
+  id: 2
   name: "AJCardedeu"
   surname: "Ajuntament de Cardedeu"
-  company: ""
+  company: "2013"
   title: "El petit Festival d'Estiu de Cardedeu"
   bio: "Divendres 26 - 21:30h - 6,00€</br>A toc de Jazz + Lluís Fortuny ReL Sessions</br>Dissabte 27 - 11:00h - 4,00€</br>Picnic Concert, el Fresc per als més petits amb As d'arts + Roleguita i Boquerón</br>Dissabte 27 - 21:30 - 6,00€</br>De Boleros... canta 'Bola de Nieve'</br>Diumenge 28 - 12:00h - 6,00€</br>Concert Vermut amb La Colònia</br>Abonaments:</br>- 15,00€ (no inclou el picnic concert)</br>Punt de venda anticipada:</br>- Llibreria El Compàs (c/ de Baix, 4-6 Cardedeu)</br>Informació general:</br>- Obertura de portes una hora abans de l'espectacle</br>- Entrada lliure després de les actuacions</br>- Aforament limitat a 150 persones</br>Lloc:  Casa Corbella"
   thumbnailUrl: ajuntament-cardedeu-festival-fresc-2014.jpg
@@ -33,6 +11,61 @@
     - {name: "site", link: "http://www.cardedeu.cat/public/agenda/festival-fresc/"}
 - 
   id: 6
+  name: "Nació Digital - Granollers"
+  surname: "El diari digital del Vallès Oriental"
+  company: "24 Juliol 2013"
+  title: "Cardedeu presenta el festival més «fresc» d'aquest estiu"
+  bio: "El nou Festival Fresc!, el petit Festival d’Estiu de Cardedeu, ens ofereix una singular i refrescant cita amb la música. Entre els dies 26, 27 i 28 de juliol, la Casa Corbella serà l'escenari d'un intens cap de setmana musical on es podran degustar petites delícies sonores cuinades al pati interior d'un edifici del segle XVIII carregat d'història."
+  thumbnailUrl: nacio-digital-festival-fresc-2013.jpg
+  rockstar: true
+  social: 
+    - {name: "site", link: "http://www.naciodigital.cat/naciogranollers/noticia/17315/cardedeu/presenta/festival/fresc/aquest/estiu"}
+- 
+  id: 10
+  name: "9nou"
+  surname: "Periòdic d'àmbit comarcal del Vallès Oriental"
+  company: "26 Juliol 2013"
+  title: "Un festival d’estiu portarà músics locals i vallesans a Cardedeu"
+  bio: "L’empresa cultural Brubaker, l’estudi de so Quesoni i un membre de la família de Casa Corbella de Cardedeu han sumat esforços per tirar endavant la primera edició del Festival Fresc, anomenat El Petit Festival d’Estiu de Cardedeu. Serà els dies 26, 27 i 28 de juliol en un espai singular i privilegiat com la Casa Corbella, una masia del segle XVIII, anteriorment anomenada Can Diumer, que obrirà excepcionalment les portes al públic per acollir un acte cultural com aquest. “Ens fa molta il·lusió que el festival se celebri en el pati interior d’aquesta casa amb tanta història”, ha comentat Àlex Falcó, de Brubaker. Segons ell, és un festival sense pretensions, amb un format senzill i adaptant-se a la situació actual de crisi."
+  thumbnailUrl: 9nou-festival-fresc-2014.jpg
+  rockstar: true
+  social: 
+    - {name: "site", link: "http://www.el9nou.cat/noticies_v_0/31725/festival-d%E2%80%99estiu-portara-musics-locals-vallesans-cardedeu"}
+- 
+  id: 9
+  name: "Avantguarda"
+  surname: "Revista internacional de música i art visual"
+  company: "26 Juliol 2013"
+  title: "Festival Fresc!, el petit Festival d’Estiu de Cardedeu"
+  bio: "T’imagines un cap de setmana musical en una masia del segle XVIII? T’imagines la possibilitat de degustar petites delícies sonores cuinades a casa al pati interior d’un edifici amb una història apassionant? </br>El FESTIVAL FRESC neix amb vocació de sumar. De sumar cultura, de sumar punts de trobada i intercanvi, de sumar un model d’oci basat en criteris com la proximitat o la sostenibilitat. Per això neix a Cardedeu –que és casa nostra i volem que ho sigui durant molts anys-. Per això té lloc en un indret privilegiat com és la Casa Corbella -anteriorment anomenada Can Diumer-."
+  thumbnailUrl: avantguarda-festival-fresc-2013.jpg
+  rockstar: true
+  social: 
+    - {name: "site", link: "http://www.naciodigital.cat/naciogranollers/noticia/17315/cardedeu/presenta/festival/fresc/aquest/estiu"}
+- 
+  id: 3
+  name: "RTVC"
+  surname: "Ràdio Televisió Cardedeu"
+  company: "28 Juliol 2014"
+  title: "El Festival Fresc torna a obrir les portes de la Casa Corbella"
+  bio: 'La casa Corbella ha obert les portes durant 4 dies per celebrar-hi la segona edició del Festival Fresc. Roger Mas, Xarim Aresté, Maria Rodés o Nevoá i Vicenç Solsona han format part d’una oferta que aposta per la varietat d’estils. La segona edició d’aquest festival estiuenc ha ampliat un dia la programació i espera continuar-ho fent en el futur.</br><div class="video-container"><iframe width="853" height="480" src="//www.youtube.com/embed/XR6GUQcklF4?rel=0" frameborder="0" allowfullscreen></iframe></div></br>'
+  thumbnailUrl: rtvc-festival-fresc2014.jpg
+  rockstar: true
+  social: 
+    - {name: "site", link: "http://www.avantguarda.com/index.php/musica/noticies/439-festival-fresc-el-petit-festival-destiu-de-cardedeu"}
+- 
+  id: 4
+  name: "TR3SC"
+  surname: "El club de Cultura"
+  company: "2014"
+  title: "Festival Fresc 2014"
+  bio: "Torna l'estiu i tenim ganes de refrescar-nos. I un any més volem fer-ho amb tu. Amb música, amb delícies gastronòmiques, amb tardes i vespres a la fresca i en un entorn de somni. Els dies 24, 25, 26 i 27 de juliol tornarem a obrir les portes de la Casa Corbella per a oferir-te de prop algunes de les veus més singulars del país. Roger Mas, Xarim Aresté, Névoa, Maria Rodés, Magalí Datzira i un munt de sorpreses més."
+  thumbnailUrl: tresc-festival-fresc-2014.jpg
+  rockstar: true
+  social: 
+    - {name: "site", link: "http://www.tresc.cat/fitxa/concerts/44375/Festival-Fresc-2014"}
+- 
+  id: 5
   name: "AraVallès"
   surname: "Diari digital del Vallès Oriental"
   company: "14 Juliol 2014"
@@ -44,15 +77,23 @@
     - {name: "site", link: "http://www.aravalles.cat/noticia/139011/torna-a-cardedeu-el-festival-fresc"}
 - 
   id: 7
-  name: "Valentyn"
-  surname: "Shybanov"
-  company: "Twinfield, GDG Kyiv"
-  title: "Software engineer/country manager"
-  bio: "Valentyn focuses on Polymer and Web Components. In previous roles he’s helped craft design systems for massive enterprise companies, user interfaces for console titles, and even built the occasional enchanted princess game. These days his mission is to fight for a better web and to help developers build great experiences."
-  thumbnailUrl: ValentynShybanov.jpg
+  name: "Nació Digital - Granollers"
+  surname: "El diari digital del Vallès Oriental"
+  company: "16 Juliol 2014"
+  title: "Cardedeu, l'estiu més fresc"
+  bio: "Amb l'estiu tornen les ganes de sortir, de refrescar-se i de passar bones estones que allarguin una mica més els vespres. Amb aquesta intenció, el Festival Fresc! s'instal·la de nou a Cardedeu els dies 24, 25, 26 i 27 de juliol, a la Casa Corbella. </br>Els organitzadors prometen una acompanyament «amb música, amb delícies gastronòmiques, amb tardes i vespres a la fresca i en un entorn de somni», que es veurà recolzat per una programació excel·lent on ho trobem Roger Mas, Xarim Aresté, Névoa, Maria Rodés o Magalí Datzira."
+  thumbnailUrl: nacio-digital-festival-fresc-2014.jpg
   rockstar: true
-  ribbon:
-    - {abbr: "GDG", title: "Google Developer Group", url: "https://developers.google.com/groups/chapter/110301321530950732281/"}
   social: 
-    - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
-    - {name: "site", link: "http://olostan.name/"}
+    - {name: "site", link: "http://www.naciodigital.cat/naciogranollers/noticia/20392/cardedeu/estiu/fresc"}
+- 
+  id: 8
+  name: "El NAS de Cardedeu"
+  surname: "Periòdic mensual independent d'informació local"
+  company: "29 Juliol 2014"
+  title: "El Fresc es consolida com el festival d’estiu de Cardedeu"
+  bio: "Té només dos anys de vida però el Fresc ja n’ha tingut prou per crear marca i consolidar-se com el Petit Festival d’Estiu de Cardedeu. L’any passat els seus promotors, Brubaker i Que Soni, van començar amb força i sobretot molta il·lusió. Enguany, ha estat el moment de despuntar oferint un cartell amb artistes de primer nivell del panorama musical català i incorporant noves activitats que han fet d’aquest festival una cita més atractiva i dinàmica que ha aconseguit que entre el dijous 24 i diumenge 27 de juliol passessin per la Casa Corbella més de 400 espectadors."
+  thumbnailUrl: nas-cardedeu-festival-fresc-2014.jpg
+  rockstar: true
+  social: 
+    - {name: "site", link: "http://www.elnasdecardedeu.cat/index.php?option=com_content&view=article&id=1147:141-el-fresc-es-consolida-com-el-festival-d-estiu-de-cardedeu&catid=64&Itemid=112"}
