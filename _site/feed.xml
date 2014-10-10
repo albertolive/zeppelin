@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Casa Corbella</title>
-    <description>La pàgina web de la Casa Corbella és un projecte cultural que uneix antics i actuals propietaris per obrir la casa al poble de Cardedeu i ennoblir el seu llegat</description>
+    <description>Pàgina oficial de Casa Corbella de Cardedeu, espai per a la cultura i recuperació de la història de Can Diumer.</description>
     <link>http://www.casacorbella.cat/</link>
     <atom:link href="http://www.casacorbella.cat/feed.xml" rel="self" type="application/rss+xml" />
     <!-- 
