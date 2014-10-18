@@ -3309,6 +3309,7 @@ a.waves-effect .waves-ripple {
 
     .jumbotron h1 {
         font-size: 3.2em;
+        margin-top: -29px;
     }
 
     .explore {
