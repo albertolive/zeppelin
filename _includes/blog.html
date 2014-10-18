@@ -1,9 +1,9 @@
 <!-- Begin Blog-->
 <section id="blog">
     <div class="content-wrapper text-left">
-        <div class="col-md-10 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
-            <h3>Latest news</h3>
-            <div class="col-lg-8 col-md-10 col-xs-12">
+        <div class="col-md-12 col-sm-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
+            <h3>Últimes notícies</h3>
+            <div class="col-lg-12 col-md-12 col-xs-12">
 
                 {% for post in site.posts %}
 
@@ -13,8 +13,8 @@
                         <a href="{{ site.baseurl | append: post.url }}" title="{{ post.title }}"><h4>{{ post.title }}</h4></a>
                         <div class="post-header">
                             <div class="published pull-left">
-                                <span class="caption">Posted:</span>
-                                <span class="publish-date" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</span>
+                                <span class="caption">Publicat:</span>
+                                <span class="publish-date" itemprop="datePublished">{{ post.date | date: "%-d %b %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</span>
                             </div>
                             <div class="share pull-right">
                                 <ul class="social-links">
@@ -42,7 +42,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <p class="post-body">{{ post.content | strip_html | truncate: 350 }} <a href="{{ site.baseurl | append: post.url }}">continue reading</a></p>
+                        <p class="post-body">{{ post.content | strip_html | truncate: 350 }} <a href="{{ site.baseurl | append: post.url }}">continua llegint</a></p>
                     </article>
 
                 {% endfor %} 
@@ -53,15 +53,15 @@
                 <div class="row">
                     <div class="pagination">
                         {% if paginator.previous_page %}
-                        <a href="/page{{ paginator.previous_page }}" class="previous">Previous</a>
+                        <a href="/page{{ paginator.previous_page }}" class="previous">Anterior</a>
                         {% else %}
-                        <span class="previous">Previous</span>
+                        <span class="previous">Anterior</span>
                         {% endif %}
                         <span class="page-number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
                         {% if paginator.next_page %}
-                        <a href="/page{{ paginator.next_page }}" class="next">Next</a>
+                        <a href="/page{{ paginator.next_page }}" class="next">Següent</a>
                         {% else %}
-                        <span class="next ">Next</span>
+                        <span class="next ">Següent</span>
                         {% endif %}
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                 {% endif %}
 
                 <div class="row text-center">
-                    <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">via RSS</a>
+                    <p class="rss-subscribe">Subscriu-te <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">via RSS</a>
                     </p>
                 </div>
 

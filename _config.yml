@@ -38,8 +38,8 @@ subscribeAction: "http://casacorbella.us9.list-manage.com/subscribe?u=f858dc3951
 subscribeRacontades: "http://casacorbella.us9.list-manage.com/subscribe?u=f858dc39512f4cc6121cafe63&id=3911c35ea0"
 
 # Documents
-c4pUrl: "http://bit.ly/dfua-c4p" # MIRARHO AIXO ESTA A SPEAKERS "BECOME A SPEAKER"
-c4sponsorsUrl: "/assets/GDG_DevFest_Partnership.pdf"
+c4pUrl: "" # MIRARHO AIXO ESTA A SPEAKERS "BECOME A SPEAKER"
+c4sponsorsUrl: ""
 
 # Head
 metaKeywords: "casa corbella, corbella, cardedeu, esdeveniments, festival fresc, festival, concerts, actes"
@@ -56,7 +56,7 @@ typeoutTextValues: '"", "COR", "CORBE", "CORBELLA"'
 eventName: "Casa Corbella"
 
 # Team Block
-aboutUs: "Aixo es una prova, falta per posar qui som" # MIRARHO
+aboutUs: "" # MIRARHO
 
 # Speakers List Block
 showSessions: true

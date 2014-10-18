@@ -1,16 +1,16 @@
 <!-- Begin Post-->
 <section id="post-section">
     <div class="content-wrapper text-left">
-        <div class="col-md-10 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
-            <div class="col-lg-8 col-md-10 col-xs-12">
+        <div class="col-md-12 col-sm-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
+            <div class="col-lg-12 col-md-12 col-xs-12">
 
                 <article class="row post">
 
                     {% if include.isStaticPost == false %}
                     <div class="post-header">
                         <div class="published pull-left">
-                            <span class="caption">Posted:</span>
-                            <span class="publish-date" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</span>
+                            <span class="caption">Publicat:</span>
+                            <span class="publish-date" itemprop="datePublished">{{ page.date | date: " %-d %b %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</span>
                         </div>
                         <div class="share pull-right">
                             <ul class="social-links">
@@ -65,7 +65,7 @@
 
                 {% if include.isStaticPost == false %}
                     <div class="row text-center">
-                        <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">via RSS</a>
+                        <p class="rss-subscribe">Subscriu-te <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">via RSS</a>
                         </p>
                     </div>
                 {% endif %}
