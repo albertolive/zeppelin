@@ -4,7 +4,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta name="author" content="Oleh Zasadnyy, GDG Lviv">
-    <meta name="description" content="{{ site.description }}">
+    {% if page.title == "Casa Corbella" %}
+        <meta name="description" content="{{ site.description }}">
+    {% elsif page.title == "Blog" %}
+        <meta name="description" content="Apartat de notícies de Casa Corbella. Des d'aquí podeu anar seguint tot allò que relaciona la casa, les activitats i estar al dia per no perdre't res.">
+    {% elsif page.title == "Història" %}
+        <meta name="description" content="La història i orígens de la família Diumer és una tasca gairebé impossible on cal rebuscar al fons de les històries de grans nissagues de Cardedeu.">
+    {% elsif page.title == "Racontades" %}
+        <meta name="description" content="Les Racontades són una combinació màgica entre contes i la descoberta de racons de Casa Corbella que ens fan mirar i sentir aquest espai de manera diferent.">
+    {% elsif page.title == "Festival Fresc" %}
+        <meta name="description" content="El Festival Fresc, petit festival d'estiu de Cardedeu, és l'activitat estrella de Casa Corbella. Petites estructures, petits públics i grans resultats.">
+    {% elsif page.title == "Premsa" %}
+        <meta name="description" content="Apartat de premsa de Casa Corbella. Aquí podreu trobar les notícies que surten als principals diaris sobre les activitats que es duen a terme a la casa.">
+    {% elsif page.title == "Contacte" %}
+        <meta name="description" content="Vols posar-te en contacte amb Casa Corbella? Tens algun dubte, suggeriment o proposta? Estem aquí pel que faci falta. Contacta amb nosaltres!">
+    {% else %}
+        <meta name="description" content="{{ site.description }}">
+    {% endif %}
     <meta name="keywords" content="{{ site.metaKeywords }}">
     <link rel="canonical" href="{{ site.url }}">
     <!-- Social: Google+ / Schema.org  -->
