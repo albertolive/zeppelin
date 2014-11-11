@@ -11,4 +11,4 @@ L’esdeveniment tindrà lloc el pròxim dia 23 de novembre, a les 12:00 hores, 
 El preu de l’entrada és de 5 Euros (3 Euros dels quals aniran destinats als alumnes de català del <a href="http://www.cpnl.cat/">Consorci per a la Normalització Lingüística</a>).<br>
 Les portes de Casa Corbella obriran una hora abans de l’espectacle, i hi haurà servei de bar que romandrà obert fins a la fi de l’acte.<br>
 Més informació al web oficial del <a href="http://poesiaamanta.wordpress.com/2014/10/03/2311-concert-vermut-meritxell-gene-canta-marius-torres/" target="_blank">PAM</a>.<br>
-Organitza: Associació Cultural l'Esquellot i Casa Corbella.
+<b>Organitza:</b> Associació Cultural l'Esquellot i Casa Corbella.
