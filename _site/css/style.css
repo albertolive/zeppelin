@@ -2800,6 +2800,8 @@ nav ul>li>a.current,nav ul>li>a:hover {
 
 .lily-effect-programacio:hover figure {
     background-position: center left;
+    -webkit-background-size: 105%;
+    background-size: 105%;
 }
 
 .lily-effect-programacio:hover figcaption h2,.lily-effect-programacio:hover figcaption .position {
@@ -2830,6 +2832,8 @@ nav ul>li>a.current,nav ul>li>a:hover {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     background-position: -30px;
+    -webkit-background-size: 115%;
+    background-size: 115%;
 }
 
 .lily-effect-programacio figcaption {
