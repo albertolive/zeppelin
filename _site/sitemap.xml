@@ -8,37 +8,62 @@
 
 <url>
   <loc>http://www.casacorbella.cat/</loc>
-  <lastmod>2014-10-04T10:51:08+00:00</lastmod>
+  <lastmod>2014-11-13T21:58:55+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://www.casacorbella.cat/blog/</loc>
-  <lastmod>2014-10-18T10:51:08+00:00</lastmod>
+  <lastmod>2014-11-13T21:58:55+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://www.casacorbella.cat/historia/</loc>
-  <lastmod>2014-10-04T10:51:08+00:00</lastmod>
+  <lastmod>2014-11-13T21:58:55+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.casacorbella.cat/racontades/</loc>
-  <lastmod>2014-10-04T10:51:08+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.casacorbella.cat/festivalfresc/</loc>
-  <lastmod>2014-10-04T10:51:08+00:00</lastmod>
+  <loc>http://www.casacorbella.cat/programacio/</loc>
+  <lastmod>2014-11-13T21:58:55+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://www.casacorbella.cat/premsa/</loc>
-  <lastmod>2014-10-04T10:51:08+00:00</lastmod>
+  <lastmod>2014-11-13T21:58:55+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://www.casacorbella.cat/contacte/</loc>
-  <lastmod>2014-10-04T10:51:08+00:00</lastmod>
+  <lastmod>2014-11-13T21:58:55+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.casacorbella.cat/blog/concert-vermut-meritxell-gene-canta-marius-torres/</loc>
+  <lastmod>2014-11-13T21:58:55+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.casacorbella.cat/blog/racontades/</loc>
+  <lastmod>2014-11-13T21:58:55+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.casacorbella.cat/blog/benviguts-a-casa-corbella/</loc>
+  <lastmod>2014-11-13T21:58:55+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.casacorbella.cat/concertvermut/</loc>
+  <lastmod>2014-11-13T21:58:55+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.casacorbella.cat/racontades/</loc>
+  <lastmod>2014-11-13T21:58:55+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.casacorbella.cat/festivalfresc/</loc>
+  <lastmod>2014-11-13T21:58:55+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 </urlset>
