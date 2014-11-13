@@ -2679,6 +2679,8 @@ nav ul>li>a.current,nav ul>li>a:hover {
     transition-delay: .05s;
     -webkit-transition-duration: .35s;
     transition-duration: .35s;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .lily-effect:hover .overlay {
@@ -2912,6 +2914,25 @@ nav ul>li>a.current,nav ul>li>a:hover {
 
 a.waves-effect .waves-ripple {
     z-index: -1;
+}
+
+.bandCampCentered{
+     width:100%;
+
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
 }
 
 @media only screen and (max-width:635px) {
