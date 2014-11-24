@@ -3091,6 +3091,15 @@ a.waves-effect .waves-ripple {
     }
 }
 
+@media only screen and (max-width: 525px) {
+    .lily-effect-programacio figure {
+        background-position: -150px;
+        -webkit-background-size: 220% !important;
+        background-size: 220% !important;
+        background-repeat: no-repeat;
+    }
+}
+
 @media (min-width: 768px) {
     .lead {
         font-size: 21px;
@@ -3407,7 +3416,7 @@ a.waves-effect .waves-ripple {
 
     .lily-effect-programacio figure {
         background-position: -150px;
-        -webkit-background-size: 200%;
+        -webkit-background-size: 150%;
         background-size: 150%;
         background-repeat: no-repeat;
     }
@@ -3906,14 +3915,14 @@ a.waves-effect .waves-ripple {
 
     .lily-effect-programacio:hover figure {
         background-position: center left;
-        -webkit-background-size: 250%;
-        background-size: 250%;
+        -webkit-background-size: 140%;
+        background-size: 140%;
     }
 
     .lily-effect-programacio figure {
         background-position: -150px;
-        -webkit-background-size: 250%;
-        background-size: 250%;
+        -webkit-background-size: 140%;
+        background-size: 140%;
         background-repeat: no-repeat;
     }
 }
