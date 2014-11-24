@@ -2800,8 +2800,8 @@ nav ul>li>a.current,nav ul>li>a:hover {
 
 .lily-effect-programacio:hover figure {
     background-position: center left;
-    -webkit-background-size: 105%;
-    background-size: 105%;
+    -webkit-background-size: 150%;
+    background-size: 150%;
 }
 
 .lily-effect-programacio:hover figcaption h2,.lily-effect-programacio:hover figcaption .position {
@@ -3404,6 +3404,13 @@ a.waves-effect .waves-ripple {
         width: 740px;
         margin-top: 100px;
     }
+
+    .lily-effect-programacio figure {
+        background-position: -150px;
+        -webkit-background-size: 200%;
+        background-size: 150%;
+        background-repeat: no-repeat;
+    }
 }
 
 @media only screen and (max-width:991px) {
@@ -3454,6 +3461,19 @@ a.waves-effect .waves-ripple {
         -webkit-transform: translateY(-125px);
         -ms-transform: translateY(-125px);
         transform: translateY(-125px);
+    }
+
+    .lily-effect-programacio:hover figure {
+        background-position: center left;
+        -webkit-background-size: 200%;
+        background-size: 200%;
+    }
+
+    .lily-effect-programacio figure {
+        background-position: -150px;
+        -webkit-background-size: 200%;
+        background-size: 200%;
+        background-repeat: no-repeat;
     }
 }
 
@@ -3882,5 +3902,18 @@ a.waves-effect .waves-ripple {
         -webkit-transform: translateX(100%);
         -ms-transform: translateX(100%);
         transform: translateX(100%);
+    }
+
+    .lily-effect-programacio:hover figure {
+        background-position: center left;
+        -webkit-background-size: 250%;
+        background-size: 250%;
+    }
+
+    .lily-effect-programacio figure {
+        background-position: -150px;
+        -webkit-background-size: 250%;
+        background-size: 250%;
+        background-repeat: no-repeat;
     }
 }
