@@ -3106,6 +3106,11 @@ a.waves-effect .waves-ripple {
     box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
 }
 
+.espectacleFinalitzat {
+    border: 2px solid #5cb85c;
+    border-radius: 10px;
+} 
+
 @media only screen and (max-width:635px) {
     .hackathon-details {
         margin-left: 0px;
