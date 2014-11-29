@@ -12,8 +12,10 @@
                                 <div class="overlay solid-overlay"></div>
                                 {% if site.showSessions %}
                                 <figcaption>
-                                    <h2 class="name"><span>{{ speaker.surname }}</span></h2>
-                                    <p class="position">{{ speaker.company }}</p>
+                                    <div class="overlayScrim">
+                                        <h2 class="name"><span>{{ speaker.surname }}</span></h2>
+                                        <p class="position">{{ speaker.company }}</p>
+                                    </div>
                                 </figcaption>
                                 {% endif %}
                             </figure>
