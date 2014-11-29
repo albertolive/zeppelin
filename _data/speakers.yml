@@ -1,4 +1,26 @@
 - 
+  id: 12
+  name: "9nou"
+  surname: "Periòdic d'àmbit comarcal del Vallès Oriental"
+  company: "7 Novembre 2014"
+  title: "Casa Corbella de Cardedeu s'obre al municipi com a espai cultural"
+  bio: "La Casa Corbella de Cardedeu s'obre a la ciutadania com a espai cultural en un projecte engegat per a diversos familiars dels antic i actuals propietaris, amb diferents propostes al voltant de la música, el teatre o la gastronomia."
+  thumbnailUrl: 9nou-estrena-casa-corbella.jpg
+  rockstar: true
+  social: 
+    - {name: "site", link: "https://lh6.googleusercontent.com/-ZQC1ExUpz3U/VFzv48zV8SI/AAAAAAAAANk/2Cbsa-crjmg/w786-h922-no/Captura%2Bde%2Bpantalla%2B2014-11-07%2Ba%2Bles%2B16.55.22.JPG"}
+- 
+  id: 11
+  name: "AraVallès"
+  surname: "Diari digital del Vallès Oriental"
+  company: "31 Octubre 2014"
+  title: "S’estrena a Cardedeu el projecte cultural Casa Corbella"
+  bio: "Casa Corbella és el nom del nou projecte cultural que neix a Cardedeu de la mà de diversos familiars dels antics i actuals propietaris de la Casa Diumer. La històrica edificació de Cardedeu estrena ara una nova vida, convertida en un espai on celebrar-hi concerts, obres de teatre o tastos gastronòmics."
+  thumbnailUrl: aravalles-estrena-casacorbella.jpg
+  rockstar: true
+  social: 
+    - {name: "site", link: "http://www.aravalles.cat/noticia/144181/sestrena-a-cardedeu-el-projecte-cultural-casa-corbella-1"}
+- 
   id: 8
   name: "El NAS de Cardedeu"
   surname: "Periòdic mensual independent d'informació local"
@@ -86,17 +108,6 @@
   rockstar: true
   social: 
     - {name: "site", link: "http://www.naciodigital.cat/naciogranollers/noticia/17315/cardedeu/presenta/festival/fresc/aquest/estiu"}
-- 
-  id: 2
-  name: "AJCardedeu"
-  surname: "Ajuntament de Cardedeu"
-  company: "2013"
-  title: "El petit Festival d'Estiu de Cardedeu"
-  bio: "Divendres 26 - 21:30h - 6,00€</br>A toc de Jazz + Lluís Fortuny ReL Sessions</br>Dissabte 27 - 11:00h - 4,00€</br>Picnic Concert, el Fresc per als més petits amb As d'arts + Roleguita i Boquerón</br>Dissabte 27 - 21:30 - 6,00€</br>De Boleros... canta 'Bola de Nieve'</br>Diumenge 28 - 12:00h - 6,00€</br>Concert Vermut amb La Colònia</br>Abonaments:</br>- 15,00€ (no inclou el picnic concert)</br>Punt de venda anticipada:</br>- Llibreria El Compàs (c/ de Baix, 4-6 Cardedeu)</br>Informació general:</br>- Obertura de portes una hora abans de l'espectacle</br>- Entrada lliure després de les actuacions</br>- Aforament limitat a 150 persones</br>Lloc:  Casa Corbella"
-  thumbnailUrl: ajuntament-cardedeu-festival-fresc-2014.jpg
-  rockstar: true
-  social: 
-    - {name: "site", link: "http://www.cardedeu.cat/public/agenda/festival-fresc/"}
 
 
 
