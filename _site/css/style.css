@@ -2722,8 +2722,9 @@ nav ul>li>a.current,nav ul>li>a:hover {
 }
 
 .lily-effect figcaption h2 span {
-    font-weight: 600;
+    font-weight: 500;
     display: block;
+    font-size: 1.4rem;
 }
 
 .lily-effect figcaption .position {
@@ -3073,6 +3074,22 @@ a.waves-effect .waves-ripple {
     display:box;
     box-pack:center;
     box-align:center;
+}
+
+.overlayScrim {
+    background: black;
+    /* position: relative; */
+    /* top: auto; */
+    /* left: auto; */
+    /* right: auto; */
+    /* bottom: 50px; */
+    background: rgba(0, 0, 0, 0.15);
+    /* text-align: left; */
+    -webkit-box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
 }
 
 @media only screen and (max-width:635px) {
