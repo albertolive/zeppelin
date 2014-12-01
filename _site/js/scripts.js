@@ -24,6 +24,9 @@
         if (window.location.href.indexOf('http://albertolive.github.io/zeppelin/') === 0) {
           window.location.href = 'http://www.casacorbella.cat';
         }
+        $(document).ready(function() {
+          $("img").unveil();
+        });
 
         e("#top-header").addClass("after-scroll");
         e("body").css("overflow", "hidden");
