@@ -1,0 +1,33 @@
+<!-- About Section -->
+<section id="about">
+    <div class="content-wrapper">
+        <div class="col-lg-10 col-lg-offset-1">
+            <h3>La casa</h3>
+            <div class="row about-details">
+                <div class="col-md-6 col-sm-6 col-xs-6">  
+                    <div class="animated hiding" data-animation="fadeInDown" data-delay="0">
+                        <a {% if page.permalink == '/historia/' %} class="current" {% endif %} href="{{ site.baseurl }}/historia/"><h5>Història</h5>
+                        <img class="img-circle" src="{{ site.baseurl }}/img/historia.jpg" height="128" width="128" alt="Historia"></a>
+                        <p>Casa de gran valor històric però d'origen incert. La seva història és una novela on s'hi barrejen arbres genealògics de famílies de Cardedeu, estades del Sant Josep-Oriol i diuen que fins i tot, refugi de la CNT durant la Guerra Civil. Un misteri que mica en mica volem descobrir. Ens hi acompanyes?</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="animated hiding" data-animation="fadeInDown" data-delay="500">
+                        <h5>Projecte</h5>
+                        <img class="img-circle" src="{{ site.baseurl }}/img/projecte.jpg" height="128" width="128" alt="Projecte">
+                        <p>Familiars dels antics i actuals propietaris ens unim per continuar escrivint la història de la casa. Ennoblir el seu llegat vol dir obrir la casa al públic i oferir una programació plena de cultura, sensibilitat i compromís amb la seva història. </p>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <!-- <div class="col-md-4 col-sm-4 col-xs-6">
+                    <div class="animated hiding" data-animation="fadeInDown" data-delay="1000">
+                        <h5>Hackathon</h5>
+                        <img class="img-circle" src="{{ site.baseurl }}/img/hackathon.jpg" height="128" width="128" alt="Hackathons">
+                        <p>Full-day free-style hackaton! Want some real teambuilding on friday? Grab your team and join our hackathon!</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About Section -->

@@ -1,0 +1,71 @@
+<!-- Begin Subscribe Section -->
+<section id="subscribe" class="parallax" style="background-image: url({{ site.baseurl }}/img/subscribeRacontades.jpg);">
+    <div class="overlay"></div>
+    <div class="content-wrapper">
+        <div class="col-lg-8 col-lg-offset-2 animated hiding" data-animation="fadeInUp" data-delay="0">
+            <h3 style="color: #AD4442">Entrades exhaurides</h3>
+            <h4>No et quedis sense entrada per al pròxim acte. <br>Subscriu-te per rebre tota la informació de Casa Corbella.</h4>
+            <div id="mc_embed_signup" class="col-lg-8 col-sm-8 col-lg-offset-2 col-sm-offset-2">
+                <form action="{{site.subscribeAction}}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div class="mc-field-group col-lg-9 col-sm-9 col-xs-12">
+                        <span class="email waves-element waves-button waves-light bordered">
+                            <input type="email" value="" name="EMAIL" class="required" id="mce-EMAIL" placeholder="correu electrònic" autocomplete="off">
+                        </span>
+                    </div>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;">
+                        <input type="text" name="b_9fc8aa205b0521b5f05fc8e1e_ae0fb459fc" tabindex="-1" value="">
+                    </div>
+                    <div class="mc-submit-group clear col-lg-3 col-sm-3 col-xs-12">
+                        <span class="button waves-element waves-button waves-light bordered">
+						    <input type="submit" value="Enviar" name="subscribe" id="mc-embedded-subscribe">
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-left same-height-wrapper">
+                <div class="textCentered"><p>*Vine a les 21:50 per si alguna reserva queda lliure. Encara pots tenir sort!</p></div>
+                <div class="col-md-6 col-xs-12 same-height animated hiding" data-animation="fadeInDown" data-delay="0">
+                    <div class="card cardRacontades">
+                        <div class="col-md-6 col-xs-6">
+                            <h4>Dia</h4>
+                            <p>8 de novembre 22h</p>
+                        </div>
+                        <div class="col-md-6 col-xs-6">
+                            <h4>Preu</h4>
+                            <p>12€</p>
+                        </div>
+                        <div class="col-md-6 col-xs-6">
+                            <h4>Aforament</h4>
+                            <p>60 persones</p>
+                        </div>
+                        <div class="col-md-6 col-xs-6">
+                            <h4>Ubicació</h4>
+                            <a href="{{ site.baseurl | append: '/contacte/#findyourway' }}">
+                                <svg class="icon icon-direction iconBig" viewBox="0 0 32 32">
+                                    <use xlink:href="/../img/sprites/sprites.svg#icon-direction"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12 same-height animated hiding" data-animation="fadeInDown" data-delay="1000">
+                    <div class="card cardRacontades">
+                        <h4>Consumicions</h4>
+                        <p><b>Tapa 1:</b> zurito de cervesa Sant Jordi i coca de recapte</br>
+                           <b>Tapa 2:</b> xarrup de garnatxa</br>
+                           <b>Tapa 3:</b> copa de cava i brownie
+                       </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- End Subscribe Section -->
