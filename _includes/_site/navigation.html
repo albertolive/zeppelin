@@ -1,0 +1,36 @@
+<header id="top-header" class="col-lg-10 col-sm-12 after-scroll
+">
+    <svg id="menu-trigger" class="icon icon-menu visible-xs" viewBox="0 0 32 32" data-effect="st-effect">
+        <use xlink:href="{{ site.baseurl }}/img/sprites/sprites.svg#icon-menu"></use>
+    </svg>
+    <a href="{{ site.baseurl }}/" id="logo-header" class="logo-header logo-dark"></a>
+    <nav class="st-menu st-effect" id="menu">
+        <div class="logo-navbar logo-dark visible-xs"></div>
+        <ul>
+            <li><a {% if page.permalink == '/' %} class="current" {% endif %} href="{{ site.baseurl }}/">Inici</a>
+            </li>
+            <li><a {% if page.permalink == '/blog/' %} class="current" {% endif %} href="{{ site.baseurl }}/blog/">Blog</a>
+            </li>
+            <li><a {% if page.permalink == '/historia/' %} class="current" {% endif %} href="{{ site.baseurl }}/historia/">Història</a>
+            </li>
+            <!-- <li><a href="#">Schedule</a>
+            </li> -->
+            <li><a {% if page.permalink == '/programacio/' %} class="current" {% endif %} href="{{ site.baseurl }}/programacio/">Programació</a>
+            </li>
+            </li>
+            <li><a {% if page.permalink == '/premsa/' %} class="current" {% endif %} href="{{ site.baseurl }}/premsa/">Premsa</a>
+            </li>
+            <li><a {% if page.permalink == '/contacte/' %} class="current" {% endif %} href="{{ site.baseurl }}/contacte/">Contacte</a>
+            </li>
+        </ul>
+        <ul id="bottom-navlinks" class="bottom-navlinks visible-xs">
+            <!-- <li><a href="#">Buy tickets</a>
+            </li> 
+            <li><a href="{{ site.c4pUrl }}" target="_blank">Become a speaker</a>
+            </li>
+        </ul>
+        <span id="buy-tickets-button"  class="btn btn-primary waves-element waves-button waves-light waves-will-raise pull-right hidden-xs hidden-sm hidden">
+            <a href="{{ site.c4pUrl }}" target="_blank">Become a speaker</a>
+        </span>-->
+    </nav>
+</header>
