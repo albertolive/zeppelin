@@ -2,5 +2,5 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://www.casacorbella.com/sitemap.xml
+Sitemap: http://www.casacorbella.cat/sitemap.xml
 
