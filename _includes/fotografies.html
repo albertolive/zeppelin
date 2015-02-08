@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<section id="imatges-Racontades" class="imatges-Racontades">
+<html class="no-js" lang="en">
+<head>
+    <meta content="charset=utf-8">
+    <title>FlexSlider 2</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+
+  <!-- Demo CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/customSlider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/flexslider.css" type="text/css" media="screen" />
+
+    <!-- Modernizr -->
+  <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+</head>
+<body class="loading">
+
+  <div id="container" class="cf">
+    <div id="main" role="main">
+      <section class="slider">
+        <div id="slider" class="flexslider">
+          <ul class="slides">
+            {% for imatgeCasa in site.data.imatgesCasa %}
+                {% for imatges in imatgeCasa.photos %}
+                    <li>
+                        <img src="{{ site.baseurl }}/img/loading/loading.gif" data-src="{{ site.baseurl }}/img/{{imatgeCasa.folder}}/{{imatgeCasa.name}}{{imatges}}.jpg" alt="" />
+                    </li>
+                {% endfor %}
+            {% endfor %}
+          </ul>
+        </div>
+        <div id="carousel" class="flexslider">
+          <ul class="slides">
+            {% for imatgeCasa in site.data.imatgesCasa %}
+                {% for imatges in imatgeCasa.photos %}
+                    <li>
+                        <img src="{{ site.baseurl }}/img/{{imatgeCasa.folder}}/thumbs/{{imatgeCasa.name}}{{imatges}}.jpg" alt="" />
+                    </li>
+                {% endfor %}
+            {% endfor %}
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="{{ site.baseurl }}/js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('#carousel').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 210,
+        itemMargin: 5,
+        asNavFor: '#slider'
+      });
+
+      $('#slider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+
+  <!-- Syntax Highlighter -->
+  <script type="text/javascript" src="{{ site.baseurl }}/js/slider/shCore.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/js/slider/shBrushXml.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/js/slider/shBrushJScript.js"></script>
+
+  <!-- Optional FlexSlider Additions -->
+  <script src="{{ site.baseurl }}/js/slider/jquery.easing.js"></script>
+  <script src="{{ site.baseurl }}/js/slider/jquery.mousewheel.js"></script>
+  <script defer src="{{ site.baseurl }}/js/slider/demo.js"></script>
+
+</body>
+</html>
+</section>
