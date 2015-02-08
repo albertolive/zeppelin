@@ -2976,7 +2976,7 @@ nav ul>li>a.current,nav ul>li>a:hover {
 }
 
 .lily-effect-fotografies:hover .overlay {
-    background: rgba(0,0,0,0.3);
+    background: rgba(2,2,2,0.5);
 }
 
 .lily-effect-fotografies figure {
@@ -3085,6 +3085,11 @@ nav ul>li>a.current,nav ul>li>a:hover {
     background-position: center left;
     -webkit-background-size: 230%;
     background-size: 230%;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
 }
 
 .animated {
