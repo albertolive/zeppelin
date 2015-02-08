@@ -8,6 +8,15 @@ exclude: ['/automation/', 'README.md', 'LICENCE.txt', 'CNAME']
 title: Casa Corbella
 email: hola@casacorbella.cat
 description: "Pàgina oficial de Casa Corbella de Cardedeu, espai per a la cultura i recuperació de la història de Can Diumer."
+descriptionHistoria: "La història i orígens de la família Diumer és una tasca gairebé impossible on cal rebuscar al fons de les històries de grans nissagues de Cardedeu."
+descriptionProgramacio: "Tota la programació que es fa, es farà o s'ha fet a Casa Corbella. Festival Fresc, Racontades o concert-vermut són alguna de les propostes."
+descriptionRactontades: "Les Racontades són una combinació màgica entre contes i la descoberta de racons de Casa Corbella que ens fan mirar i sentir aquest espai de manera diferent."
+descriptionResumRacontades: "Resum de les Racontades del 8 de novembre del 2014 a Casa Corbella. Hi trobaràs totes les imatges i el vídeo de l'acte."
+descriptionConcertVermut: "Arriba a les portes de Casa Corbella la veu captivadora de la cantautora catalana Meritxell Gené, i ho fa per a delectar el públic amb el seu nou treball..."
+descriptionResumConcertVermut: "Resum del concert-vermut que es va dur a terme a Casa Corbella amb la cantautora Meritxell Gené la qual va musicar els poemes de Màrius Torres."
+descriptionFestivalFresc: "El Festival Fresc, petit festival d'estiu de Cardedeu, és l'activitat estrella de Casa Corbella. Petites estructures, petits públics i grans resultats."
+descriptionPremsa: "Apartat de premsa de Casa Corbella. Aquí podreu trobar les notícies que surten als principals diaris sobre les activitats que es duen a terme a la casa."
+descriptionContacte: "Vols posar-te en contacte amb Casa Corbella? Tens algun dubte, suggeriment o proposta? Estem aquí pel que faci falta. Contacta amb nosaltres!"
 baseurl: ""
 url: "http://www.casacorbella.cat"
 permalink: /blog/:title

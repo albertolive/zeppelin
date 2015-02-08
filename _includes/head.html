@@ -3,47 +3,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta name="author" content="Casa Corbella">
+
+    <link rel="author" href="https://plus.google.com/u/0/+CasaCorbellaCatCasaCorbella">
+    <link rel="publisher" href="https://plus.google.com/u/0/+CasaCorbellaCatCasaCorbella">
+
     {% if page.title == "Casa Corbella" %}
-        <meta name="description" content="{{ site.description }}">
-    {% elsif page.title == "Blog" %}
-        <meta name="description" content="Apartat de notícies de Casa Corbella. Des d'aquí podeu anar seguint tot allò que relaciona la casa, les activitats i estar al dia per no perdre't res.">
+        {% assign description =  site.description %}
     {% elsif page.title == "Història" %}
-        <meta name="description" content="La història i orígens de la família Diumer és una tasca gairebé impossible on cal rebuscar al fons de les històries de grans nissagues de Cardedeu.">
+        {% assign description =  site.descriptionHistoria %}
     {% elsif page.title == "Programació" %}
-        <meta name="description" content="Tota la programació que es fa, es farà o s'ha fet a Casa Corbella. Festival Fresc, Racontades o concert-vermut són alguna de les propostes.">
+        {% assign description =  site.descriptionProgramacio %}
     {% elsif page.title == "Racontades" %}
-        <meta name="description" content="Les Racontades són una combinació màgica entre contes i la descoberta de racons de Casa Corbella que ens fan mirar i sentir aquest espai de manera diferent.">
+        {% assign description =  site.descriptionRactontades %}
     {% elsif page.title == "Resum Racontades" %}
-        <meta name="description" content="Resum de les Racontades del 8 de novembre del 2014 a Casa Corbella. Hi trobaràs totes les imatges i el vídeo de l'acte.">
+        {% assign description =  site.descriptionResumRacontades %}
     {% elsif page.title == "Festival Fresc" %}
-        <meta name="description" content="El Festival Fresc, petit festival d'estiu de Cardedeu, és l'activitat estrella de Casa Corbella. Petites estructures, petits públics i grans resultats.">
+        {% assign description =  site.descriptionFestivalFresc %}
+    {% elsif page.title == "Concert Vermut Mertixell Gené Canta Màrius Torres" %}
+        {% assign description =  site.descriptionConcertVermut %}
+    {% elsif page.title == "Resum Concert Vermut Meritxell Gené" %}
+        {% assign description =  site.descriptionResumConcertVermut %}
     {% elsif page.title == "Premsa" %}
-        <meta name="description" content="Apartat de premsa de Casa Corbella. Aquí podreu trobar les notícies que surten als principals diaris sobre les activitats que es duen a terme a la casa.">
+        {% assign description =  site.descriptionPremsa %}
     {% elsif page.title == "Contacte" %}
-        <meta name="description" content="Vols posar-te en contacte amb Casa Corbella? Tens algun dubte, suggeriment o proposta? Estem aquí pel que faci falta. Contacta amb nosaltres!">
+        {% assign description =  site.descriptionContacte %}
     {% else %}
-        <meta name="description" content="{{ site.description }}">
+        {% assign description =  site.description %}
     {% endif %}
+
+    <meta name="description" content="{{ description }}">
     <meta name="keywords" content="{{ site.metaKeywords }}">
     <link rel="canonical" href="{{ site.url }}">
+
     <!-- Social: Google+ / Schema.org  -->
     <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta itemprop="description" content="{{ site.description }}">
-    <meta itemprop="image" content="{{ site.socialImageSrcGooglePlus | prepend: site.baseurl | prepend: site.url }}">
+    <meta itemprop="description" content="{{ description }}">
+    <meta itemprop="image" content="{{ site.url }}/img/sections-background/{{ page.image }}">
+
     <!-- Social: Twitter -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="{{ site.twitterAccount }}">
+    <meta name="twitter:creator" content="{{ site.twitterAccount }}">
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta name="twitter:description" content="{{ site.description }}">
-    <meta name="twitter:image:src" content="{{ site.socialImageSrcTwitter | prepend: site.baseurl | prepend: site.url }}">
+    <meta name="twitter:description" content="{{ description }}">
+    <meta name="twitter:image:src" content="{{ site.url }}/img/sections-background/{{ page.image }}">
+
     <!-- Social: Facebook / Open Graph -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" /> 
     <meta property="og:site_name" content="{{ site.title }}" /> 
     <meta property="og:type" content="website" /> 
     <meta property="og:url" content="{{ site.url }}" />
-    <meta property="og:image" content="{{ site.socialImageSrcFacebook | prepend: site.baseurl | prepend: site.url }}" />
-    <meta property="og:description" content="{{ site.description }}" /> 
-    
+    <meta property="og:image" content="{{ site.url }}/img/sections-background/{{ page.image }}" />
+    <meta property="og:description" content="{{ description }}" />
 
     <title>{% if page.title %}{{ page.title }} &bull; {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <link rel="shortcut icon" href="{{ "/img/favicons/favicon.ico" | prepend: site.baseurl }}">
