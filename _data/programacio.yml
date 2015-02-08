@@ -1,18 +1,18 @@
 - 
   id: 1
   surname: "Concert Vermut"
-  link: "concertvermut"
+  link: "programacio/concertvermut"
   company: "23 Novembre 2014"
   thumbnailUrl: concert_vermut.jpg
 - 
   id: 2
   surname: "Racontades"
-  link: "racontades"
+  link: "programacio/racontades"
   company: "08 Novembre 2014"
   thumbnailUrl: racontades.jpg
 - 
   id: 3
   surname: "Festival Fresc"
-  link: "festivalfresc"
+  link: "programacio/festivalfresc"
   company: "24-27 Juliol 2014"
   thumbnailUrl: festival_fresc.jpg
