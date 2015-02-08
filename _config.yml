@@ -34,8 +34,8 @@ twitterHashTag: "casacorbella"
 twitterFeed: "http://lviv.gdg.org.ua/tweetledee/favoritesjson.php?c=10&cache_interval=900" # MIRARHO
 
 # Subscribe
-subscribeAction: "http://casacorbella.us9.list-manage.com/subscribe?u=f858dc39512f4cc6121cafe63&id=31ec279c52"
-subscribeRacontades: "http://casacorbella.us9.list-manage.com/subscribe?u=f858dc39512f4cc6121cafe63&id=3911c35ea0"
+subscribeAction: "http://casacorbella.us9.list-manage.com/subscribe?u=f858dc39512f4cc6121cafe63&id=d6b01abe84"
+subscribeRacontades: "http://casacorbella.us9.list-manage.com/subscribe?u=f858dc39512f4cc6121cafe63&id=d6b01abe84"
 
 # Documents
 c4pUrl: "" # MIRARHO AIXO ESTA A SPEAKERS "BECOME A SPEAKER"
@@ -83,8 +83,12 @@ historiaRows:
 #Projecte
 projecteRows:
 - {title: "", image: , details: "Què s’amaga darrere de les grans portes que tanquen aquest palau al bell mig de Cardedeu? Concerts tenyits de llum i d’encant, petites representacions cuinades amb molt d’art i vespres a la fresca. La cultura és impossible d’abraçar, però a Casa Corbella intentem condensar-la durant uns instants perquè vosaltres la pugueu gaudir."}
-- {title: "Com funciona?", image: "com-funciona.jpg", details: "“Casa meva és casa vostra, si és que hi ha cases d’algú”, que deia en Sisa. Quan lleis, normes i ignorància limiten propostes originals i diferents, la cultura es cola entre els límits establerts i fa gala de la seva màgia. És així com Casa Corbella pot obrir les seves portes al públic i oferir una programació plena de cultura, sensibilitat i compromís amb la seva història. Però, per a fer-ho, necessita una gran família. Així doncs, tothom qui vulgui formar part de Casa Corbella, només ha d'inscriure's en el nostre llibre de família i d’aquesta manera podrà tenir accés a les festes i sorpreses que ja tenim preparades."}
-- {title: "Transperència", image: "transparencia.jpg", details: "Casa Corbella som una entitat sense ànim de lucre amb NIF G-66405028 que organitza actes culturals a Cardedeu. Els beneficis obtinguts de cada espectacle es destinen íntegrament als artistes i un petit marge a l’adequació de la casa. Tots els artistes i tot el públic està assegurat durant la seva estada a Casa Corbella amb una pòlissa de responsabilitat civil que cobreix els possibles incidents que puguin tenir lloc. "}
+- {title: "Com funciona?", image: "transparencia.jpg", details: "“Casa meva és casa vostra, si és que hi ha cases d’algú”, que deia en Sisa. Quan lleis, normes i ignorància limiten propostes originals i diferents, la cultura es cola entre els límits establerts i fa gala de la seva màgia. És així com Casa Corbella pot obrir les seves portes al públic i oferir una programació plena de cultura, sensibilitat i compromís amb la seva història. Però, per a fer-ho, necessita una gran família. Així doncs, tothom qui vulgui formar part de Casa Corbella, només ha d'inscriure's en el nostre llibre de família i d’aquesta manera podrà tenir accés a les festes i sorpreses que ja tenim preparades."}
+
+#Projecte
+projecte2Rows:
+- {title: "Transperència", image: , details: "Casa Corbella som una entitat sense ànim de lucre amb NIF G-66405028 que organitza actes culturals a Cardedeu. Els beneficis obtinguts de cada espectacle es destinen íntegrament als artistes i un petit marge a l’adequació de la casa. Tots els artistes i tot el públic està assegurat durant la seva estada a Casa Corbella amb una pòlissa de responsabilitat civil que cobreix els possibles incidents que puguin tenir lloc. "}
+
 
 # Racontades
 #racontadesTitol: "Meet our themes"

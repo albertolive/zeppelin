@@ -2,9 +2,9 @@
 <section id="about-hackathon" class="about-hackathon">
     <div class="content-wrapper">
         <div class="col-md-8 col-md-offset-2">
-            <h2>Casa Corbella</h2>
-            {% for row in site.projecteRows %}
+            {% for row in site.projecte2Rows %}
             {% assign check = forloop.index0 | modulo:2 %}
+            
             <div class="hackathon-row {% if check == 0 %}float-left{% else %}float-right{% endif %} col-md-12">
                 {% if row.image  %}
                     <div class="hackathon-img-wrapper animated hiding" data-animation="{% if check == 0 %}fadeInLeft{% else %}fadeInRight{% endif %}" data-delay="0">
