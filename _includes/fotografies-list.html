@@ -1,0 +1,31 @@
+<!-- Begin Speakers List-->
+<section id="speakers" class="speakers">
+    <div class="content-wrapper">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="row text-left appear-animation-trigger">
+                {% for speaker in site.data.fotografies %}
+                    <div class="effect-wrapper appear-animation col-md-4">
+                        <a href="{{ site.baseurl }}/{{speaker.link}}/">
+                            <div class="lily-effect-fotografies ribbon-activator" data-toggle="modal">
+                                <div class="lily-head">
+                                    <figure class="waves-effect waves-block waves-light" style="background-image: url({{ site.baseurl | append: '/img/fotografies/' | append: speaker.thumbnailUrl }})">
+                                        <div class="overlay solid-overlay"></div>
+                                        {% if site.showSessions %}
+                                        <figcaption>
+                                            <div class="overlayScrim">
+                                                <h2 class="name"><span>{{ speaker.surname }}</span></h2>
+                                                <p class="position">{{ speaker.company }}</p>
+                                            </div>
+                                        </figcaption>
+                                        {% endif %}
+                                    </figure>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div> 
+        </div>
+    </div>
+</section>
+<!-- End Speakers List -->

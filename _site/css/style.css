@@ -2937,6 +2937,156 @@ nav ul>li>a.current,nav ul>li>a:hover {
 
 
 
+
+.lily-effect-fotografies {
+    margin-bottom: 26px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-shadow: 0 1px 7px rgba(0,0,0,0.06),0 1px 3px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 7px rgba(0,0,0,0.06),0 1px 3px rgba(0,0,0,0.15);
+}
+
+.lily-effect-fotografies:hover {
+    -webkit-box-shadow: 0 1px 7px rgba(0,0,0,0.06),0 1px 3px rgba(0,0,0,0.35);
+    box-shadow: 0 1px 7px rgba(0,0,0,0.06),0 1px 3px rgba(0,0,0,0.35);
+}
+
+.lily-effect-fotografies:hover figure {
+    background-position: center left;
+    -webkit-background-size: 150%;
+    background-size: 150%;
+}
+
+.lily-effect-fotografies:hover figcaption h2,.lily-effect-fotografies:hover figcaption .position {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+
+.lily-effect-fotografies:hover figcaption .position {
+    line-height: 1;
+    margin-top: 8px;
+    -webkit-transition-delay: .05s;
+    transition-delay: .05s;
+    -webkit-transition-duration: .35s;
+    transition-duration: .35s;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.lily-effect-fotografies:hover .overlay {
+    background: rgba(0,0,0,0.3);
+}
+
+.lily-effect-fotografies figure {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    background-position: -30px;
+    -webkit-background-size: 115%;
+    background-size: 115%;
+}
+
+.lily-effect-fotografies figcaption {
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    padding: 32px 16px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.lily-effect-fotografies figcaption h2 {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 300;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+    word-spacing: -2px;
+}
+
+.lily-effect-fotografies figcaption h2 span {
+    font-weight: 600;
+    display: block;
+}
+
+.lily-effect-fotografies figcaption .position {
+    margin: 0;
+    font-size: 11px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.9);
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+}
+
+.lily-effect-fotografies .overlay {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    background: transparent;
+}
+
+.lily-effect-fotografies .lily-head {
+    height: 200px;
+}
+
+.lily-effect-fotografies .lily-bottom {
+    clear: both;
+    height: 80px;
+    padding: 16px 14px 9px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-bottom: 2px solid #fff;
+    background: #fff;
+}
+
+.lily-effect-fotografies .lily-bottom h2 {
+    font-size: 21px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.lily-effect-fotografies .lily-bottom .title {
+    font-size: 16px;
+    line-height: 1.5;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    height: 50px;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.lily-effect-fotografies .lily-bottom .slider-next-item {
+    position: absolute;
+    right: 25px;
+    bottom: 30px;
+}
+
+.lily-effect-fotografies figure {
+    background-position: -220px;
+    -webkit-background-size: 230%;
+    background-size: 230%;
+    background-repeat: no-repeat;
+}
+
+.lily-effect-fotografies:hover figure {
+    background-position: center left;
+    -webkit-background-size: 230%;
+    background-size: 230%;
+}
+
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -3129,6 +3279,13 @@ a.waves-effect .waves-ripple {
 
 @media only screen and (max-width: 525px) {
     .lily-effect-programacio figure {
+        background-position: -150px;
+        -webkit-background-size: 220% !important;
+        background-size: 220% !important;
+        background-repeat: no-repeat;
+    }
+
+    .lily-effect-fotografies figure {
         background-position: -150px;
         -webkit-background-size: 220% !important;
         background-size: 220% !important;
@@ -3518,6 +3675,19 @@ a.waves-effect .waves-ripple {
         background-position: -150px;
         -webkit-background-size: 200%;
         background-size: 200%;
+        background-repeat: no-repeat;
+    }
+
+    .lily-effect-fotografies:hover figure {
+        background-position: center left;
+        -webkit-background-size: 170%;
+        background-size: 170%;
+    }
+
+    .lily-effect-fotografies figure {
+        background-position: -170px;
+        -webkit-background-size: 120%;
+        background-size: 120%;
         background-repeat: no-repeat;
     }
 }
@@ -3961,4 +4131,41 @@ a.waves-effect .waves-ripple {
         background-size: 140%;
         background-repeat: no-repeat;
     }
+
+    .lily-effect-fotografies:hover figure {
+        background-position: center left;
+        -webkit-background-size: 140%;
+        background-size: 140%;
+    }
+
+    .lily-effect-fotografies figure {
+        background-position: -150px;
+        -webkit-background-size: 140%;
+        background-size: 140%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (min-width:1350px) {
+    .lily-effect-fotografies figure {
+        background-position: -250px;
+        -webkit-background-size: 250%;
+        background-size: 230%;
+        background-repeat: no-repeat;
+    }
+
+    .lily-effect-fotografies:hover figure {
+        background-position: center left;
+        -webkit-background-size: 300%;
+        background-size: 300%;
+    }
+}
+
+@media only screen and (min-width:1800px) {
+    .lily-effect-fotografies:hover figure {
+        background-position: center left;
+        -webkit-background-size: 200%;
+        background-size: 200%;
+    }
+
 }

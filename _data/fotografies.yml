@@ -1,0 +1,18 @@
+- 
+  id: 1
+  surname: "La casa"
+  link: "fotografies/lacasa"
+  company: "Recull d'imatges actuales de la casa"
+  thumbnailUrl: la-casa.jpg
+- 
+  id: 2
+  surname: "Història"
+  link: "fotografies/historia"
+  company: "Mostra de fotografies antigues de la casa"
+  thumbnailUrl: historia.jpg
+- 
+  id: 3
+  surname: "Actes"
+  link: "fotografies/actes"
+  company: "Imatges dels actes de Casa Corbella"
+  thumbnailUrl: actes.jpg
