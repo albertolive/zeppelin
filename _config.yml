@@ -49,7 +49,7 @@ twitterFeed: "http://lviv.gdg.org.ua/tweetledee/favoritesjson.php?c=10&cache_int
 subscribeAction: "http://casacorbella.us9.list-manage.com/subscribe?u=f858dc39512f4cc6121cafe63&id=d6b01abe84"
 subscribeRacontades: "http://casacorbella.us9.list-manage.com/subscribe?u=f858dc39512f4cc6121cafe63&id=d6b01abe84"
 subscribeText: "Vols formar part de casa corbella?"
-subscribeTextSocis: "Espectacle pels socis de Casa Corbella.<br> Vols formar-hi part?"
+subscribeTextSocis: "Espectacle per a familiars de Casa Corbella. Vols formar part de la família?"
 
 # Documents
 c4pUrl: "" # MIRARHO AIXO ESTA A SPEAKERS "BECOME A SPEAKER"
