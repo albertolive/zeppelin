@@ -16,6 +16,7 @@ descriptionRactontades: "Les Racontades són una combinació màgica entre conte
 descriptionResumRacontades: "Resum de les Racontades del 8 de novembre del 2014 a Casa Corbella. Hi trobaràs totes les imatges i el vídeo de l'acte."
 descriptionConcertVermut: "Arriba a les portes de Casa Corbella la veu captivadora de la cantautora catalana Meritxell Gené, i ho fa per a delectar el públic amb el seu nou treball..."
 descriptionResumConcertVermut: "Resum del concert-vermut que es va dur a terme a Casa Corbella amb la cantautora Meritxell Gené la qual va musicar els poemes de Màrius Torres."
+descriptionLaSedDeLaSal: "La Sed de la Sal és un recital amb 14 cançons, construïdes al voltant d'alguns temes clàssics. Veu de Rubén Martínez Santana i piano per Borja Riquelme."
 descriptionFestivalFresc: "El Festival Fresc, petit festival d'estiu de Cardedeu, és l'activitat estrella de Casa Corbella. Petites estructures, petits públics i grans resultats."
 descriptionPremsa: "Apartat de premsa de Casa Corbella. Aquí podreu trobar les notícies que surten als principals diaris sobre les activitats que es duen a terme a la casa."
 descriptionContacte: "Vols posar-te en contacte amb Casa Corbella? Tens algun dubte, suggeriment o proposta? Estem aquí pel que faci falta. Contacta amb nosaltres!"
@@ -47,6 +48,8 @@ twitterFeed: "http://lviv.gdg.org.ua/tweetledee/favoritesjson.php?c=10&cache_int
 # Subscribe
 subscribeAction: "http://casacorbella.us9.list-manage.com/subscribe?u=f858dc39512f4cc6121cafe63&id=d6b01abe84"
 subscribeRacontades: "http://casacorbella.us9.list-manage.com/subscribe?u=f858dc39512f4cc6121cafe63&id=d6b01abe84"
+subscribeText: "Vols formar part de casa corbella?"
+subscribeTextSocis: "Espectacle pels socis de Casa Corbella.<br> Vols formar-hi part?"
 
 # Documents
 c4pUrl: "" # MIRARHO AIXO ESTA A SPEAKERS "BECOME A SPEAKER"
@@ -118,8 +121,6 @@ festivalFrescRows:
 concertVermutRows:
  - {title: "", image: "mertixell-gene.jpg", details: "Arriba a les portes de Casa Corbella la veu captivadora de la cantautora catalana Meritxell Gené, i ho fa per a delectar el públic amb el seu nou treball, <b>“Així t’escau la melangia”</b>, en el que musica els poemes de Màrius Torres, el metge que feia versos… L’esdeveniment tindrà lloc el pròxim dia <b>23 de novembre</b>, a les <b>12:00 hores</b>, al Pati de Casa Corbella i anirà amenitzat per un vermut, que complementarà el clímax de sintonia i complicitat que ens oferirà la cantant. El preu de l’entrada és de <b>5 Euros</b> (3 Euros per als alumnes de català del Consorci per a la Normalització Lingüística). Les portes de Casa Corbella obriran una hora abans de l’espectacle, i hi haurà servei de bar que romandrà obert fins a la fi de l’acte."}
 
-# Informació
-# informacio:
-#  - {title: "Dia", image: "dia.png", info: "8 de Novembre<br>22h"}
-#  - {title: "Preu", image: "prize-1.png", info: "12€"}
-#  - {title: "Consumicions", image: "consumicio.jpg", info: "Zurito de cervesa Sant Jordi/sense alcohol i coca de recapte<br>Xarrup de garnatxa<br>Copa de cava i pa de pessic amb crema de castanya"}
+#la Sed De La Sal
+laSedDeLaSalRows:
+- {title: "", image: "laSedDeLaSal1.jpg", details: "<b>28 febrer</b>, <b>18h</b> Presentació del disc <b>La sed de la sal</b>. La Sed de la Sal és un recital amb 14 cançons, construïdes al voltant d'alguns temes clàssics del repertori pianístic des del període barroc fins al romanticisme. Bach, Beethoven, Schumann són 're-visitats' i -des del respecte reverencial cap a les seves partitures- són intervinguts per generar noves peces musicals; cançons compostes per <b> Rubén Martínez Santana </b> acompanyat al piano per <b> Borja Riquelme </b>."}
