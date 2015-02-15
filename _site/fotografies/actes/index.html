@@ -21,7 +21,7 @@
     <!-- Social: Google+ / Schema.org  -->
     <meta itemprop="name" content="Actes">
     <meta itemprop="description" content="Pàgina oficial de Casa Corbella de Cardedeu, espai per a la cultura i recuperació de la història de Can Diumer.">
-    <meta itemprop="image" content="http://www.casacorbella.cat/img/sections-background/top-section-fotografies.jpg">
+    <meta itemprop="image" content="http://www.casacorbella.cat/img/sections-background/top-section-actes.jpg">
 
     <!-- Social: Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -29,14 +29,14 @@
     <meta name="twitter:creator" content="@casacorbella">
     <meta name="twitter:title" content="Actes">
     <meta name="twitter:description" content="Pàgina oficial de Casa Corbella de Cardedeu, espai per a la cultura i recuperació de la història de Can Diumer.">
-    <meta name="twitter:image:src" content="http://www.casacorbella.cat/img/sections-background/top-section-fotografies.jpg">
+    <meta name="twitter:image:src" content="http://www.casacorbella.cat/img/sections-background/top-section-actes.jpg">
 
     <!-- Social: Facebook / Open Graph -->
     <meta property="og:title" content="Actes" /> 
     <meta property="og:site_name" content="Casa Corbella" /> 
     <meta property="og:type" content="website" /> 
     <meta property="og:url" content="http://www.casacorbella.cat" />
-    <meta property="og:image" content="http://www.casacorbella.cat/img/sections-background/top-section-fotografies.jpg" />
+    <meta property="og:image" content="http://www.casacorbella.cat/img/sections-background/top-section-actes.jpg" />
     <meta property="og:description" content="Pàgina oficial de Casa Corbella de Cardedeu, espai per a la cultura i recuperació de la història de Can Diumer." />
 
     <title>Actes &bull; Casa Corbella</title>
@@ -104,7 +104,7 @@
             <div class="st-content">
 
                  <!-- Begin Top Section -->
-<section id="top-section-page" style="background-image: url('/img/sections-background/top-section-fotografies.jpg');">
+<section id="top-section-page" style="background-image: url('/img/sections-background/top-section-actes.jpg');">
     <div class="gradient-overlay"></div>
 
     <header id="top-header" class="col-lg-10 col-sm-12 after-scroll
@@ -145,342 +145,74 @@
 <!-- End Top Section -->
 
 
- <section id="grid" class="grid">
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width">
-
-            <!-- Example CSS -->
-            <style>
-            html { font-family: Arial, sans-serif; background: #111; }
-            #gallery  { width: 80%; margin: 10px auto; display: block; }
-
-            #gallery ul { margin: 0; padding: 0; height: 50px; }
-            #gallery li { list-style-type: none; }
-            #gallery li a { float: left; margin: 0 20px 0 0; padding: 5px 10px; text-decoration: none; }
-            #gallery li a:hover, #gallery li a.selected { }
-            
-            #gallery .tile .caption {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                background: url(/img/fotografies/filters/opaque.png);
-                font-family: cursive;
-                opacity:0;
-                transition: all .3s;
-                height: 100%;
-            }
-            #gallery .tile > * {
-                border-radius: 4px;
-            }
-            #gallery .tile a:hover .caption {
-                opacity:1;
-            }
-            #gallery .tile a:hover .socialButtons {
-                display: block;
-            }
-            #gallery .tile .caption p {
-                margin:10px;
-                color: #fff;
-                font-size: 14px;        
-            }
-            .load {
-                width: 300px;
-                display: block;
-                margin: 20px auto;
-                color: #fff;
-                text-decoration: none;
-                background: #333;
-                padding: 10px;
-                text-align: center;
-            }
-            .ftg-loading-panel {
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                background: url(/img/fotografies/filters/overlay.png);
-                color: #fff;
-                z-index: 1000;
-                text-align: center;
-                font-size: 26px;
-                font-weight: bold;
-                padding:0px;
-                border-top:5px solid #666;
-            }
-            /* overlay at start */
-            .mfp-fade.mfp-bg {
-              opacity: 0;
-
-              -webkit-transition: all 0.15s ease-out;
-              -moz-transition: all 0.15s ease-out;
-              transition: all 0.15s ease-out;
-            }
-            /* overlay animate in */
-            .mfp-fade.mfp-bg.mfp-ready {
-              opacity: 0.8;
-            }
-            /* overlay animate out */
-            .mfp-fade.mfp-bg.mfp-removing {
-              opacity: 0;
-            }
-
-            /* content at start */
-            .mfp-fade.mfp-wrap .mfp-content {
-              opacity: 0;
-
-              -webkit-transition: all 0.15s ease-out;
-              -moz-transition: all 0.15s ease-out;
-              transition: all 0.15s ease-out;
-            }
-            /* content animate it */
-            .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-              opacity: 1;
-            }
-            /* content animate out */
-            .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-              opacity: 0;
-            }
-            .socialButtons {
-                display: none;
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 31%;
-            }
-            .shareaholic-share-buttons-container .shareaholic-share-buttons-wrapper {
-                display: block !important;
-            }
-            #gallery .tile .zoom {
-                font-size: 22px;
-                color: #fff;
-                display: block;
-                position: absolute;
-                top: -50px;
-                left: 50%;
-                margin: -12px 0 0 -12px;
-                -moz-transition: top .5s;
-                -o-transition: top .5s;
-                -webkit-transition: top .5s;
-                transition: top .5s;
-            }
-            #gallery .tile:hover .zoom{
-                top: 50%;
-            }
-            </style>
-        </head>
-        <body>      
-            <section id="gallery">
-                    <div class="ftg-items parent-container mfp-zoom-out-cur">
-                        
+ <!-- Begin Speakers List-->
+<section id="resum" class="resum">
+    <div class="content-wrapper">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="row text-left appear-animation-trigger">
+                
+                <a href="/programacio/resum-concert-vermut-meritxell-gene/">
+                <div class="effect-wrapper appear-animation col-md-4 col-sm-6 col-xs-12">
+                    <div class="lily-effect-programacio ribbon-activator" data-toggle="modal"> <!--data-target="#speakerDetail-3 -->
+                        <div class="lily-head">
+                            <figure class="waves-effect waves-block waves-light" style="background-image: url(/img/programacio/concert_vermut.jpg)">
+                                <div class="overlay solid-overlay"></div>
                                 
-                        
+                                <figcaption>
+                                    <div class="overlayScrim">
+                                        <h2 class="name"><span>Concert Vermut</span></h2>
+                                    </div>
+                                </figcaption>
                                 
-                        
-                                
-                                  
-                                    <article class="tile ftg-set-1">
-                                        <a class="image-link" href="/img/fotografies/actes/actes_1.jpg">
-                                            <img class="item" src="/img/fotografies/actes/actes_1.jpg" alt="Actes - Casa Corbella"/>
-                                            <div class="caption">
-                                                <i class="fa fa-search zoom"></i>
-                                            </div>
-                                            <div class="socialButtons">
-                                                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15616898' data-title='Actes - Casa Corbella' data-link='http://www.casacorbella.cat/fotografies/actes/' data-image='http://www.casacorbella.cat/img/fotografies/actes/actes_1.jpg' data-summary=""></div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                
-                                    <article class="tile ftg-set-2">
-                                        <a class="image-link" href="/img/fotografies/actes/actes_2.jpg">
-                                            <img class="item" src="/img/fotografies/actes/actes_2.jpg" alt="Actes - Casa Corbella"/>
-                                            <div class="caption">
-                                                <i class="fa fa-search zoom"></i>
-                                            </div>
-                                            <div class="socialButtons">
-                                                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15616898' data-title='Actes - Casa Corbella' data-link='http://www.casacorbella.cat/fotografies/actes/' data-image='http://www.casacorbella.cat/img/fotografies/actes/actes_2.jpg' data-summary=""></div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                
-                                    <article class="tile ftg-set-3">
-                                        <a class="image-link" href="/img/fotografies/actes/actes_3.jpg">
-                                            <img class="item" src="/img/fotografies/actes/actes_3.jpg" alt="Actes - Casa Corbella"/>
-                                            <div class="caption">
-                                                <i class="fa fa-search zoom"></i>
-                                            </div>
-                                            <div class="socialButtons">
-                                                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15616898' data-title='Actes - Casa Corbella' data-link='http://www.casacorbella.cat/fotografies/actes/' data-image='http://www.casacorbella.cat/img/fotografies/actes/actes_3.jpg' data-summary=""></div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                
-                                    <article class="tile ftg-set-4">
-                                        <a class="image-link" href="/img/fotografies/actes/actes_4.jpg">
-                                            <img class="item" src="/img/fotografies/actes/actes_4.jpg" alt="Actes - Casa Corbella"/>
-                                            <div class="caption">
-                                                <i class="fa fa-search zoom"></i>
-                                            </div>
-                                            <div class="socialButtons">
-                                                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15616898' data-title='Actes - Casa Corbella' data-link='http://www.casacorbella.cat/fotografies/actes/' data-image='http://www.casacorbella.cat/img/fotografies/actes/actes_4.jpg' data-summary=""></div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                
-                                    <article class="tile ftg-set-5">
-                                        <a class="image-link" href="/img/fotografies/actes/actes_5.jpg">
-                                            <img class="item" src="/img/fotografies/actes/actes_5.jpg" alt="Actes - Casa Corbella"/>
-                                            <div class="caption">
-                                                <i class="fa fa-search zoom"></i>
-                                            </div>
-                                            <div class="socialButtons">
-                                                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15616898' data-title='Actes - Casa Corbella' data-link='http://www.casacorbella.cat/fotografies/actes/' data-image='http://www.casacorbella.cat/img/fotografies/actes/actes_5.jpg' data-summary=""></div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                
-                                    <article class="tile ftg-set-6">
-                                        <a class="image-link" href="/img/fotografies/actes/actes_6.jpg">
-                                            <img class="item" src="/img/fotografies/actes/actes_6.jpg" alt="Actes - Casa Corbella"/>
-                                            <div class="caption">
-                                                <i class="fa fa-search zoom"></i>
-                                            </div>
-                                            <div class="socialButtons">
-                                                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15616898' data-title='Actes - Casa Corbella' data-link='http://www.casacorbella.cat/fotografies/actes/' data-image='http://www.casacorbella.cat/img/fotografies/actes/actes_6.jpg' data-summary=""></div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                
-                                    <article class="tile ftg-set-7">
-                                        <a class="image-link" href="/img/fotografies/actes/actes_7.jpg">
-                                            <img class="item" src="/img/fotografies/actes/actes_7.jpg" alt="Actes - Casa Corbella"/>
-                                            <div class="caption">
-                                                <i class="fa fa-search zoom"></i>
-                                            </div>
-                                            <div class="socialButtons">
-                                                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15616898' data-title='Actes - Casa Corbella' data-link='http://www.casacorbella.cat/fotografies/actes/' data-image='http://www.casacorbella.cat/img/fotografies/actes/actes_7.jpg' data-summary=""></div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                
-                                    <article class="tile ftg-set-8">
-                                        <a class="image-link" href="/img/fotografies/actes/actes_8.jpg">
-                                            <img class="item" src="/img/fotografies/actes/actes_8.jpg" alt="Actes - Casa Corbella"/>
-                                            <div class="caption">
-                                                <i class="fa fa-search zoom"></i>
-                                            </div>
-                                            <div class="socialButtons">
-                                                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15616898' data-title='Actes - Casa Corbella' data-link='http://www.casacorbella.cat/fotografies/actes/' data-image='http://www.casacorbella.cat/img/fotografies/actes/actes_8.jpg' data-summary=""></div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                
-                                    <article class="tile ftg-set-9">
-                                        <a class="image-link" href="/img/fotografies/actes/actes_9.jpg">
-                                            <img class="item" src="/img/fotografies/actes/actes_9.jpg" alt="Actes - Casa Corbella"/>
-                                            <div class="caption">
-                                                <i class="fa fa-search zoom"></i>
-                                            </div>
-                                            <div class="socialButtons">
-                                                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15616898' data-title='Actes - Casa Corbella' data-link='http://www.casacorbella.cat/fotografies/actes/' data-image='http://www.casacorbella.cat/img/fotografies/actes/actes_9.jpg' data-summary=""></div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                
-                                    <article class="tile ftg-set-10">
-                                        <a class="image-link" href="/img/fotografies/actes/actes_10.jpg">
-                                            <img class="item" src="/img/fotografies/actes/actes_10.jpg" alt="Actes - Casa Corbella"/>
-                                            <div class="caption">
-                                                <i class="fa fa-search zoom"></i>
-                                            </div>
-                                            <div class="socialButtons">
-                                                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15616898' data-title='Actes - Casa Corbella' data-link='http://www.casacorbella.cat/fotografies/actes/' data-image='http://www.casacorbella.cat/img/fotografies/actes/actes_10.jpg' data-summary=""></div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                
-                                    <article class="tile ftg-set-11">
-                                        <a class="image-link" href="/img/fotografies/actes/actes_11.jpg">
-                                            <img class="item" src="/img/fotografies/actes/actes_11.jpg" alt="Actes - Casa Corbella"/>
-                                            <div class="caption">
-                                                <i class="fa fa-search zoom"></i>
-                                            </div>
-                                            <div class="socialButtons">
-                                                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15616898' data-title='Actes - Casa Corbella' data-link='http://www.casacorbella.cat/fotografies/actes/' data-image='http://www.casacorbella.cat/img/fotografies/actes/actes_11.jpg' data-summary=""></div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                
-                                    <article class="tile ftg-set-12">
-                                        <a class="image-link" href="/img/fotografies/actes/actes_12.jpg">
-                                            <img class="item" src="/img/fotografies/actes/actes_12.jpg" alt="Actes - Casa Corbella"/>
-                                            <div class="caption">
-                                                <i class="fa fa-search zoom"></i>
-                                            </div>
-                                            <div class="socialButtons">
-                                                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15616898' data-title='Actes - Casa Corbella' data-link='http://www.casacorbella.cat/fotografies/actes/' data-image='http://www.casacorbella.cat/img/fotografies/actes/actes_12.jpg' data-summary=""></div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                
-                                    <article class="tile ftg-set-13">
-                                        <a class="image-link" href="/img/fotografies/actes/actes_13.jpg">
-                                            <img class="item" src="/img/fotografies/actes/actes_13.jpg" alt="Actes - Casa Corbella"/>
-                                            <div class="caption">
-                                                <i class="fa fa-search zoom"></i>
-                                            </div>
-                                            <div class="socialButtons">
-                                                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15616898' data-title='Actes - Casa Corbella' data-link='http://www.casacorbella.cat/fotografies/actes/' data-image='http://www.casacorbella.cat/img/fotografies/actes/actes_13.jpg' data-summary=""></div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                
-                                    <article class="tile ftg-set-14">
-                                        <a class="image-link" href="/img/fotografies/actes/actes_14.jpg">
-                                            <img class="item" src="/img/fotografies/actes/actes_14.jpg" alt="Actes - Casa Corbella"/>
-                                            <div class="caption">
-                                                <i class="fa fa-search zoom"></i>
-                                            </div>
-                                            <div class="socialButtons">
-                                                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15616898' data-title='Actes - Casa Corbella' data-link='http://www.casacorbella.cat/fotografies/actes/' data-image='http://www.casacorbella.cat/img/fotografies/actes/actes_14.jpg' data-summary=""></div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                
-                                    <article class="tile ftg-set-15">
-                                        <a class="image-link" href="/img/fotografies/actes/actes_15.jpg">
-                                            <img class="item" src="/img/fotografies/actes/actes_15.jpg" alt="Actes - Casa Corbella"/>
-                                            <div class="caption">
-                                                <i class="fa fa-search zoom"></i>
-                                            </div>
-                                            <div class="socialButtons">
-                                                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15616898' data-title='Actes - Casa Corbella' data-link='http://www.casacorbella.cat/fotografies/actes/' data-image='http://www.casacorbella.cat/img/fotografies/actes/actes_15.jpg' data-summary=""></div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                
-                                    <article class="tile ftg-set-16">
-                                        <a class="image-link" href="/img/fotografies/actes/actes_16.jpg">
-                                            <img class="item" src="/img/fotografies/actes/actes_16.jpg" alt="Actes - Casa Corbella"/>
-                                            <div class="caption">
-                                                <i class="fa fa-search zoom"></i>
-                                            </div>
-                                            <div class="socialButtons">
-                                                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15616898' data-title='Actes - Casa Corbella' data-link='http://www.casacorbella.cat/fotografies/actes/' data-image='http://www.casacorbella.cat/img/fotografies/actes/actes_16.jpg' data-summary=""></div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                
-                            
-                                     
+                            </figure>
+                        </div>
                     </div>
-                </section>
-        </body>
-    </html>
-</section> 
+                </div>
+                </a>
+                
+                <a href="/programacio/resum-racontades/">
+                <div class="effect-wrapper appear-animation col-md-4 col-sm-6 col-xs-12">
+                    <div class="lily-effect-programacio ribbon-activator" data-toggle="modal"> <!--data-target="#speakerDetail-2 -->
+                        <div class="lily-head">
+                            <figure class="waves-effect waves-block waves-light" style="background-image: url(/img/programacio/racontades.jpg)">
+                                <div class="overlay solid-overlay"></div>
+                                
+                                <figcaption>
+                                    <div class="overlayScrim">
+                                        <h2 class="name"><span>Racontades</span></h2>
+                                    </div>
+                                </figcaption>
+                                
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                
+                <a href="/programacio/festivalfresc/">
+                <div class="effect-wrapper appear-animation col-md-4 col-sm-6 col-xs-12">
+                    <div class="lily-effect-programacio ribbon-activator" data-toggle="modal"> <!--data-target="#speakerDetail-1 -->
+                        <div class="lily-head">
+                            <figure class="waves-effect waves-block waves-light" style="background-image: url(/img/programacio/festival_fresc.jpg)">
+                                <div class="overlay solid-overlay"></div>
+                                
+                                <figcaption>
+                                    <div class="overlayScrim">
+                                        <h2 class="name"><span>Festival Fresc</span></h2>
+                                    </div>
+                                </figcaption>
+                                
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                
+            </div> 
+        </div>
+    </div>
+</section>
+<!-- End Speakers List --> 
 
                 <!-- Begin Footer -->
 <footer id="footer">

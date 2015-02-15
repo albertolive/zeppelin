@@ -1,0 +1,15 @@
+- 
+  id: 3
+  surname: "Concert Vermut"
+  link: "programacio/resum-concert-vermut-meritxell-gene"
+  thumbnailUrl: concert_vermut.jpg
+- 
+  id: 2
+  surname: "Racontades"
+  link: "programacio/resum-racontades"
+  thumbnailUrl: racontades.jpg
+- 
+  id: 1
+  surname: "Festival Fresc"
+  link: "programacio/festivalfresc"
+  thumbnailUrl: festival_fresc.jpg
