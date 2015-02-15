@@ -66,6 +66,76 @@
     </script>
     <script src="{{ "/js/scripts.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/js/jquery.unveil.js" | prepend: site.baseurl }}"></script>
-</body>
 
+    <link rel="stylesheet" href="{{site.baseurl}}/css/magnific-popup.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="{{ "/js/jquery.magnific-popup.js" | prepend: site.baseurl }}"></script>
+
+    <script src="{{ "/js/jquery.finalTilesGallery.js" | prepend: site.baseurl }}"></script>
+
+<!--    <script type="text/javascript">
+//<![CDATA[
+  (function() {
+    var shr = document.createElement('script');
+    shr.setAttribute('data-cfasync', 'false');
+    shr.src = '//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js';
+    shr.type = 'text/javascript'; shr.async = 'true';
+    shr.onload = shr.onreadystatechange = function() {
+      var rs = this.readyState;
+      if (rs && rs != 'complete' && rs != 'loaded') return;
+      var site_id = 'de7eb8b657a7a565d4e383ef475473fa';
+      try { Shareaholic.init(site_id); } catch (e) {}
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(shr, s);
+  })();
+//]]>
+</script>
+-->
+
+   <script>
+
+        $('.socialButtons').click(function(e) {
+            e.stopPropagation();
+        });
+
+        //instantiate Final Tiles Gallery
+        $("#gallery").finalTilesGallery({
+            minTileWidth: 180,
+            margin: 10,
+            gridCellSize: 30,
+            autoLoadOffset: 5
+        });
+        $(document).ready(function() {
+          $('.parent-container').magnificPopup({
+            mainClass: 'mfp-with-zoom',
+              delegate: 'a', // child items selector, by clicking on it popup will open
+              type: 'image',
+              gallery:{
+                enabled:true,
+                preload: [0,2]
+            },
+              image: {
+                cursor: 'mfp-zoom-out-cur'
+            },
+            preloader: true,
+            zoom: {
+                enabled: true, // By default it's false, so don't forget to enable it
+
+                duration: 300, // duration of the effect, in milliseconds
+                easing: 'ease-in-out', // CSS transition easing function 
+
+                // The "opener" function should return the element from which popup will be zoomed in
+                // and to which popup will be scaled down
+                // By defailt it looks for an image tag:
+                opener: function(openerElement) {
+                  // openerElement is the element on which popup was initialized, in this case its <a> tag
+                  // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+                  return openerElement.is('img') ? openerElement : openerElement.find('img');
+                }
+            } 
+            });
+        });
+    </script> 
+</body>
 </html>
