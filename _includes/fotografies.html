@@ -25,7 +25,7 @@
                 {% if imatgeCasa.id == page.id %}
                   {% for imatges in imatgeCasa.photos %}
                       <li>
-                          <img src="{{ site.baseurl }}/img/loading/loading.gif" data-src="{{ site.baseurl }}/img/{{imatgeCasa.folder}}/{{imatgeCasa.name}}{{imatges}}.jpg" alt="" />
+                          <img src="{{ site.baseurl }}/img/loading/loading.gif" data-src="{{ site.baseurl }}/img/{{imatgeCasa.folder}}/{{imatgeCasa.name}}{{imatges}}.jpg" alt="{{page.title}} - {{site.title}}" />
                       </li>
                   {% endfor %}
                 {% endif %}
@@ -38,7 +38,7 @@
                 {% if imatgeCasa.id == page.id %}
                   {% for imatges in imatgeCasa.photos %}
                       <li>
-                          <img src="{{ site.baseurl }}/img/{{imatgeCasa.folder}}/thumbs/{{imatgeCasa.name}}{{imatges}}.jpg" alt="" />
+                          <img src="{{ site.baseurl }}/img/{{imatgeCasa.folder}}/thumbs/{{imatgeCasa.name}}{{imatges}}.jpg" alt="{{page.title}} - {{site.title}}" />
                       </li>
                   {% endfor %}
                 {% endif %}

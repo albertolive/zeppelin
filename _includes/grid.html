@@ -98,10 +98,10 @@
               opacity: 0;
             }
             .socialButtons {
-                display: block;
-                position: relative;
-                left: 1px;
-                top: 7px;
+                display: none;
+                position: absolute;
+                left: 0;
+                top: 0;
                 width: 31%;
             }
             .shareaholic-share-buttons-container .shareaholic-share-buttons-wrapper {
@@ -122,7 +122,7 @@
             }
             #gallery .tile:hover .zoom{
                 top: 50%;
-            } 
+            }
             </style>
         </head>
         <body>      
@@ -133,12 +133,12 @@
                                   {% for imatges in dataGrid.photos %}
                                     <article class="tile ftg-set-{{imatges}}">
                                         <a class="image-link" href="{{ site.baseurl }}/img/fotografies/{{dataGrid.folder}}/{{dataGrid.name}}{{imatges}}.jpg">
-                                            <img class="item" src="{{ site.baseurl }}/img/fotografies/{{dataGrid.folder}}/{{dataGrid.name}}{{imatges}}.jpg" alt=""/>
+                                            <img class="item" src="{{ site.baseurl }}/img/fotografies/{{dataGrid.folder}}/{{dataGrid.name}}{{imatges}}.jpg" alt="{{page.title}} - {{site.title}}"/>
                                             <div class="caption">
-                                                <div class="socialButtons">
-                                                    <!-- <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15616898' data-title='{{page.title}}' data-link='http://www.casacorbella.cat{{page.permalink}}' data-image='http://www.casacorbella.cat/img/fotografies/{{dataGrid.folder}}/{{dataGrid.name}}{{imatges}}.jpg' data-summary=""></div> -->
-                                                </div>
                                                 <i class="fa fa-search zoom"></i>
+                                            </div>
+                                            <div class="socialButtons">
+                                                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15616898' data-title='{{page.title}} - {{site.title}}' data-link='http://www.casacorbella.cat{{page.permalink}}' data-image='http://www.casacorbella.cat/img/fotografies/{{dataGrid.folder}}/{{dataGrid.name}}{{imatges}}.jpg' data-summary=""></div>
                                             </div>
                                         </a>
                                     </article>

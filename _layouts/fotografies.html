@@ -73,7 +73,7 @@
 
     <script src="{{ "/js/jquery.finalTilesGallery.js" | prepend: site.baseurl }}"></script>
 
-<!--    <script type="text/javascript">
+  <script type="text/javascript">
 //<![CDATA[
   (function() {
     var shr = document.createElement('script');
@@ -91,7 +91,6 @@
   })();
 //]]>
 </script>
--->
 
    <script>
 
@@ -109,7 +108,7 @@
         $(document).ready(function() {
           $('.parent-container').magnificPopup({
             mainClass: 'mfp-with-zoom',
-              delegate: 'a', // child items selector, by clicking on it popup will open
+              delegate: '.image-link', // child items selector, by clicking on it popup will open
               type: 'image',
               gallery:{
                 enabled:true,
