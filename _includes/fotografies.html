@@ -22,22 +22,26 @@
         <div id="slider" class="flexslider">
           <ul class="slides">
             {% for imatgeCasa in site.data.imatgesCasa %}
+              {% if imatgeCasa.id == page.id %}
                 {% for imatges in imatgeCasa.photos %}
                     <li>
                         <img src="{{ site.baseurl }}/img/loading/loading.gif" data-src="{{ site.baseurl }}/img/{{imatgeCasa.folder}}/{{imatgeCasa.name}}{{imatges}}.jpg" alt="" />
                     </li>
                 {% endfor %}
+              {% endif %}
             {% endfor %}
           </ul>
         </div>
         <div id="carousel" class="flexslider">
           <ul class="slides">
             {% for imatgeCasa in site.data.imatgesCasa %}
+              {% if imatgeCasa.id == page.id %}
                 {% for imatges in imatgeCasa.photos %}
                     <li>
                         <img src="{{ site.baseurl }}/img/{{imatgeCasa.folder}}/thumbs/{{imatgeCasa.name}}{{imatges}}.jpg" alt="" />
                     </li>
                 {% endfor %}
+              {% endif %}
             {% endfor %}
           </ul>
         </div>
