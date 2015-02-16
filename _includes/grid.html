@@ -1,152 +1,23 @@
-<section id="grid" class="grid">
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width">
-
-            <!-- Example CSS -->
-            <style>
-            html { font-family: Arial, sans-serif; background: #111; }
-            #gallery  { width: 80%; margin: 10px auto; display: block; }
-
-            #gallery ul { margin: 0; padding: 0; height: 50px; }
-            #gallery li { list-style-type: none; }
-            #gallery li a { float: left; margin: 0 20px 0 0; padding: 5px 10px; text-decoration: none; }
-            #gallery li a:hover, #gallery li a.selected { }
-            
-            #gallery .tile .caption {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                background: url({{ site.baseurl }}/img/fotografies/filters/opaque.png);
-                font-family: cursive;
-                opacity:0;
-                transition: all .3s;
-                height: 100%;
-            }
-            #gallery .tile > * {
-                border-radius: 4px;
-            }
-            #gallery .tile a:hover .caption {
-                opacity:1;
-            }
-            #gallery .tile a:hover .socialButtons {
-                display: block;
-            }
-            #gallery .tile .caption p {
-                margin:10px;
-                color: #fff;
-                font-size: 14px;        
-            }
-            .load {
-                width: 300px;
-                display: block;
-                margin: 20px auto;
-                color: #fff;
-                text-decoration: none;
-                background: #333;
-                padding: 10px;
-                text-align: center;
-            }
-            .ftg-loading-panel {
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                background: url({{ site.baseurl }}/img/fotografies/filters/overlay.png);
-                color: #fff;
-                z-index: 1000;
-                text-align: center;
-                font-size: 26px;
-                font-weight: bold;
-                padding:0px;
-                border-top:5px solid #666;
-            }
-            /* overlay at start */
-            .mfp-fade.mfp-bg {
-              opacity: 0;
-
-              -webkit-transition: all 0.15s ease-out;
-              -moz-transition: all 0.15s ease-out;
-              transition: all 0.15s ease-out;
-            }
-            /* overlay animate in */
-            .mfp-fade.mfp-bg.mfp-ready {
-              opacity: 0.8;
-            }
-            /* overlay animate out */
-            .mfp-fade.mfp-bg.mfp-removing {
-              opacity: 0;
-            }
-
-            /* content at start */
-            .mfp-fade.mfp-wrap .mfp-content {
-              opacity: 0;
-
-              -webkit-transition: all 0.15s ease-out;
-              -moz-transition: all 0.15s ease-out;
-              transition: all 0.15s ease-out;
-            }
-            /* content animate it */
-            .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-              opacity: 1;
-            }
-            /* content animate out */
-            .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-              opacity: 0;
-            }
-            .socialButtons {
-                display: none;
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 31%;
-            }
-            .shareaholic-share-buttons-container .shareaholic-share-buttons-wrapper {
-                display: block !important;
-            }
-            #gallery .tile .zoom {
-                font-size: 22px;
-                color: #fff;
-                display: block;
-                position: absolute;
-                top: -50px;
-                left: 50%;
-                margin: -12px 0 0 -12px;
-                -moz-transition: top .5s;
-                -o-transition: top .5s;
-                -webkit-transition: top .5s;
-                transition: top .5s;
-            }
-            #gallery .tile:hover .zoom{
-                top: 50%;
-            }
-            </style>
-        </head>
-        <body>      
-            <section id="gallery">
-                    <div class="ftg-items parent-container mfp-zoom-out-cur">
-                        {% for dataGrid in site.data.grid %}
-                                {% if dataGrid.id == page.id %}
-                                  {% for imatges in dataGrid.photos %}
-                                    <article class="tile ftg-set-{{imatges}}">
-                                        <a class="image-link" href="{{ site.baseurl }}/img/fotografies/{{dataGrid.folder}}/{{dataGrid.name}}{{imatges}}.jpg">
-                                            <img class="item" src="{{ site.baseurl }}/img/fotografies/{{dataGrid.folder}}/{{dataGrid.name}}{{imatges}}.jpg" alt="{{page.title}} - {{site.title}}"/>
-                                            <div class="caption">
-                                                <i class="fa fa-search zoom"></i>
-                                            </div>
-                                            <div class="socialButtons">
-                                                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15616898' data-title='{{page.title}} - {{site.title}}' data-link='http://www.casacorbella.cat/img/fotografies/{{dataGrid.folder}}/{{dataGrid.name}}{{imatges}}.jpg' data-image='http://www.casacorbella.cat/img/fotografies/{{dataGrid.folder}}/{{dataGrid.name}}{{imatges}}.jpg' data-summary="Veure més imatges a http://www.casacorbella.cat{{page.permalink}}"></div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                {% endfor %}
-                            {% endif %}
-                        {% endfor %}             
-                    </div>
-                </section>
-        </body>
-    </html>
+<section id="grid" class="grid">    
+<section id="gallery">
+        <div class="ftg-items parent-container mfp-zoom-out-cur">
+            {% for dataGrid in site.data.grid %}
+                    {% if dataGrid.id == page.id %}
+                      {% for imatges in dataGrid.photos %}
+                        <article class="tile ftg-set-{{imatges}}">
+                            <a class="image-link" href="{{ site.baseurl }}/img/fotografies/{{dataGrid.folder}}/{{dataGrid.name}}{{imatges}}.jpg">
+                                <img class="item" src="{{ site.baseurl }}/img/fotografies/{{dataGrid.folder}}/{{dataGrid.name}}{{imatges}}.jpg" alt="{{page.title}} - {{site.title}}"/>
+                                <div class="caption">
+                                    <i class="fa fa-search zoom"></i>
+                                </div>
+                                <div class="socialButtons">
+                                    <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15616898' data-title='{{page.title}} - {{site.title}}' data-link='http://www.casacorbella.cat/img/fotografies/{{dataGrid.folder}}/{{dataGrid.name}}{{imatges}}.jpg' data-image='http://www.casacorbella.cat/img/fotografies/{{dataGrid.folder}}/{{dataGrid.name}}{{imatges}}.jpg' data-summary="Veure més imatges a http://www.casacorbella.cat{{page.permalink}}"></div>
+                                </div>
+                            </a>
+                        </article>
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}             
+        </div>
+    </section>
 </section>

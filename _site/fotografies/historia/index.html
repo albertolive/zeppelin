@@ -233,7 +233,7 @@
     });
     </script>
     <script src="/js/scripts.js"></script>
-    <script src="/js/jquery.lazyload.js"></script>
+    <script src="/js/jquery.unveil.js"></script>
 
     <link rel="stylesheet" href="/css/magnific-popup.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -268,11 +268,8 @@
         $("#gallery").finalTilesGallery({
             minTileWidth: 180,
             margin: 10,
-            gridCellSize: 150,
-            autoLoadOffset: 5,
-            hoverEffect: 'fade',
-            hoverEasing: 'swing',
-            allowEnlargement: true
+            gridCellSize: 30,
+            autoLoadOffset: 5
         });
         $(document).ready(function() {
           $('.parent-container').magnificPopup({
