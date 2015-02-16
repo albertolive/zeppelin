@@ -4,21 +4,25 @@
   link: "programacio/laseddelasal"
   company: "28 Febrer 2015"
   thumbnailUrl: la-sed-de-la-sal.jpg
+  finalitzat: false
 - 
   id: 3
   surname: "Concert Vermut"
   link: "programacio/concertvermut"
   company: "23 Novembre 2014"
   thumbnailUrl: concert_vermut.jpg
+  finalitzat: true
 - 
   id: 2
   surname: "Racontades"
   link: "programacio/racontades"
   company: "08 Novembre 2014"
   thumbnailUrl: racontades.jpg
+  finalitzat: true
 - 
   id: 1
   surname: "Festival Fresc"
   link: "programacio/festivalfresc"
   company: "24-27 Juliol 2014"
   thumbnailUrl: festival_fresc.jpg
+  finalitzat: true

@@ -3275,6 +3275,15 @@ a.waves-effect .waves-ripple {
     box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
 }
 
+.estatEsdeveniment {
+    position: absolute;
+    max-width:100%;
+    max-height:100%;
+    display:block;
+    left: 74%;
+    background-repeat: no-repeat;
+}
+
 .espectacleFinalitzat {
     border: 2px solid #5cb85c;
     border-radius: 10px;
@@ -3400,6 +3409,25 @@ a.waves-effect .waves-ripple {
     top: 50%;
 }
 
+@media only screen and (max-width: 525px) {
+    .lily-effect-programacio figure {
+        background-position: -150px;
+        -webkit-background-size: 220% !important;
+        background-size: 220% !important;
+        background-repeat: no-repeat;
+    }
+
+    .lily-effect-fotografies figure {
+        background-position: -150px;
+        -webkit-background-size: 220% !important;
+        background-size: 220% !important;
+        background-repeat: no-repeat;
+    }
+    .estatEsdeveniment {
+        left: 59%;
+    }
+}
+
 @media only screen and (max-width:635px) {
     .hackathon-details {
         margin-left: 0px;
@@ -3416,19 +3444,9 @@ a.waves-effect .waves-ripple {
     }
 }
 
-@media only screen and (max-width: 525px) {
-    .lily-effect-programacio figure {
-        background-position: -150px;
-        -webkit-background-size: 220% !important;
-        background-size: 220% !important;
-        background-repeat: no-repeat;
-    }
-
-    .lily-effect-fotografies figure {
-        background-position: -150px;
-        -webkit-background-size: 220% !important;
-        background-size: 220% !important;
-        background-repeat: no-repeat;
+@media only screen and (max-width:650px) {
+    .estatEsdeveniment {
+        left: 67%;
     }
 }
 
@@ -4283,6 +4301,15 @@ a.waves-effect .waves-ripple {
         background-size: 140%;
         background-repeat: no-repeat;
     }
+    .estatEsdeveniment {
+        left: 73%;
+    }
+}
+
+@media only screen and (max-width:960px) {
+    .estatEsdeveniment {
+        left: 56%;
+    }
 }
 
 @media only screen and (min-width:1350px) {
@@ -4297,6 +4324,11 @@ a.waves-effect .waves-ripple {
         background-position: center left;
         -webkit-background-size: 300%;
         background-size: 300%;
+    }
+}
+@media only screen and (max-width:1500px) {
+    .estatEsdeveniment {
+        left: 66%;
     }
 }
 
