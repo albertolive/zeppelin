@@ -84,6 +84,10 @@ h6 {
     max-width: 100%;
 }
 
+.responsiveVideo {
+    frameborder: 0;
+}
+
 .videoWrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
