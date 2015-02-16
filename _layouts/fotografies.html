@@ -65,19 +65,31 @@
     </script>
     <script src="{{ "/js/scripts.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/js/jquery.unveil.js" | prepend: site.baseurl }}"></script>
+    {% page.esFoto %}
+        <script src="{{ "/js/jquery.finalTilesGallery.js" | prepend: site.baseurl }}"></script>
 
-    <script src="{{ "/js/jquery.finalTilesGallery.js" | prepend: site.baseurl }}"></script>
+        <link rel="stylesheet" property="stylesheet" href="{{site.baseurl}}/css/magnific-popup.css">
+        <link rel="stylesheet" property="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <script src="{{ "/js/jquery.magnific-popup.js" | prepend: site.baseurl }}"></script>
+    {% endif %}
+    {% page.esResum %}
+        <link rel="stylesheet" property="stylesheet" href="{{ site.baseurl }}/css/customSlider.css" type="text/css" media="screen" />
+          <link rel="stylesheet" property="stylesheet" href="{{ site.baseurl }}/css/flexslider.css" type="text/css" media="screen" />
 
-    <link rel="stylesheet" property="stylesheet" href="{{site.baseurl}}/css/magnific-popup.css">
-    <link rel="stylesheet" property="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <script src="{{ "/js/jquery.magnific-popup.js" | prepend: site.baseurl }}"></script>
+          <!-- Modernizr -->
+        <script src="{{ site.baseurl }}/js/modernizr.js"></script>
 
-    <link rel="stylesheet" property="stylesheet" href="{{ site.baseurl }}/css/customSlider.css" type="text/css" media="screen" />
-      <link rel="stylesheet" property="stylesheet" href="{{ site.baseurl }}/css/flexslider.css" type="text/css" media="screen" />
 
-      <!-- Modernizr -->
-    <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+        <!-- Syntax Highlighter -->
+        <script type="text/javascript" src="{{ site.baseurl }}/js/slider/shCore.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/js/slider/shBrushXml.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/js/slider/shBrushJScript.js"></script>
 
+        <!-- Optional FlexSlider Additions -->
+        <script src="{{ site.baseurl }}/js/slider/jquery.easing.js"></script>
+        <script src="{{ site.baseurl }}/js/slider/jquery.mousewheel.js"></script>
+        <script defer src="{{ site.baseurl }}/js/slider/demo.js"></script>
+    {% endif %}
   <script type="text/javascript">
 //<![CDATA[
   (function() {
