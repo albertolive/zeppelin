@@ -3424,7 +3424,7 @@ a.waves-effect .waves-ripple {
         background-repeat: no-repeat;
     }
     .estatEsdeveniment {
-        left: 59%;
+        left: 60%;
     }
 }
 
@@ -3444,7 +3444,7 @@ a.waves-effect .waves-ripple {
     }
 }
 
-@media only screen and (max-width:650px) {
+@media only screen and (min-width:526px) and (max-width:650px) {
     .estatEsdeveniment {
         left: 67%;
     }
@@ -3846,6 +3846,12 @@ a.waves-effect .waves-ripple {
         -webkit-background-size: 120%;
         background-size: 120%;
         background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (min-width:651px) and (max-width:767px) {
+    .estatEsdeveniment {
+        left: 73%;
     }
 }
 
@@ -4301,14 +4307,17 @@ a.waves-effect .waves-ripple {
         background-size: 140%;
         background-repeat: no-repeat;
     }
+}
+
+@media only screen and (min-width:768px) and (max-width:1119px) {
     .estatEsdeveniment {
-        left: 73%;
+        left: 65%;
     }
 }
 
-@media only screen and (max-width:960px) {
+@media only screen and (min-width:1120px) and (max-width:1222px) {
     .estatEsdeveniment {
-        left: 56%;
+        left: 59%;
     }
 }
 
@@ -4326,9 +4335,9 @@ a.waves-effect .waves-ripple {
         background-size: 300%;
     }
 }
-@media only screen and (max-width:1500px) {
+@media only screen and (min-width:1223px) and (max-width:1500px) {
     .estatEsdeveniment {
-        left: 66%;
+        left: 67%;
     }
 }
 
