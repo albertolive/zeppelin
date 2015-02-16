@@ -88,6 +88,12 @@ h6 {
     frameborder: 0;
 }
 
+iframe {
+    border: 0px;
+    height: 99%;
+    width: 100%;
+}
+
 .videoNav {
     margin-top: 70px;
 }
