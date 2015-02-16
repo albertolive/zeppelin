@@ -1,5 +1,5 @@
 <!-- About Hackathon Section -->
-<section id="about-hackathon" class="about-hackathon">
+<section id="projecte" class="projecte">
     <div class="content-wrapper">
         <div class="col-md-8 col-md-offset-2">
             <h2>Casa Corbella</h2>
@@ -11,7 +11,7 @@
                     <img class="img-responsive" src="{{ site.baseurl }}/img/projecte/{{ row.image }}" alt="{{ row.title }}"></div>
                 {% endif %}
                 <div class="{% if row.image  %}hackathon-details {% endif %} animated hiding" data-animation="{% if check == 0 %}fadeInRight{% else %}fadeInLeft{% endif %}" data-delay="0">
-                    <h3>{{ row.title }}</h3>
+                    {% if row.title %}<h3>{{ row.title }}</h3>{% endif %}
                     <p>{{ row.details }}</p>
                 </div>
             </div>
