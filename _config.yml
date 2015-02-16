@@ -46,11 +46,11 @@ logisticsMapMobileCenterCoordinates: "41.64258290000001, 2.356339299999945"
 
 #Tweets feed
 twitterHashTag: "casacorbella"
-twitterFeed: "http://lviv.gdg.org.ua/tweetledee/favoritesjson.php?c=10&cache_interval=900" # MIRARHO
+twitterFeed: "http://lviv.gdg.org.ua/tweetledee/favoritesjson.php?c=10&amp;cache_interval=900" # MIRARHO
 
 # Subscribe
-subscribeAction: "http://casacorbella.us9.list-manage.com/subscribe?u=f858dc39512f4cc6121cafe63&id=d6b01abe84"
-subscribeRacontades: "http://casacorbella.us9.list-manage.com/subscribe?u=f858dc39512f4cc6121cafe63&id=d6b01abe84"
+subscribeAction: "http://casacorbella.us9.list-manage.com/subscribe?u=f858dc39512f4cc6121cafe63&amp;id=d6b01abe84"
+subscribeRacontades: "http://casacorbella.us9.list-manage.com/subscribe?u=f858dc39512f4cc6121cafe63&amp;id=d6b01abe84"
 subscribeText: "Vols formar part de casa corbella?"
 subscribeTextSocis: "Espectacle per a familiars de Casa Corbella. Vols formar part de la família?"
 
@@ -81,7 +81,7 @@ thumbnailsFolder: /img/speakers/ #ARRAY AMB TOTES LES IMATGES
 
 # Footer
 gplusFollowUsUrl: "https://plus.google.com/b/116777404151158684359/+CasaCorbellaCatCasaCorbella/about"
-twitterFollowUsUrl: "https://twitter.com/intent/follow?original_referer=http%3A%2F%2F0.0.0.0%3A4000%2F&region=follow_link&screen_name=casacorbella&tw_p=followbutton&variant=2.0"
+twitterFollowUsUrl: "https://twitter.com/intent/follow?original_referer=http%3A%2F%2F0.0.0.0%3A4000%2F&amp;region=follow_link&amp;screen_name=casacorbella&amp;tw_p=followbutton&amp;variant=2.0"
 fbFollowUsUrl: "https://facebook.com/casacorbella"
 
 # Blog

@@ -61,7 +61,7 @@
     <meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png">
     <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
 
-    <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,500&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
     <!-- Bootstrap -->
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -143,15 +143,6 @@
             <li><a  href="/premsa/">Premsa</a></li>
             <li><a  href="/contacte/">Contacte</a></li>
         </ul>
-        <ul id="bottom-navlinks" class="bottom-navlinks visible-xs">
-            <!-- <li><a href="#">Buy tickets</a>
-            </li> 
-            <li><a href="" target="_blank">Become a speaker</a>
-            </li>
-        </ul>
-        <span id="buy-tickets-button"  class="btn btn-primary waves-element waves-button waves-light waves-will-raise pull-right hidden-xs hidden-sm hidden">
-            <a href="" target="_blank">Become a speaker</a>
-        </span>-->
     </nav>
 </header>
 
@@ -169,43 +160,6 @@
 	<div class="row">
 		<div class="col-md-3 col-sm-4 col-xs-6">
 			<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300" data-href="http://www.casacorbella.cat"></div>
-			<!--<ul>
-				<h5>Links</h5>
-				 <li><a href="http://gdg.org.ua" target="_blank">GDG.org.ua</a>
-				</li>
-				<li><a href="https://developers.google.com" target="_blank">Google Developers</a>
-				</li>
-			</ul>
-			<ul class="social-links">
-				<li>
-					<a href="https://plus.google.com/b/116777404151158684359/+CasaCorbellaCatCasaCorbella/about" target="_blank">
-						<svg class="icon icon-google-plus" viewBox="0 0 30 32">
-							<use xlink:href="/img/sprites/sprites.svg#icon-google-plus"></use>
-						</svg>
-					</a>
-				</li>
-				<li>
-					<a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2F0.0.0.0%3A4000%2F&region=follow_link&screen_name=casacorbella&tw_p=followbutton&variant=2.0" target="_blank">
-						<svg class="icon icon-twitter" viewBox="0 0 30 32">
-							<use xlink:href="/img/sprites/sprites.svg#icon-twitter"></use>
-						</svg>
-					</a>
-				</li>
-				<li>
-					<a href="https://facebook.com/casacorbella" target="_blank">
-						<svg class="icon icon-facebook" viewBox="0 0 30 32">
-							<use xlink:href="/img/sprites/sprites.svg#icon-facebook"></use>
-						</svg>
-					</a>
-				</li>
-				<li>
-					<a href="/feed.xml" target="_blank">
-						<svg class="icon icon-rss" viewBox="0 0 30 32">
-							<use xlink:href="/img/sprites/sprites.svg#icon-rss"></use>
-						</svg>
-					</a>
-				</li>
-			</ul>-->
 		</div>
 		<div class="col-md-3 col-sm-4 col-xs-6">
 			<a href="https://twitter.com/casacorbella" class="twitter-follow-button" data-show-count="false" data-size="medium">Segueix @casacorbella</a>
@@ -231,7 +185,7 @@
 		<!-- Please don't delete this line-->
 		<div class="col-md-6">
 			<p class="copyright">
-				&copy; 2014 Disseny i creació per <a href="https://plus.google.com/+OlehZasadnyy/about">Oleh Zasadnyy</a> &middot; <a href="http://lviv.gdg.org.ua" target="_blank">GDG Lviv</a>. Modificat per <a href="https://www.linkedin.com/profile/view?id=213738738&trk=nav_responsive_tab_profile_pic" target="_blank">Albert Olivé</a>.
+				&copy; 2014 Disseny i creació per <a href="https://plus.google.com/+OlehZasadnyy/about">Oleh Zasadnyy</a> &middot; <a href="http://lviv.gdg.org.ua" target="_blank">GDG Lviv</a>. Modificat per <a href="https://www.linkedin.com/profile/view?id=213738738&amp;trk=nav_responsive_tab_profile_pic" target="_blank">Albert Olivé</a>.
 			</p>
 		</div>
 	</div>
@@ -279,13 +233,11 @@
     });
     </script>
     <script src="/js/scripts.js"></script>
-    <script src="/js/jquery.unveil.js"></script>
+    <script src="/js/jquery.lazyload.js"></script>
 
     <link rel="stylesheet" href="/css/magnific-popup.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="/js/jquery.magnific-popup.js"></script>
-
-    <script src="/js/jquery.finalTilesGallery.js"></script>
 
   <script type="text/javascript">
 //<![CDATA[
@@ -316,8 +268,11 @@
         $("#gallery").finalTilesGallery({
             minTileWidth: 180,
             margin: 10,
-            gridCellSize: 30,
-            autoLoadOffset: 5
+            gridCellSize: 150,
+            autoLoadOffset: 5,
+            hoverEffect: 'fade',
+            hoverEasing: 'swing',
+            allowEnlargement: true
         });
         $(document).ready(function() {
           $('.parent-container').magnificPopup({
@@ -349,6 +304,7 @@
             } 
             });
         });
+
     </script> 
 </body>
 </html>

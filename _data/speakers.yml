@@ -30,7 +30,7 @@
   thumbnailUrl: nas-cardedeu-festival-fresc-2014.jpg
   rockstar: true
   social: 
-    - {name: "site", link: "http://www.elnasdecardedeu.cat/index.php?option=com_content&view=article&id=1147:141-el-fresc-es-consolida-com-el-festival-d-estiu-de-cardedeu&catid=64&Itemid=112"}
+    - {name: "site", link: "http://www.elnasdecardedeu.cat/index.php?option=com_content&amp;view=article&amp;id=1147:141-el-fresc-es-consolida-com-el-festival-d-estiu-de-cardedeu&amp;catid=64&amp;Itemid=112"}
 - 
   id: 7
   name: "Nació Digital - Granollers"
