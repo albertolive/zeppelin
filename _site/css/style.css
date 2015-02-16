@@ -88,6 +88,10 @@ h6 {
     frameborder: 0;
 }
 
+.videoNav {
+    margin-top: 70px;
+}
+
 .videoWrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
