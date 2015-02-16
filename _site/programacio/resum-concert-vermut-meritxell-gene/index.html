@@ -139,15 +139,6 @@
 <!-- End Top Section -->
 
  <section id="imatges" class="imatges">
-  <head>
-
-      <link rel="stylesheet" property="stylesheet" href="/css/customSlider.css" type="text/css" media="screen" />
-      <link rel="stylesheet" property="stylesheet" href="/css/flexslider.css" type="text/css" media="screen" />
-
-      <!-- Modernizr -->
-    <script src="/js/modernizr.js"></script>
-
-  </head>
   <body class="loading">
 
     <div id="container" class="cf">
@@ -457,12 +448,88 @@
     $(document).ready(function() {
         var bodyColor = $('body').css('color');
         if (bodyColor != 'rgb(51, 51, 51)') {
-            $("head").prepend('<link rel="stylesheet" href="/css/bootstrap.min.css">');
+            $("head").prepend('<link rel="stylesheet" property="stylesheet" href="/css/bootstrap.min.css">');
         }
     });
     </script>
     <script src="/js/scripts.js"></script>
     <script src="/js/jquery.unveil.js"></script>
-</body>
 
+    <script src="/js/jquery.finalTilesGallery.js"></script>
+
+    <link rel="stylesheet" property="stylesheet" href="/css/magnific-popup.css">
+    <link rel="stylesheet" property="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="/js/jquery.magnific-popup.js"></script>
+
+    <link rel="stylesheet" property="stylesheet" href="/css/customSlider.css" type="text/css" media="screen" />
+      <link rel="stylesheet" property="stylesheet" href="/css/flexslider.css" type="text/css" media="screen" />
+
+      <!-- Modernizr -->
+    <script src="/js/modernizr.js"></script>
+
+  <script type="text/javascript">
+//<![CDATA[
+  (function() {
+    var shr = document.createElement('script');
+    shr.setAttribute('data-cfasync', 'false');
+    shr.src = '//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js';
+    shr.type = 'text/javascript'; shr.async = 'true';
+    shr.onload = shr.onreadystatechange = function() {
+      var rs = this.readyState;
+      if (rs && rs != 'complete' && rs != 'loaded') return;
+      var site_id = 'de7eb8b657a7a565d4e383ef475473fa';
+      try { Shareaholic.init(site_id); } catch (e) {}
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(shr, s);
+  })();
+//]]>
+</script>
+
+   <script>
+
+        $('.socialButtons').click(function(e) {
+            e.stopPropagation();
+        });
+
+        //instantiate Final Tiles Gallery
+        $("#gallery").finalTilesGallery({
+            minTileWidth: 180,
+            margin: 10,
+            gridCellSize: 30,
+            autoLoadOffset: 5
+        });
+        $(document).ready(function() {
+          $('.parent-container').magnificPopup({
+            mainClass: 'mfp-with-zoom',
+              delegate: '.image-link', // child items selector, by clicking on it popup will open
+              type: 'image',
+              gallery:{
+                enabled:true,
+                preload: [0,2]
+            },
+              image: {
+                cursor: 'mfp-zoom-out-cur'
+            },
+            preloader: true,
+            zoom: {
+                enabled: true, // By default it's false, so don't forget to enable it
+
+                duration: 300, // duration of the effect, in milliseconds
+                easing: 'ease-in-out', // CSS transition easing function 
+
+                // The "opener" function should return the element from which popup will be zoomed in
+                // and to which popup will be scaled down
+                // By defailt it looks for an image tag:
+                opener: function(openerElement) {
+                  // openerElement is the element on which popup was initialized, in this case its <a> tag
+                  // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+                  return openerElement.is('img') ? openerElement : openerElement.find('img');
+                }
+            } 
+            });
+        });
+
+    </script> 
+</body>
 </html>
