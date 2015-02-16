@@ -3283,7 +3283,7 @@ a.waves-effect .waves-ripple {
 #gallery  { 
     width: 100%;
     display: block;
-    padding: 20px; 
+    padding-left: 35px; 
 }
 
 #gallery ul { margin: 0; padding: 0; height: 50px; }
