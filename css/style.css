@@ -3409,6 +3409,12 @@ a.waves-effect .waves-ripple {
     top: 50%;
 }
 
+@media only screen and (max-width: 380px) {
+    .estatEsdeveniment {
+        left: 40%;
+    }
+}
+
 @media only screen and (max-width: 525px) {
     .lily-effect-programacio figure {
         background-position: -150px;
@@ -3423,6 +3429,9 @@ a.waves-effect .waves-ripple {
         background-size: 220% !important;
         background-repeat: no-repeat;
     }
+}
+
+@media only screen and (min-width:381px) and (max-width: 525px) {
     .estatEsdeveniment {
         left: 60%;
     }
@@ -3446,7 +3455,7 @@ a.waves-effect .waves-ripple {
 
 @media only screen and (min-width:526px) and (max-width:650px) {
     .estatEsdeveniment {
-        left: 67%;
+        left: 68%;
     }
 }
 
@@ -4309,13 +4318,19 @@ a.waves-effect .waves-ripple {
     }
 }
 
-@media only screen and (min-width:768px) and (max-width:1119px) {
+@media only screen and (min-width:768px) and (max-width:960px) {
+    .estatEsdeveniment {
+        left: 56%;
+    }
+}
+
+@media only screen and (min-width:961px) and (max-width:1199px) {
     .estatEsdeveniment {
         left: 65%;
     }
 }
 
-@media only screen and (min-width:1120px) and (max-width:1222px) {
+@media only screen and (min-width:1200px) and (max-width:1222px) {
     .estatEsdeveniment {
         left: 59%;
     }
