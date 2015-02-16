@@ -9,7 +9,7 @@
 
     {% if page.title == "Casa Corbella" %}
         {% assign description =  site.description %}
-    {% elsif page.title == "Història" %}
+    {% elsif page.permalink == "/historia/" %}
         {% assign description =  site.descriptionHistoria %}
     {% elsif page.title == "Projecte" %}
         {% assign description =  site.descriptionHistoria %}
@@ -29,6 +29,12 @@
         {% assign description =  site.descriptionResumConcertVermut %}
     {% elsif page.title == "La sed de la sal" %}
         {% assign description =  site.descriptionLaSedDeLaSal %}
+    {% elsif page.title == "La Casa" %}
+        {% assign description =  site.descriptionLaCasa %}
+    {% elsif page.permalink == "/fotografies/historia/" %}
+        {% assign description =  site.descriptionHistoriaFotografia %}
+    {% elsif page.title == "Actes" %}
+        {% assign description =  site.descriptionActes %}
     {% elsif page.title == "Premsa" %}
         {% assign description =  site.descriptionPremsa %}
     {% elsif page.title == "Contacte" %}
