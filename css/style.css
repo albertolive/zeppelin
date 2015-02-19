@@ -94,6 +94,11 @@ iframe {
     width: 100%;
 }
 
+#about-laSed iframe {
+    height: 455px !important;
+    width: 682px !important;
+}
+
 .videoNav {
     margin-top: 70px;
 }
@@ -3414,6 +3419,12 @@ a.waves-effect .waves-ripple {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.center-shareolic {
+    width: 72%;
+    margin: 0 auto;
+    margin-left: 21%;
 }
 
 @media only screen and (max-width: 380px) {
