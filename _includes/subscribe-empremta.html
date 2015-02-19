@@ -1,0 +1,90 @@
+<!-- Begin Rockstar Speakers Section -->
+<section id="subscribe" class="parallax" style="background-image: url({{ site.baseurl }}/img/empremta/background-speakers.jpg);">
+    <div class="overlay"></div>
+    <div class="content-wrapper">
+
+        <div class="col-lg-8 col-lg-offset-2 animated hiding" data-animation="fadeInUp" data-delay="0">
+            <h3>{{site.subscribeTextSocis}}</h3>
+            <div id="mc_embed_signup" class="col-lg-8 col-sm-8 col-lg-offset-2 col-sm-offset-2">
+                <form action="{{site.subscribeAction}}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div class="mc-field-group col-lg-9 col-sm-9 col-xs-12">
+                        <span class="email waves-element waves-button waves-light bordered">
+                            <input type="email" value="" name="EMAIL" class="required" id="mce-EMAIL" placeholder="correu electrònic" autocomplete="off">
+                        </span>
+                    </div>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;">
+                        <input type="text" name="b_9fc8aa205b0521b5f05fc8e1e_ae0fb459fc" tabindex="-1" value="">
+                    </div>
+                    <div class="mc-submit-group clear col-lg-3 col-sm-3 col-xs-12">
+                        <span class="button waves-element waves-button waves-light bordered">
+                            <input type="submit" value="Enviar" name="subscribe" id="mc-embedded-subscribe">
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 text-left same-height-wrapper">
+            <div class="col-md-6 col-xs-12 same-height animated hiding" data-animation="fadeInDown" data-delay="0">
+                <div class="card cardRacontades">
+                    <div class="col-md-6 col-xs-6">
+                        <h4>Dia</h4>
+                        <p><b>07 de Març del 2015 de les 10h a les 17h.</b></p>
+                    </div>
+                    <div class="col-md-6 col-xs-6">
+                        <h4>Preu</h4>
+                        <p>entrada <b>30€</b> / estudiants i aturats <b>25€</b></p>
+                        
+                    </div>
+                    <div class="col-md-12 col-xs-12">
+                        <h6><b>Cal inscripció prèvia al correu <a href="mailto:info@festivalempremta.com" target="_top">info@festivalempremta.com</a></b></h6>
+                    </div>
+                    <div class="col-md-6 col-xs-6">
+                        <h4 class="truncate">Aforament</h4>
+                        <p><b>Limitat</b></p>
+                    </div>
+                    <div class="col-md-6 col-xs-6">
+                        <h4 class="truncate">Ubicació</h4>
+                        <a href="{{ site.baseurl | append: '/contacte/#findyourway' }}">
+                            <svg class="icon icon-direction iconBig" viewBox="0 0 32 32">
+                                <use xlink:href="/../img/sprites/sprites.svg#icon-direction"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12 same-height animated hiding" data-animation="fadeInDown" data-delay="1000">
+                <div class="card cardRacontades">
+                    <h4>Comparteix</h4>
+                    <br>
+                    <div class='shareaholic-canvas center-shareolic' data-app='share_buttons' data-app-id='15613234' data-title='{{page.title}}' data-link='http://www.casacorbella.cat{{page.permalink}}' data-image='http://www.casacorbella.cat/img/empremta/cartell-emprempta.jpg' data-summary="<b>Empremta</b> és una trobada d'Art de la Performance amb caràcter heterogeni i experimental. Com a residu i marca de l'acció, del gest..."></div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script type="text/javascript">
+        //<![CDATA[
+          (function() {
+            var shr = document.createElement('script');
+            shr.setAttribute('data-cfasync', 'false');
+            shr.src = '//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js';
+            shr.type = 'text/javascript'; shr.async = 'true';
+            shr.onload = shr.onreadystatechange = function() {
+              var rs = this.readyState;
+              if (rs && rs != 'complete' && rs != 'loaded') return;
+              var site_id = 'de7eb8b657a7a565d4e383ef475473fa';
+              try { Shareaholic.init(site_id); } catch (e) {}
+            };
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(shr, s);
+          })();
+        //]]>
+        </script>
+</section>
+<!-- End Rockstar Speakers Section -->

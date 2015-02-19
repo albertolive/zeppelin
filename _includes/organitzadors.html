@@ -1,0 +1,52 @@
+<!-- Begin Organizers Section -->
+<section id="sponsors">
+    <div class="content-wrapper">
+        <div class="col-lg-10 col-lg-offset-1">
+            {% for organitzador in site.data.organitzadors %}
+                {% if page.id == organitzador.id %}
+                    <h5>Organitzadors</h5>
+                    <ul class="list-inline">
+                        {% for org in organitzador.organitzadorsRows %}
+                            <li>
+                                {% if org.link %}
+                                <a href="{{org.link}}" target="_blank">
+                                    <img src="{{ site.baseurl }}/img/{{organitzador.carpeta}}/logos/{{org.imatge}}" alt="{{org.alt}}">
+                                </a>
+                                {% else %}
+                                    <img src="{{ site.baseurl }}/img/{{organitzador.carpeta}}/logos/{{org.imatge}}" alt="{{org.alt}}">
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                        {% if organitzador.organitzem %}
+                            <li>
+                                <img src="{{ site.baseurl }}/img/logos/logoNormal.jpg" alt="Casa Corbella">
+                            </li>
+                        {% endif %}
+                    </ul>
+                    {% if organitzador.collaboradors %}
+                        <h5>Col·laboradors</h5>
+                        <ul class="list-inline">
+                                {% for col in organitzador.collaboradorsRows %}
+                                    <li>
+                                        {% if col.link %}
+                                        <a href="{{col.link}}" target="_blank">
+                                            <img src="{{ site.baseurl }}/img/{{organitzador.carpeta}}/logos/{{col.imatge}}" alt="{{col.alt}}">
+                                        </a>
+                                        {% else %}
+                                            <img src="{{ site.baseurl }}/img/{{organitzador.carpeta}}/logos/{{col.imatge}}" alt="{{col.alt}}">
+                                        {% endif %}
+                                    </li>
+                                {% endfor %}
+                            {% if organitzador.collaborem %}
+                                <li>
+                                    <img src="{{ site.baseurl }}/img/logos/logoNormal.jpg" alt="Casa Corbella">
+                                </li>
+                            {% endif %}
+                        </ul>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- End Organizers Section -->

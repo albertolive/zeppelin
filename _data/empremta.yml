@@ -1,0 +1,20 @@
+- 
+  id: 1
+  name: "Denys Blacker"
+  thumbnailUrl: denys-blacker.jpg
+  url: http://www.festivalempremta.com/p/denys-blacker.html
+- 
+  id: 2
+  name: "Symbolab"
+  thumbnailUrl: symbolab.png
+  url: http://www.festivalempremta.com/p/blog-page.html
+- 
+  id: 3
+  name: "Dani d'Emilia"
+  thumbnailUrl: dani-dEmilia.jpg
+  url: http://www.festivalempremta.com/p/dani-demilia.html
+- 
+  id: 4
+  name: "Isil Sol Vil"
+  thumbnailUrl: Isil-Sol-Vil.jpg
+  url: http://www.festivalempremta.com/p/isil-sol-vil.html

@@ -1,0 +1,59 @@
+-
+  id: 5
+  carpeta: "empremta"
+  organitzadorsRows:
+    - {imatge: "logo.jpg", link: "http://www.festivalempremta.com/", alt: "Empremta - Festival Internacional del Performance"}
+  collaboradorsRows:
+  organitzem: false
+  collaboradors: false
+  collaborem: false
+-
+  id: 4
+  carpeta: "laSedDeLaSal"
+  organitzadorsRows:
+    - {imatge: "ruben-martinez-santana.jpg", link: "http://www.rubenmartinezsantana.com/", alt: "Ruben Martinez Santana"}
+  collaboradorsRows:
+  organitzem: true
+  collaboradors: false
+  collaborem: false
+-
+  id: 3
+  carpeta: "concertVermut"
+  organitzadorsRows: 
+    - {imatge: "logo-esquellot.png", link: null, alt: "Esquellot"}
+    - {imatge: "pam.png", link: "http://poesiaamanta.wordpress.com/", alt: "Poesia a manta"}
+  collaboradorsRows:
+  organitzem: false
+  collaboradors: false
+  collaborem: false
+-
+  id: 2
+  carpeta: "racontades"
+  organitzadorsRows:
+    - {imatge: "racontades.jpg", link: "https://www.facebook.com/Racontades/", alt: "Racontades"}
+  collaboradorsRows:
+    - {imatge: "santJordi.jpg", link: "http://www.cervesasantjordi.cat/", alt: "Cervesa Sant Jordi"}
+    - {imatge: "tastavins.jpg", link: null, alt: "Tastavins" }
+    - {imatge: "eric-pastisser.jpg", link: "https://www.facebook.com/eric.pastisser", alt: "Eric Pastisser"}
+    - {imatge: "maspellisser.jpg", link: "http://maspellisser.blogspot.com.es/", alt: "Mas Pellisser"}
+    - {imatge: "ratafiabosch.jpg", link: "http://www.ratafiabosch.cat/", alt: "Ratafia Bosch"}
+  organitzem: true
+  collaboradors: true
+  collaborem: false
+-
+  id: 1
+  carpeta: "festivalfresc"
+  organitzadorsRows:
+    - {imatge: "brubaker.png", link: "http://brubaker.cat/", alt: "Brubaker"}
+    - {imatge: "quesoni.jpg", link: "http://www.quesoni.cat/", alt: "QueSoni"}
+    - {imatge: "torre-rossa.jpg", link: "http://www.pizzeriatorrerossa.com/", alt: "Torre Rossa"}
+  collaboradorsRows:
+    - {imatge: "ajuntamentcardedeu.jpg", link: "http://www.cardedeu.cat/", alt: "Ajuntament de Cardedeu"}
+    - {imatge: "assessoriacorbella.jpg", link: "http://corbellagns.com/", alt: "Assessoria Corbella" }
+    - {imatge: "estrella-damm.jpg", link: "http://www.estrelladamm.com/", alt: "Estrella Damm"}
+    - {imatge: "fani-benages.jpg", link: "http://fanibenages.com/", alt: "Fani Benages"}
+    - {imatge: "logo_compas.jpg", link: "https://www.facebook.com/LlibreriaPapereriaCompas", alt: "Llibreria Compàs"}
+    - {imatge: "colectivo-cautivo.jpg", link: "http://colectivocautivo.wordpress.com/", alt: "Colectivo Cautivo"}
+  organitzem: true
+  collaboradors: true
+  collaborem: false
