@@ -11,7 +11,7 @@
   link: "programacio/laseddelasal"
   company: "28 Febrer 2015"
   thumbnailUrl: la-sed-de-la-sal.jpg
-  finalitzat: false
+  finalitzat: true
 - 
   id: 3
   surname: "Concert Vermut"
