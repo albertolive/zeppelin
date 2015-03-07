@@ -3442,6 +3442,9 @@ a.waves-effect .waves-ripple {
     .estatEsdeveniment {
         left: 40%;
     }
+    h2 {
+        font-size: 4.875em;
+    }
 }
 
 @media only screen and (max-width: 525px) {
