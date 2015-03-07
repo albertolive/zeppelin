@@ -9,7 +9,7 @@
                 {% if imatgeCasa.id == page.id %}
                   {% for imatges in imatgeCasa.photos %}
                       <li>
-                          <img class="lazy" data-original="{{ site.baseurl }}/img/{{imatgeCasa.folder}}/{{imatgeCasa.name}}{{imatges}}.jpg" alt="{{page.title}} - {{site.title}}" />
+                          <img src="{{ site.baseurl }}/img/loading/loading.gif" data-src="{{ site.baseurl }}/img/{{imatgeCasa.folder}}/{{imatgeCasa.name}}{{imatges}}.jpg" alt="{{page.title}} - {{site.title}}" />
                       </li>
                   {% endfor %}
                 {% endif %}
