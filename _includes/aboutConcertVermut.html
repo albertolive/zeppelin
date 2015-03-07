@@ -7,7 +7,7 @@
                 <h5>Accedeix al següent enllaç per veure el vídeo i les imatges: <a href="{{ site.baseurl }}/programacio/resum-concert-vermut-meritxell-gene">Resum Concert-Vermut</a></h5>
             </div>
         </div>
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-xs-12">
             {% for row in site.concertVermutRows %}
             {% assign check = forloop.index0 | modulo:2 %}
             <div class="hackathon-row {% if check == 0 %}float-left{% else %}float-right{% endif %} col-md-12">
