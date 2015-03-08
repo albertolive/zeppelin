@@ -1,12 +1,12 @@
 - 
-  id: 4
+  id: 5
   surname: "Empremta"
   link: "programacio/empremta"
   company: "07 Març 2015"
   thumbnailUrl: empremta.jpg
-  finalitzat: false
+  finalitzat: true
 - 
-  id: 3
+  id: 4
   surname: "La sed de la sal"
   link: "programacio/laseddelasal"
   company: "28 Febrer 2015"
