@@ -1,0 +1,30 @@
+<!-- About Hackathon Section -->
+<section id="about-Mosquito" class="about-Mosquito">
+<!--     <div class="content-wrapper">
+        <div class="col-xs-12">
+            <div class="espectacleFinalitzat">
+                <h2>Espectacle finalitzat</h2>
+                <h5>Accedeix al següent enllaç per veure el vídeo i les imatges: <a href="{{ site.baseurl }}/programacio/resum-la-sed-de-la-sal/">Resum La sed de la sal</a></h5>
+            </div>
+        </div>
+    </div> -->
+    <div class="content-wrapper">
+        <div class="col-xs-12">
+            {% for row in site.mosquitoNoDaBistecRows %}
+            {% assign check = forloop.index0 | modulo:2 %}
+            <div class="hackathon-row {% if check == 0 %}float-left{% else %}float-right{% endif %} col-md-12">
+                
+                <div class="festivalFresc-details animated hiding" data-animation="{% if check == 0 %}fadeInLeft{% else %}fadeInRight{% endif %}" data-delay="0">
+                    <h4>{{ row.title }}</h4>
+                    <p>{{ row.details }}</p>
+                </div>
+                <div class="fresc-img-wrapper animated hiding" data-animation="{% if check == 0 %}fadeInLeft{% else %}fadeInRight{% endif %}" data-delay="0">
+                    <img class="img-responsive" src="{{ site.baseurl }}/img/mosquitonodabistec/{{ row.image }}" alt="Jose Luis insua amb Mosquito no da bistec"> <br> <br>
+                <!-- <iframe width="682" height="455" src="https://www.youtube.com/embed/hGmbY5wnaes" class="responsiveVideo noIframe" allowfullscreen></iframe> -->
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- End About Hackathon Section -->

@@ -1,4 +1,13 @@
 -
+  id: 6
+  carpeta: "mosquitonodabistec"
+  organitzadorsRows:
+  collaboradorsRows:
+    - {imatge: "granat.png", link: "https://www.facebook.com/pages/Granat/1410524395893548", alt: "Granat"}
+  organitzem: true
+  collaboradors: true
+  collaborem: false
+-
   id: 5
   carpeta: "empremta"
   organitzadorsRows:
