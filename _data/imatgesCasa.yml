@@ -13,3 +13,8 @@
   folder: "laSedDeLaSal/slider"
   name: "laSedDeLaSal_"
   photos: [1,2,3,4,5,6,7,8,9]
+- 
+  id: 4
+  folder: "mosquitonodabistec/slider"
+  name: "mosquitonodabistec_"
+  photos: [1,2,3,4,5,6,7,8,9]
