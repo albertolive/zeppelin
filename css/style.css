@@ -20,6 +20,35 @@ section {
     background: #fff;
 }
 
+#modal {
+    display: none;
+    color: #fff;
+}
+
+#close {
+    float: right;
+    cursor: pointer;
+}
+
+.panel-heading {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.panel-default {
+   width: 50%;
+    margin: 0 auto;
+}
+
+.panel-body {
+    color: #000;
+}
+
+.comunicat {
+    text-align: left;
+    line-height: 1.6rem;
+}
+
 .content-wrapper {
     position: relative;
     z-index: 1;

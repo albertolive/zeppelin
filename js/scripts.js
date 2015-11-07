@@ -25,7 +25,18 @@
           window.location.href = 'http://www.casacorbella.cat';
         }
         $(document).ready(function() {
-          $("img").unveil();
+          // $("img").unveil();
+          Custombox.open({
+                target: '#modal',
+                effect: 'fadein',
+                id: 'modal',
+                close: function() {
+                    debugger;
+                }
+            });
+          $('#close').on('click', function( e ) {
+                 Custombox.close();
+            });
         });
 
         e("#top-header").addClass("after-scroll");
